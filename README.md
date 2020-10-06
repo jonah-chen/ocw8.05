@@ -9,4 +9,4 @@ Midterm Exams: ~~2011~~ 2012 2013
 
 Final Exams: 2011 2012 2013
 
-Solutions have yet to be checks. Any corrections will be appreciated. 
+Solutions have yet to be checked. Any corrections will be appreciated. 
