@@ -1,0 +1,38 @@
+\begin{sol}
+\begin{enumerate}[label=\textbf{(\alph*)}]
+\item
+The Heisenberg Hamiltonian is 
+$$\hat H_H=\frac{\hat p_H}{2m}+V(\hat x_H)$$ 
+The momentum and position operators have no explicit time-dependence. Therefore, the formula used in \textit{2, p.58} can be used. 
+$$\frac{d\hat p_H}{dt}=-i[\hat p_H,\hat H_H]=-i[\hat p_H,V(\hat x_H)]$$
+It is shown in \textit{1e, p.28} that $[f(x),p]=if'(x)$ 
+$$\frac{d\hat p_H}{dt}=-V'(x)$$
+Apply the initial conditions at $t=0$ will yield the solution
+$$\hat p_H=\hat p-V'(x)t$$ 
+It was shown on \textit{4.b, p.50} that the commutator $[x,p^2]=2i\hat p$ 
+$$\frac{d\hat x_H}{dt}=-i[\hat x_H,\hat H_H]=-\frac{i}{2m}[\hat x_H,\hat p_H^2]=\frac{\hat p_H}{m}$$
+Applying the initial condition at $t=0$ will yield the solution
+$$\hat x_H=\hat x+\frac{\hat p_H}{m}t$$
+To compute the derivatives of the expectation values
+$$\frac{d}{dt}\langle \hat p\rangle=\frac{d}{dt}\bra{\psi,0}\hat p_H\ket{\psi,0}=\bra{\psi,0}\frac{d\hat p_H}{dt}\ket{\psi,0}=\bra{\psi,0}-V'(\hat x)\ket{\psi,0}=-\langle V'(\hat{x})\rangle$$ 
+$$\frac{d}{dt}\langle\hat x\rangle=\frac{d}{dt}\bra{\psi,0}\hat x_H\ket{\psi,0}=\bra{\psi,0}\frac{d\hat x_H}{dt}\ket{\psi,0}=\bra{\psi,0}\frac{\hat p_H}{m}\ket{\psi,0}=\frac{\langle \hat p\rangle}{m}$$ 
+These results are known as \textit{Ehrenfest's theorem}. To obtain newton's second law, take the second derivative of $\langle \hat x\rangle$
+$$\frac{d^2}{dt^2}\langle x\rangle=\frac{d}{dt}\frac{\langle p\rangle}{m}=-\frac{\langle V'(x)\rangle}{m}$$ 
+Recall a force due to a potential in classical mechanics $F=-\nabla V$. Here, define quantum mechanical force to be $\hat F\equiv-V'(\hat x)$. Also recall that the second time derivative of position is acceleration, $\hat a=\frac{d^2\hat x}{dt^2}$  (note $\hat a$ is not the annihilation operator) Rearrange the equation such that it takes a familiar form.
+$$\langle\hat F\rangle=m\langle\hat a\rangle$$ 
+\item
+The initial position and momentum of the state is known to be $x_0$ and $p_0$ respectively. Since it is a free particle, the momentum is constant. From \textit{Ehrenfest's theorem}, 
+$$\frac{d}{dt}\langle\hat x\rangle=\frac{p_0}{m}$$
+$$\langle\hat x\rangle=x_0+\frac{p_0}{m}t$$ 
+\item
+The Hamiltonian for this particle in an electric field is
+$$\hat H=\frac{\hat p^2}{2m}+qE_0\hat x\sin(\omega t)$$
+Let $t_1$ be a time where $\sin(\omega t)$ is zero, let $t_2$ be a time where $\sin(\omega t)$ is non-zero value $\beta$.
+$$[\hat H(t_1),\hat H(t_2)]=\frac{\beta qE_0}{2m}[\hat p^2,\hat x]=\frac{-i\beta qE_0}{m}\hat p\neq 0$$ 
+The derivation of \textit{Ehrenfest's theorem} still holds since there are no assumptions made about the nature of the Hamiltonian in the derivation. Because the unitary time-evolution operators still exist for this Hamiltonian, thus, the Heisenberg operators must also exist as $\hat A_H=\hat U_t^\dagger\hat A\hat U_t$.
+\item
+Using the equivalent to newton's second law, 
+$$\frac{d^2}{dt^2}\langle\hat x\rangle=-\frac{\langle V'(\hat x)\rangle}{m}=\frac{-qE_0\sin(\omega t)}{m}$$
+$$\langle\hat x\rangle=\langle\hat x\rangle_{t=0}+\frac{1}{m}\left(\langle\hat p\rangle_{t=0}+\frac{qE_0}{\omega}\right)t+\frac{qE_0}{m\omega^2}\sin(\omega t)$$
+\end{enumerate}
+\end{sol}

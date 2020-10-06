@@ -1,0 +1,83 @@
+\begin{sol}
+\begin{enumerate}[label=\textbf{(\alph*)}]
+\item
+It is known that the vacuum state of the simple harmonic oscillator is non-degenerate. Assume there is a degeneracy in the $n$-th excited state. Take any two of such degenerate states $\ket{n,1}$ and $\ket{n,2}$. Since they are degenerate in energy, they must have the same eigenvalue under the number operator
+$$N\ket{n,1}=N\ket{n,2}=n\ket{n,1}=n\ket{n,2}$$
+
+Apply the annihilation operator to both states $n$ times.
+$$\beta a^n\ket{n,1}=\gamma a^n\ket{n,2}=\ket 0$$ 
+\item
+$$[a,(a^\dagger)^n]=a(a^\dagger)^n-(a^\dagger)^na=aa^\dagger(a^\dagger)^{n-1}-(a^\dagger)^na$$ $$=([a,a^\dagger]+a^\dagger a)(a^\dagger)^{n-1}-(a^\dagger)^na=(1+a^\dagger a)(a^\dagger)^{n-1}-(a^\dagger)^na$$
+$$=(a^\dagger)^{n-1}+a^\dagger a(a^\dagger)^{n-1}-(a^\dagger)^na$$ 
+In general, 
+$$(a^\dagger)^ma(a^\dagger)^n=(a^\dagger)^maa^\dagger(a^\dagger)^{n-1}=(a^\dagger)^{m}([a,a^\dagger]+a^\dagger a)(a^\dagger)^{n-1}=(a^\dagger)^{m+n-1}+(a^\dagger)^{m+1}a(a^\dagger)^{n-1}$$
+By induction, 
+$$[a,(a^\dagger)^n]=n(a^\dagger)^{n-1}+(a^\dagger)^na-(a^\dagger)^na=n(a^\dagger)^{n-1}$$ 
+\item
+$$\bra ka\ket n=\sqrt n\braket{k}{n-1}=\sqrt n\delta_k^{n-1}$$ 
+$$\bra ka^\dagger\ket n=\sqrt{n+1}\braket{k}{n+1}=\sqrt{n+1}\delta_k^{n+1}$$
+$$\bra kx\ket n=\frac{1}{\sqrt{2m\omega}}\bra k(a+a^\dagger)\ket n=\frac{1}{\sqrt{2m\omega}}(\sqrt n\delta_k^{n-1}+\sqrt{n+1}\delta_k^{n+1})$$
+
+$$\bra kp\ket n=i\sqrt{\frac{m\omega}{2}}(\bra k(a^\dagger-a)\ket n=i\sqrt{\frac{m\omega}{2}}(\sqrt{n+1}\delta_k^{n+1}-\sqrt n\delta_k^{n-1})$$
+$$x^2=\frac{1}{2m\omega}(a+a^\dagger)^2=\frac{1}{2m\omega}(a^2+(a^\dagger)^2+aa^\dagger+a^\dagger a)=\frac{1}{2m\omega}(a^2+(a^\dagger)^2+2N+1)$$
+$$\bra kx^2\ket n=\frac{1}{2m\omega}\left(\bra ka^2\ket n+\bra k(a^\dagger)^2\ket n+2\bra kN\ket n+\braket{m}{n}\right)$$
+$$=\frac{1}{2m\omega}\left(\sqrt{n(n-1)}\delta_k^{n-2}+\sqrt{(n+1)(n+2)}\delta_k^{n+2}+(2n+1)\delta_k^n\right)$$ 
+$$p^2=\frac{m\omega}{2}(a^\dagger-a)^2=\frac{m\omega}{2}(-a^2-(a^\dagger)^2+2N+1)$$
+$$\bra kp^2\ket n=\frac{m\omega}{2}\left(-\bra ka^2\ket n-\bra k(a^\dagger)^2\ket n+2\bra kN\ket n+\braket{m}{n}\right)$$
+$$=\frac{m\omega}{2}\left((2n+1)\delta_k^n-\sqrt{n(n-1)}\delta_k^{n-2}-\sqrt{(n+1)(n+2)}\delta_k^{n+2}\right)$$
+$$\bra kN\ket n=n\braket{k}{n}=n\delta_k^n$$ 
+The four by four matrix truncation using $m,n=0,1,2,3$ are 
+$$\hat a=\begin{pmatrix}
+0&1&0&0\\0&0&\sqrt{2}&0\\0&0&0&\sqrt{3}\\0&0&0&0
+\end{pmatrix}$$ $$\hat a^\dagger=\begin{pmatrix}
+0&0&0&0\\1&0&0&0\\0&\sqrt{2}&0&0\\0&0&\sqrt{3}&0
+\end{pmatrix}$$
+$$\hat x=\frac{1}{\sqrt{2m\omega}}\begin{pmatrix}
+0&1&0&0\\1&0&\sqrt{2}&0\\0&\sqrt{2}&0&\sqrt{3}\\0&0&\sqrt{3}&0
+\end{pmatrix}$$ 
+$$\hat p=i\sqrt{\frac{m\omega}{2}}\begin{pmatrix}
+0&-1&0&0\\1&0&-\sqrt{2}&0\\0&\sqrt{2}&0&-\sqrt{3}\\0&0&\sqrt{3}&0
+\end{pmatrix}$$
+$$\hat x^2=\frac{1}{2m\omega}\begin{pmatrix}
+1&0&\sqrt{2}&0\\0&3&0&\sqrt{6}\\\sqrt{2}&0&5&0\\0&\sqrt{6}&0&7
+\end{pmatrix}$$
+$$\hat p^2=\frac{m\omega}{2}\begin{pmatrix}
+1&0&-\sqrt{2}&0\\0&3&0&-\sqrt{6}\\-\sqrt{2}&0&5&0\\0&-\sqrt{6}&0&7
+\end{pmatrix}$$
+$$\hat N=\begin{pmatrix}
+0&0&0&0\\0&1&0&0\\0&0&2&0\\0&0&0&3
+\end{pmatrix}$$
+\item
+$$[\hat x,\hat p]=\frac{i}{2}\begin{pmatrix}
+0&1&0&0\\1&0&\sqrt{2}&0\\0&\sqrt{2}&0&\sqrt{3}\\0&0&\sqrt{3}&0
+\end{pmatrix}\begin{pmatrix}
+0&-1&0&0\\1&0&-\sqrt{2}&0\\0&\sqrt{2}&0&-\sqrt{3}\\0&0&\sqrt{3}&0
+\end{pmatrix}$$
+$$-\frac{i}{2}\begin{pmatrix}
+0&-1&0&0\\1&0&-\sqrt{2}&0\\0&\sqrt{2}&0&-\sqrt{3}\\0&0&\sqrt{3}&0
+\end{pmatrix}\begin{pmatrix}
+0&1&0&0\\1&0&\sqrt{2}&0\\0&\sqrt{2}&0&\sqrt{3}\\0&0&\sqrt{3}&0
+\end{pmatrix}$$
+$$=\frac{i}{2}\begin{pmatrix}
+1&0&-\sqrt{2}&0\\0&1&0&-\sqrt{6}\\\sqrt{2}&0&1&0\\0&\sqrt{6}&0&-3
+\end{pmatrix}-\frac{i}{2}\begin{pmatrix}
+-1&0&-\sqrt{2}&0\\0&-1&0&-\sqrt{6}\\\sqrt{2}&0&-1&0\\0&\sqrt{6}&0&3
+\end{pmatrix}$$
+$$=i\begin{pmatrix}
+1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&-3
+\end{pmatrix}\neq i\mathbf 1$$ 
+No, the commutator of the four by four truncated matrices of $\hat x$ and $\hat p$ does not result in $i\mathbf 1$. This is because the Hilbert space of the possible states of the simple harmonic oscillator is infinite dimensional, thus, the four by four matrices are just approximations. Upon closer inspection, the only element that differs from the expected result of $i\mathbf{1}$ is $[\hat x,\hat p]_3^3$. Thus, the approximation is not bad!
+\item
+It can be seen that the expectation values for $\hat x$ and $\hat p$ of the stationary states of the simple harmonic oscillator is zero. Therefore,
+$$\Delta x_{\ket n}=\sqrt{\langle x^2\rangle-\langle x\rangle^2}=\sqrt{\bra n\hat x^2\ket n}=\sqrt{\frac{1}{m\omega}\left(n+\frac{1}{2}\right) }$$
+$$\Delta p_{\ket n}=\sqrt{\langle p^2\rangle-\langle p\rangle^2}=\sqrt{\bra n\hat p^2\ket n}=\sqrt{m\omega\left(n+\frac{1}{2}\right)} $$
+Finding the product of the uncertainties,
+$$\Delta x\Delta p=n+\frac{1}{2}$$ 
+This saturates the uncertainty principle when $n=0$, which is the vacuum state.\\\\
+In a classical oscillator, the total energy is directly related to the maximum excursion $x_{max}$, where 
+$$E_{classical}=\frac{m\omega^2x_{max}^2}{2}$$ 
+For the quantum oscillator, substituting $x_{max}$ with $\Delta x$ will yield
+$$E_{classical}=\frac{m\omega^2(\Delta x)^2}{2}=\frac{\omega}{2}\left(n+\frac{1}{2}\right)$$
+Note that the energies of the $n$-th states predicted by quantum mechanics is twice the classical prediction. 
+\end{enumerate}
+\end{sol}

@@ -1,0 +1,28 @@
+\begin{sol}
+\begin{enumerate}
+    \item
+    \textbf{True.} Verify that $\braket{ x}{ \hat Px}=\braket{x}{-x}$, $\braket{\hat Px}{x}=\braket{-x}{x}$ and $\braket{x}{-x}=\braket{-x}{x}$, thus $\hat P$ is hermitian and $\hat P^\dagger=\hat P$. $P^\dagger P\ket x=PP\ket x=P\ket {-x}=\ket x\forall\ket x\therefore P^\dagger P=\mathbf 1$. $\hat P$ is unitary.
+    \item
+    \textbf{False.} $-\braket{x}{x}=-\delta(0),\braket{x}{-x}=0$
+    \item
+    \textbf{False.} The $2\times 2$ identity matrix has an infinite number of eigenvectors, not just $2$
+    \item
+    \textbf{True.} The energy eigenbasis is complete. Thus, all trial wavefunctions in the Hilbert space can be written as a superposition
+    $$\ket\psi=\sum_{j=1}^N\ketbra{j}{j}\ket{\psi}$$
+    The expectation value of the Hamiltonian is 
+    $$\bra\psi\hat H\ket\psi=\sum_{j=1}^NE_j|\braket{j}{\psi}|^2, E_j\leq E_N\therefore \bra\psi\hat H\ket\psi\leq E_N$$
+    \item
+    \textbf{True.} Node theorem states the $n$-th excited state has $n$ nodes.
+    \item
+    \textbf{False.} If both $\psi$ and $\psi'$ vanish, the wavefunction must be identically zero for all $x$ as the potential is continuous and finite. Therefore, such state is not well behaved and cannot be physical.
+    \item
+    \textbf{False.} Any even continuous and differential function $\psi$ must have $\psi'(0)=0$. The argument in (6) rules out this possibility.
+    \item
+    \textbf{True} $\hat S_x$ is an operator corresponding to an observable, thus, it must be hermitian. $i$ times real number times hermitian operator is anti-hermitian. The exponential of an anti-hermitian operator is unitary.
+    \item
+    \textbf{True.} $[R,R^\dagger]=0$, thus R must be diagonalizable.
+    \item
+    \textbf{False.} Expand the exponential:
+    $$R=\sum_{n=0}^\infty\frac{(i\pi)^n\hat S_x^n}{n!}=1+i\pi\hat S_x-\frac{\pi^2}{2}\hat S_x^2......$$
+\end{enumerate}
+\end{sol}

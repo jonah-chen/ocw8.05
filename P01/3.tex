@@ -1,0 +1,43 @@
+\begin{sol}
+\begin{enumerate}[label=\textbf{(\alph*)}]
+
+	
+	\item
+	Given a a state $\ket\psi$ that is subject to the potential $V(x)=-V_0a\delta(x)$. The state must obey the time-independent Schrodinger's equation, which can be rewritten in the following form.
+	$$d\psi'=2m(-V_0a\delta(x)-E)\psi dx$$
+	The discontinuity of the first derivative $\Delta\psi'(0)=\psi'(0^+)-\psi'(0^-)$. This quantity can be computed in the by integrating the time-independent Schrodinger's equation.
+	$$\lim_{\epsilon \to 0}\int_{-\epsilon}^{\epsilon}d\psi'=
+	\lim_{\epsilon \to 0}\int_{-\epsilon}^{\epsilon}2m(-V_0a\delta(x)-E)\psi dx$$
+	$$\Delta\psi'(0)=-2mV_0a\psi(0)$$
+	As the delta functions are completely localized, this result can be applied to all three delta functions.
+	$$\Delta\psi'(\pm a)=-2mV_0a\psi(\pm a)$$
+	\\
+	\item
+	Note: Bound states of the potential $V(x)=-V_0a\displaystyle{\sum_{n=-1}^1\delta(x-na)}$ must have $E<0$. \\
+	(i) There are zero nodes in the region $x>a$.\\Owing to the time-independent Schrodinger's equation, $\psi''(x)\psi(x)>0$ for the region $x>a$. Assume there exists a state $\ket\psi$ with a node at $x=x_0>a$. Then, $\psi(x_0)\psi'(x_0)>0$, and $\psi''(x)\psi'(x)>0$ and $\psi(x)$ will diverge. Therefore, any bound state with a node at $x>a$ is not physical.\\\\
+    (ii) There can be either zero or one node in the region $0 < x < a$.\\
+    The nature of the potential requires the bound states $\psi(x)$ to be concave if $\psi(x)>0$, and convex if $\psi(x)<0$. This fact is a direct result of the time-independent Schrodinger's equation. As $\psi'(x)$ is continuous in the region $0 < x < a$, it is impossible for $\psi(x)$ to have more than one node in the region $0 < x < a$.\\\\
+    (iii) No, there cannot be a node at $x=a$. \\
+    If there exist a state with a node at $x=a$, the wave-function must vanish for all $x>a$. The discontinuity of the first derivative is $\Delta\psi'(a)=-2mV_0a\psi(a)=0$. This reasoning can be applied to all three delta functions. Thus, the wave-function must vanish at all $x\in\mathbb{R}$ if there exists a node at $x=a$, which is not a state describing a particle.\\\\
+    (iv) Yes, there can be a node at $x=0$\\
+    A well behaved state can be constructed with a node at $x=0$. This state can be a function proportional to $\sinh(x)$ in the region $-a<x<a$, which satisfies all the necessary constraints of the system.
+    \item 
+	For arbitrarily large $V_0$ there are three bound states. Unfortunately, I cannot draw with \LaTeX    \item
+    For the anti-symmetric bound state, the time-independent Schrodinger's equation can be solved in the three regions where the potential is constant. The normalizability and parity conditions can be imposed to reduce the solution to three terms, where $\alpha>0$, $-E=\frac{\alpha^2}{2m}$.
+    $$\psi(x)=A(-\exp(\alpha x)\Theta(-a-x)+\exp(-\alpha x)\Theta(x-a))+B\sinh(\alpha x)\Theta(x+a)\Theta(a-x)$$
+    
+    Since the solution is anti-symmetric, it suffices to impose the boundary conditions at one point, $x=a$.
+    $\psi(a^+)=\psi(a^-)$, and $\psi'(a^+)-\psi'(a^-)=-2mV_0a\psi(a)$.
+    $$B\sinh(\alpha a)=A\exp(-\alpha a)$$
+$$-\alpha A \exp(-\alpha a)-\alpha B\cosh(\alpha a)=-2mV_0aB\sinh(\alpha a)$$
+    The system of equations can be  simplified
+    
+    $$(2mV_0a-\alpha)\sinh(\alpha a)=\alpha \cosh(\alpha a)$$
+   $$2mV_0a=\alpha+\alpha\coth(\alpha a)$$
+   For energies near the top of the well, $\alpha\approx 0$,
+   $$2mV_0a\approx\frac{1}{a}$$
+   $$V_0\approx\frac{1}{2ma^2}$$
+   
+	
+\end{enumerate}
+\end{sol}

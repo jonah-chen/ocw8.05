@@ -1,0 +1,30 @@
+\newpage
+\begin{sol}
+\begin{enumerate}[label=\textbf{(\alph*)}]
+\item
+Using the formal definition of the exponential, 
+$$e^{x}=\sum_{n=0}^\infty\frac{x^n}{n!}$$ 
+Thus, the derivative of the exponential is
+$$\frac{d}{dt}e^x=\sum_{n=0}^\infty\frac{dx}{dt}\frac{nx^{n-1}}{n!}=\frac{dx}{dt}\sum_{n=0}^\infty\frac{x^n}{n!}=\frac{dx}{dt}e^x$$ 
+Also, note the following
+$$[e^{tL},L]=\sum_{n=0}^\infty\frac{t^nL^n}{n!}L-L\sum_{n=0}^\infty\frac{t^nL^n}{n!}=\sum_{n=0}^\infty \frac{t^n}{n!}(L^nL-LL^n)=0$$
+Letting $x=tL$ and $L=A+B$, it becomes trivial that
+$$\frac{d}{dt}e^{t(A+B)}=(A+B)e^{t(A+B)}=e^{t(A+B)}(A+B)$$
+\item
+\begin{lemma}
+$$[A,B]=c: c=\kappa\mathbf 1, \kappa\in\mathbb C\implies e^ABe^{-A}=B+c$$
+\end{lemma}
+\begin{proof}
+Let $F(t)=e^{tA}Be^{-tA}$. It is trivial that $F(0)=B$.
+$$\frac{dF}{dt}=Ae^{tA}Be^{-tA}+e^{tA}B(-Ae^{-tA})$$ $$=e^{tA}ABe^{-tA}-e^{tA}BAe^{-tA}=e^{tA}[A,B]e^{-tA}=e^{tA}ce^{-tA}=c$$
+Note that $e^ABe^{-A}=F(1)$
+$$F(t)=F(0)+\int_0^t\frac{dF}{dt}dt=F(0)+ct|_0^t=B+ct$$ 
+$$F(1)=B+c$$ 
+\end{proof}
+\item
+First, note that the translation operator can be written as $\hat T=e^{-A}, A=ia\hat p$.\\
+Compute the commutator $[A,\hat x]=ia[p,x]=a$. Also note that $\hat{ T^\dagger}=e^A\therefore\hat{ T^\dagger}(a)\hat x\hat T(a)=e^A\hat x e^{-A}$. Applying Lemma 8 yields $\hat{ T^\dagger}(a)\hat x\hat T(a)=\hat x+a$\\\\
+Given $\braket{x}{\psi}=\psi(x)$, $\bra x\hat T(a)=\bra{\hat T(a)^\dagger x}=\bra{x-a}$
+$$\bra x\hat T(a)\ket\psi=\braket{x-a}{\psi}=\psi(x-a)$$
+\end{enumerate}
+\end{sol}

@@ -1,0 +1,33 @@
+\begin{sol}
+\begin{enumerate}[label=\textbf{(\alph*)}]
+\item
+A general normalized spin state $\ket{\mathbf{n}(\theta,\phi);+}=\begin{pmatrix}\cos(\frac{\theta}{2})\\e^{i\phi}\sin(\frac{\theta}{2})\end{pmatrix}$\\
+Let the positive $z$ axis be in the direction of $\ket{+}$ such that $\braket{z;+}{+}$= 1. The unnormalized spin state given is $\ket{\psi}=\begin{pmatrix}1+i\\-1-i\sqrt{3}\end{pmatrix}$ 
+First, normalize the spin state in a way where the first component is real, as $\cos(\frac{\theta}{2})$ is real.
+$$\braket{\psi}{\psi}=\begin{pmatrix}1-i & -1+i\sqrt{3}\end{pmatrix}\begin{pmatrix}1+i\\-1-i\sqrt{3}\end{pmatrix}=2+4=6$$
+$$\ket\Psi=\frac{\ket\psi}{\sqrt{\braket{\psi}{\psi}}}=\frac{1}{\sqrt 6}\begin{pmatrix}1+i\\-1-i\sqrt{3}\end{pmatrix}$$
+A factor of $1+i$ can be taken out to make the first component real
+$$\ket\Psi=\frac{1+i}{\sqrt 6}\begin{pmatrix}1\\\frac{-1-i\sqrt 3}{1+i}\end{pmatrix}=e^{i\frac{\pi}{4}}\frac{1}{\sqrt{3}}\begin{pmatrix}1\\\frac{-1-\sqrt{3}}{2}+\frac{1-\sqrt{3}}{2}i\end{pmatrix}$$
+$$\theta=2\cos^{-1}\left(\frac{1}{\sqrt{3}}\right)\approx 109.5\degree$$ 
+$$\frac{1}{\sqrt 3}\left(\frac{-1-\sqrt{3}}{2}+\frac{1-\sqrt{3}}{2}i\right)=e^{i\phi}\frac{\sqrt{2}}{\sqrt{3}}$$
+$$\frac{-1-\sqrt{3}}{2}+\frac{1-\sqrt{3}}{2}i=e^{i\phi}\sqrt{2}$$ 
+$$\phi=\tan^{-1}\left(-\frac{1-\sqrt{3}}{1+\sqrt{3}}\right)=15\degree$$ 
+The spin state is pointing towards the direction of $\theta\approx 109.5\degree$and $\phi=15\degree$.
+\item
+For $\phi=0$, the eigenstates can be written as
+$$\ket{\mathbf{n}(\theta);+}=\begin{pmatrix}\cos\left(\frac{\theta}{2}\right)\\\sin\left(\frac{\theta}{2}\right)\end{pmatrix} \text{ and }\ket{\mathbf{n}(\theta);-}=\begin{pmatrix}\sin\left(\frac{\theta}{2}\right)\\-\cos\left(\frac{\theta}{2}\right)\end{pmatrix}$$  
+Thus, the atoms which the second magnet are in the state $\ket{z;+}$. The probability of measuring spin-down in the direction of $\mathbf{n}$ is 
+$$|\braket{\mathbf{n}(\theta);-}{z;+}|^2=\bigg|\begin{pmatrix}\sin\left(\frac{\theta}{2}\right)&-\cos\left(\frac{\theta}{2}\right)\end{pmatrix}\begin{pmatrix}1\\0\end{pmatrix}\bigg|^2=\sin^2\left(\frac{\theta}{2}\right)$$
+The atoms that are blocked, therefore, never make it to the third magnet is $\sin^2(\frac{\theta}{2})$.\\
+The particle entering the third slit is in the state $\braket{\mathbf{n}(\theta);+}{z;+}\ket{\mathbf{n}(\theta);+}$. The probability of it being measured to be in the state $\ket{z;+}$ is
+$$|\braket{z;+}{\braket{\mathbf{n}(\theta);+}{z;+}\ket{\mathbf{n}(\theta);+}}|^2=\bigg|\cos\left(\frac{\theta}{2}\right)\begin{pmatrix}1&0\end{pmatrix}\begin{pmatrix}\cos\left(\frac{\theta}{2}\right)\\\sin\left(\frac{\theta}{2}\right)\end{pmatrix}\bigg|^2=\cos^4\left(\frac{\theta}{2}\right)$$
+
+Through a similar process, the probability of the particle being measured to be in the state $\ket{z;-}$ is
+
+$$|\braket{z;-}{\braket{\mathbf{n}(\theta);+}{z;+}\ket{\mathbf{n}(\theta);+}}|^2=\bigg|\cos\left(\frac{\theta}{2}\right)\begin{pmatrix}0&1\end{pmatrix}\begin{pmatrix}\cos\left(\frac{\theta}{2}\right)\\\sin\left(\frac{\theta}{2}\right)\end{pmatrix}\bigg|^2$$
+$$=\left(\sin\left(\frac{\theta}{2}\right)\cos\left(\frac{\theta}{2}\right)\right)^2=\frac{1}{4}\sin^2(\theta)$$
+For $\theta=0$, the expected probability to measure a particle in the state $\ket +$ is 1. The equations predicts the result correctly since $\cos^4(0)=1$, and $\sin^4(0)=0$.\\
+For $\theta=\frac{\pi}{2}$, the particle should be blocked by the 2nd Stern-Garlach device with probability $\frac{1}{2}$. The equations predicts this result correctly since $\sin^2(\frac{\pi}{4})=\frac{1}{2}$. The particles that are not blocked should have equal probability to be measured as either $\ket+$ or $\ket-$. This is also correctly predicted by the equations since $\frac{1}{4}\sin^2(\frac{\pi}{2})=\cos^4(\frac{\pi}{2})=\frac{1}{4}$.\\
+For $\theta=\pi$, all the particles should be blocked by the 2nd Stern-Garlach device. The equations also predicts this result correctly as $\sin^2(\frac{\pi}{2})=1$.
+\end{enumerate}
+\end{sol}

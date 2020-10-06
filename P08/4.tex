@@ -1,0 +1,23 @@
+\begin{sol}
+Given the electric and magnetic fields. For electromagnetic field, $\omega=k$.
+$$E_x(z,t)=\sqrt{\frac{2}{V\epsilon_0}}\omega q(t)\sin(kz)$$
+$$B_y(z,t)=\sqrt{\frac{2}{V\epsilon_0}}p(t)\cos(kz)$$ 
+Gauss' Law determines there is no charge present in the cavity.
+$$\nabla\cdot\mathbf{E}=\frac{\rho}{\epsilon_0}=\frac{\partial E_x}{\partial x}=0$$ 
+Gauss' Law for magnetism holds.
+$$\nabla\cdot \mathbf{B}=\frac{\partial B_y}{\partial y}=0$$
+Applying Faraday's Law 
+$$\nabla\times\mathbf{E}=-\frac{\partial\mathbf{B}}{\partial t}$$
+$$\nabla\times\mathbf{E}=\frac{\partial E_x}{\partial z}\hat j=\sqrt{\frac{2}{V\epsilon_0}}\omega k q(t)\cos(kz)\hat j$$
+$$-\frac{\partial\mathbf B}{\partial t}=-\sqrt{\frac{2}{V\epsilon_0}}\dot p(t)\cos(kz)\hat j$$
+$$\because\omega=k,\:\: q(t)=-\omega^2\dot p(t)$$ 
+Applying Ampere's Law with Maxwell's Addition, with zero current density
+$$\nabla\times\mathbf B=\frac{1}{\epsilon_0}\mathbf J-\frac{\partial\mathbf{E}}{\partial t}$$
+$$\nabla\times \mathbf B=\frac{\partial B_y}{\partial z}\hat i=-\sqrt{\frac{2}{V\epsilon_0}}kp(t)\sin(kz)\hat i$$ $$\frac{\partial\mathbf{E}}{\partial t}=\sqrt{\frac{2}{V\epsilon_0}}\omega \dot q(t)\sin(kz)\hat i$$ 
+$$\dot q(t)=p(t)$$
+
+Assume $\hat p$ and $\hat q$ have the canonical commutation relation $[\hat q,\hat p]=i\mathbf 1$. Applying Heisenberg's equation of motion for the Hamiltonian $\hat H=\frac{1}{2}(\hat p^2+\omega^2\hat q^2)$ , 
+$$\frac{d\hat p}{dt}=-i[\hat p,\hat H]=\frac{i}{2}\omega^2[\hat p,\hat q^2]=-\omega^2\hat q$$  
+$$\frac{d\hat q}{dt}=-i[\hat q,\hat H]=-\frac{i}{2}[\hat q,\hat p^2]=\hat p$$
+The relations given by the Heisenberg's equation of motion is analogous to the relations given by Maxwell's equations. 
+\end{sol}

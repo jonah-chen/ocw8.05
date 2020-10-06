@@ -1,0 +1,24 @@
+\begin{sol}
+\begin{enumerate}[label=\textbf{(\alph*)}]
+    \item
+    $$\ket{\Psi,0}=\frac{1}{\sqrt{2}}(\cos(\theta_0/2)\ket++\sin(\theta_0/2)\ket-)$$
+    \item
+    The spin state can be rewritten as a linear combination of the energy eigenstates. In this case, they are the eigenstates of the operator $\hat S_y$ which are 
+    $$\ket{\pm_y}=\ket+\pm i\ket-$$
+    Using the completeness relation
+    $$\ket{\Psi,0}=(\ketbra{+_y}{+_y}+\ketbra{-_y}{-_y})\frac{1}{\sqrt{2}}(\cos(\theta_0/2)\ket++\sin(\theta_0/2)\ket-)$$
+    $$=\frac{1}{\sqrt{2}}(\bra++i\bra-)(\cos(\theta_0/2)\ket++\sin(\theta_0/2)\ket-)\ket{+_y}$$
+    $$+\frac{1}{\sqrt{2}}(\bra+-i\bra-)(\cos(\theta_0/2)\ket++\sin(\theta_0/2)\ket-)\ket{-_y}$$
+    $$=\frac{1}{\sqrt{2}}(\cos(\theta_0/2)+i\sin(\theta_0/2)\ket{+_y}+\cos(\theta_0/2)-i\sin(\theta_0/2)\ket{-_y})$$
+    $$=\frac{1}{\sqrt{2}}(e^{\frac{i\theta_0}{2}}\ket{+_y}+e^{-\frac{i\theta_0}{2}}\ket{-_y})$$
+    
+    The energy eigenvalues are 
+    $$E\ket{\pm_y}=-\gamma B\hat S_y\ket{\pm_y}=\mp\frac{\gamma B}{2}\ket{\pm_y}$$
+    Time evolution of energy eigenstates are trivial, thus
+    $$\ket{\Psi,t}=\frac{1}{\sqrt{2}}\left(\exp\left(\frac{i(\theta_0-\gamma Bt)}{2}\right)\ket{+_y}+\exp\left(\frac{-i(\theta_0-\gamma Bt)}{2}\right)\ket{-_y}\right)$$
+    Let $\theta(t)=\theta_0-\gamma Bt$ and expressing this state in the $z$ basis,
+    $$\ket{\Psi,t}=\frac{1}{2}\left(e^{i\theta(t)/2}(\ket++i\ket-)+e^{-i\theta(t)/2}(\ket+-i\ket-)\right)$$
+    $$\ket{\Psi,t}=\cos\left(\frac{\theta(t)}{2}\right)\ket+-\sin\left(\frac{\theta(t)}{2}\right)\ket-$$
+    The time dependent spin orientation are $\theta(t)$ and $\phi=\pi$ as $e^{i\pi}=-1$.
+\end{enumerate}
+\end{sol}

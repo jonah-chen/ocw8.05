@@ -1,0 +1,12 @@
+\begin{sol}
+\begin{enumerate}[label=\textbf{(\alph*)}]
+    \item
+    Let a unitary change-of-basis operator $U$ where $U\ket {a_i}=\ket{b_i}$. Using the property $\Tr(AB)=\Tr(BA)$, $\Tr(U^\dagger AU)=\Tr(U^\dagger UA)=\Tr(A)$
+    \item
+    The unitary change of basis matrix is
+    $$U=\frac{1}{\sqrt{2}}\begin{pmatrix}1&-1&0\\0&0&\sqrt{2}\\1&1&0\end{pmatrix}\:\:\:\:U^\dagger=\frac{1}{\sqrt{2}}\begin{pmatrix}1&0&1\\-1&0&1\\0&\sqrt{2}&0\end{pmatrix}$$
+    The matrix $A_2$ in this new basis would be given by 
+    $$U^\dagger A_2U=\begin{pmatrix}3&0&0\\0&1&-\sqrt{2}\\0&-\sqrt{2}&0\end{pmatrix}$$
+    $3$ is definitely an eigenvalue of this matrix. It is known that the trace of a matrix is the sum of eigenvalues and the determinant of a matrix is the product of eigenvalues, both of which are basis independent. $\Tr(A_2)=4, \det(A_2)=-6$. Since $3$ is a eigenvalue, the other two must add up to $1$ and multiply to $-2$, thus, they are $2$ and $-1$
+\end{enumerate}
+\end{sol}

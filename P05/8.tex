@@ -1,0 +1,27 @@
+\begin{sol}
+Using a centered gaussian trial function with real $a$ $$g(x)=\frac{1}{\sqrt{a\sqrt{\pi}}}e^{-\frac{x^2}{2a^2}}$$
+The variational principle states that for all states $\ket g$,
+$$E_0\leq\bra{g}\hat H\ket{g}=\frac{1}{|a|\sqrt\pi}\int_{-\infty}^\infty e^{-\frac{x^2}{2a^2}}\left(-\frac{1}{2m}\frac{d^2}{dx^2}+\frac{1}{2}kx^2\right)e^{-\frac{x^2}{2a^2}}dx$$
+$$=\frac{1}{|a|\sqrt\pi}\int_{-\infty}^\infty e^{-\frac{x^2}{a^2}}\left(\frac{a^2-x^2}{2ma^4}+\frac{kx^2}{2}\right)dx=\frac{1}{4}\left(\frac{1}{ma^2}+a^2k\right)$$
+This condition must be satisfied for any value of $a$, thus, the best bound can be obtained by minimizing the final expression over the variable $a$. By defining $w\equiv a^2$ can simplify the calculation
+$$E_0\leq\min_{a\in\mathbb R}\frac{1}{4}\left(\frac{1}{ma^2}+a^2k\right)=\frac{1}{4}\min_{w\geq 0 }\left(\frac{1}{mw}+kw\right)$$
+It is trivial to see the function being minimized is concave for all positive $w$, thus, the stationary point will be the minimum point.
+$$\frac{d}{dx}\left(\frac{1}{mw}+kw\right)=k-\frac{1}{mw^2}=0\:,\:\:\:\:\:\:\:\:w=\sqrt{\frac{1}{mk}}$$
+$$E_0\leq \frac{1}{2}\sqrt{\frac{k}{m}}$$
+
+
+Since the harmonic oscillator is a even potential, the ground state must be a even function. Thus, $\langle \hat x\rangle=\langle\hat p\rangle=0$. From the definition of uncertainty, 
+$$\Delta x^2=\langle \hat x^2\rangle-\langle \hat x\rangle^2=\langle \hat x^2\rangle\,\,\text{      and      }\,\,\Delta p^2=\langle \hat p^2\rangle-\langle \hat p\rangle^2=\langle \hat p^2\rangle$$
+Note that $$E_0=\langle \hat{H}\rangle_{\psi_0}=\frac{\langle \hat p^2\rangle}{2m}+\frac{1}{2}k\langle \hat x^2\rangle=\frac{(\Delta p)^2}{2m}+\frac{1}{2}k(\Delta x)^2$$
+The uncertainty principle states that
+$$\Delta x\Delta p\geq\frac{1}{2}$$
+$$(\Delta x)^2\geq\frac{1}{4(\Delta p)^2}$$
+Substituting into the previous expression will yield a bound for the ground state energy
+$$E_0\geq\frac{(\Delta p)^2}{2m}+\frac{k}{8(\Delta p)^2}$$
+Since it is assume there is no previous knowledge about $\Delta p$, the right hand side must be minimized with the variable $\Delta p$ over all non-negative reals. Define $v\equiv(\Delta p)^2$
+$$E_0\geq\min_{\Delta p\geq 0}\left(\frac{(\Delta p)^2}{2m}+\frac{k}{8(\Delta p)^2}\right)=\min_{v\geq 0}\left(\frac{v}{2m}+\frac{k}{8v}\right)$$
+It is trivial to see the function being minimized is concave for all positive $v$, thus, the stationary point will be the minimum point.
+$$\frac{d}{dx}\left(\frac{v}{2m}+\frac{k}{8v}\right)=\frac{1}{2m}-\frac{k}{8v^2}=0\:,\:\:\:\:\:\:\:\:v=\frac{\sqrt{mk}}{2}$$
+$$E_0\geq\frac{1}{2}\sqrt{\frac{k}{m}}$$
+Since it is already demonstrated that $\displaystyle{E_0\leq \frac{1}{2}\sqrt{\frac{k}{m}}}$, the ground state energy must be exactly $\displaystyle{\frac{1}{2}\sqrt{\frac{k}{m}}}$.
+\end{sol}

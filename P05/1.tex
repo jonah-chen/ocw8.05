@@ -1,0 +1,23 @@
+\begin{sol}
+\begin{enumerate}[label=\textbf{(\alph*)}]
+\item
+Note that $[\hat x,\hat p]=i\mathbf{1}$. Applying Lemma 8 yields
+$$T_x^\dagger\hat xT_x=e^{i\hat p x}\hat xe^{-i\hat px}=\hat x+ix[\hat p,\hat x]\mathbf{1}=\hat x+x\mathbf{1}$$
+$$\tilde T_p^\dagger\hat p\tilde T_p=e^{-ip\hat x}\hat pe^{ip\hat x}=\hat p-ip[\hat x,\hat p]=\hat p+p\mathbf{1}$$
+\item
+Define the following intermediate operators: $A\equiv-i\hat p x, B\equiv ip\hat x$.
+$$[T_x,\tilde T_p]=T_x\tilde T_p-\tilde T_pT_x=e^{A}e^{B}-e^{B}e^{A}$$
+The commutator 
+$$[A,B]=xp[\hat p,\hat x]=-ixp\mathbf{1}$$ 
+Since the commutator is a scalar multiple of the identity, the terms of the equation can be multiplied by the scalar $1=e^{-\frac{1}{2}[A,B]}e^{\frac{1}{2}[A,B]}$ 
+$$[T_x, \tilde T_p]=(e^Ae^Be^{-\frac{1}{2}[A,B]})e^{\frac{1}{2}[A,B]}-(e^Be^Ae^{\frac{1}{2}[A,B]})e^{-\frac{1}{2}[A,B]}$$
+Using the \textit{Baker-Campbell-Hausdorff Theorem} can simplify the bracketed expression to $e^{A+B}$, which can be factored out.
+$$[T_x, \tilde T_p]=e^{A+B}(e^{\frac{1}{2}[A,B]}-e^{-\frac{1}{2}[A,B]})=e^Ae^Be^{-\frac{1}{2}[A,B]}(e^{\frac{1}{2}[A,B]}-e^{-\frac{1}{2}[A,B]})=e^Ae^B(1-e^{-[A,B]})$$ The original operators can be substituted back in
+$$[T_x, \tilde T_p]=T_x\tilde T_p(1-e^{ixp})$$ 
+Since neither $T_x$ and $\tilde T_p$ are not the zero operator, for the commutation relation to be zero, the following equation must be satisfied
+$$1-e^{ixp}=0$$
+Using \textit{Euler's Formula}
+$$1=\cos(xp)+i\sin(xp)$$ 
+$$xp=2\pi N: N\in\mathbb Z$$ 
+\end{enumerate}
+\end{sol}

@@ -1,0 +1,38 @@
+\begin{sol}
+\begin{enumerate}[label=\textbf{(\alph*)}]
+\item
+The bras are the conjugate transpose of the kets:
+$$\bra{\psi}=a^*\bra{1}-b^*\bra{2}+a^*\bra{3};\,\,\,\,\,\bra{\phi}=b^*\bra 1+a^*\bra 2$$
+Owing to the orthonormal basis, $\braket{m}{n}=\delta_{mn}$
+$$\braket{\phi}{\psi}=(b^*\bra 1+a^*\bra 2)(a\ket 1-b\ket 2+a\ket 3)=ab^*-a^*b$$
+$$\braket{\psi}{\phi}=(a^*\bra{1}-b^*\bra{2}+a^*\bra{3})(b\ket 1+a\ket 2)=a^*b-ab^*=\braket{\phi}{\psi}^*$$
+\item
+$$\ket\psi=\begin{pmatrix}a\\-b\\a\end{pmatrix}\,\,\,\,\,\ket\phi=\begin{pmatrix}b\\a\\0\end{pmatrix}$$
+$$\bra{\psi}=\begin{pmatrix}a^*&-b^*&a^*\end{pmatrix}\,\,\,\,\,\bra\phi=\begin{pmatrix}b^*&a^*&0\end{pmatrix}$$ 
+$$\braket{\phi}{\psi}=\begin{pmatrix}b^*&a^*&0\end{pmatrix}\begin{pmatrix}a\\-b\\a\end{pmatrix}=ab^*-a^*b$$
+$$\braket{\psi}{\phi}=\begin{pmatrix}a^*&-b^*&a^*\end{pmatrix}\begin{pmatrix}b\\a\\0\end{pmatrix}=a^*b-ab^*=\braket{\phi}{\psi}^*$$ 
+\item
+The general ket-bra matrix can be constructed as follows. \\
+Define
+
+$$\ket v\equiv\ketbra{a}{b}\ket{u}=\braket{b}{u}\ket{a}$$ 
+$$\ket v_j=\ketbra{a}{b}_{ij}\ket{u}_i=\ket a_j\bra b_i\ket u_i$$ 
+From the matrix representation of an operator, $T_{ij}\ket u_i=\ket v_j\therefore\ketbra{a}{b}_{ij}=\ket a_j\bra b_i$.
+
+
+$$A=\ketbra{\phi}{\psi}=\begin{pmatrix}
+a^*b&-b^*b&a^*b\\
+a^*a&-b^*a&a^*a\\
+0&0&0 
+\end{pmatrix}=\begin{pmatrix}
+a^*b&-|b|^2&a^*b\\
+|a|^2&-ab^*&|a|^2\\
+0&0&0 
+\end{pmatrix}$$
+\item 
+The defining property of hermitian matrices is $Q=Q^\dagger$. Note this implies the following condition on its components $Q_{ij}=Q_{ji}^*$ due to the action of the definition of the conjugate transpose operation.\\
+Shown above, if $P=\ketbra{\psi}{\psi}, P_{ij}=\ket\psi_j\bra\psi_i=\ket\psi_i^*\ket\psi_j$. From this, it is trivial that for any $\psi$, $P$ will be hermitian. Furthermore, the set of hermitian matrices is closed under linear combinations, thus $Q$ must be hermitian.
+$$\because Q:\mathbb C^3\to\mathbb C^3\exists\ket{\chi}\in\mathbb C^3:\braket{\phi}{\chi}=\braket{\psi}{\chi}=\mathbf 0\implies Q\ket{\chi}=\mathbf{0}=0\ket{\chi}$$  
+By definition, $\ket{\chi}$ is an eigenvector of $Q$ with zero eigenvalue.
+\end{enumerate}
+\end{sol}

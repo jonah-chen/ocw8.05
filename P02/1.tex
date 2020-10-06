@@ -1,0 +1,33 @@
+\begin{sol}
+It has been derived in \textit{3a, p.4} that the discontinuity in the derivative due to a delta function at position $x$ is 
+$$\Delta\psi'(x)=2maV_0\psi(x)=\frac{2\gamma}{a}\psi(x)$$
+The time-independent Schrodinger's equation can be solved in the two regions $x\in(0,\frac{a}{2})$ and $x\in(\frac{a}{2},a)$ separately. In each of these regions,
+$$\psi''=-2mE\psi$$
+$$\psi(x)=A\sin(kx-B)$$
+where $k=\sqrt{2mE}$. From the boundary conditions of the infinite square well, the wave-functions on the left and right of the delta function barrier is
+$$\psi_L=A\sin(kx), \psi_R=B\sin(k(x-a))$$ Thus,
+$$\psi_L'\left(\frac{a}{2}\right)=Ak\cos\left(\frac{ka}{2}\right),\psi_R'\left(\frac{a}{2}\right)=Bk\cos\left(-\frac{ka}{2}\right)$$ The boundary conditions of the continuity of the wave-function and the discontinuity of its derivative can be applied at $x=\frac{a}{2}$.
+$$\psi_L\left(\frac{a}{2}\right)=\psi_R\left(\frac{a}{2}\right)$$
+$$A\sin\left(\frac{ka}{2}\right)=B\sin\left(-\frac{ka}{2}\right)=-B\sin\left(\frac{ka}{2}\right)$$
+$$A=-B$$
+The continuity of the wave-function provides a relation between the unknown coefficients $A$ and $B$. 
+$$\psi_R'\left(\frac{a}{2}\right)-\psi_L'\left(\frac{a}{2}\right)=\frac{\gamma}{a}\psi\left(\frac{a}{2}\right)$$
+$$Bk\cos\left(\frac{ka}{2}\right)+Bk\cos\left(\frac{ka}{2}\right)=\frac{2\gamma}{a}\left(-B\sin\left(\frac{ka}{2}\right)\right)$$
+$$2k\cos\left(\frac{ka}{2}\right)=-\frac{2\gamma}{a}\sin\left(\frac{ka}{2}\right)$$
+$$\tan\left(\frac{ka}{2}\right)=-\frac{ka}{\gamma}$$ As $\gamma\to\infty$, $\tan(\frac{ka}{2})=0$. Thus, $k=\frac{2\pi N}{a}$ for positive integers $N$. For the ground state, $N=1$, thus, it is possible to do a Taylor expansion of $\tan(x)$ at $x=\pi$. In general, for the n-1th excited state, it is possible to do a Taylor expansion of $\tan(x)$ at $x=n\pi$, whose first term is
+$$\tan(x)\approx(x-n\pi)$$
+The expression to find $k$ becomes
+$$\frac{ka}{2}-n\pi=-\frac{ka}{\gamma}$$ 
+This can be reduced to
+$$k=\frac{2n\pi\gamma}{a(2+\gamma)}$$
+This approximation is sufficient for sufficiently large values of $\gamma$.\\
+\\
+However, the bound states of the infinite square well with a odd number of nodes are unaffected by the delta function barrier, since $\psi(\frac{a}{2})=0$. Thus, those energies remain on the spectrum where
+$$k=\frac{2\pi n}{a}$$
+Notice that as $\gamma\to\infty$, these states are identical to the states described previously.\\
+For the ground state, where $n=1$
+$$k=\frac{2\pi\gamma}{a(2+\gamma)}$$
+$$E=\frac{2\pi^2\gamma^2}{ma^2(2+\gamma)^2}$$ The first excited state has one node, thus, it is unaffected by the delta function barrier. It has energy
+$$E=\frac{2\pi^2}{ma^2}$$
+The first excited state has remained the same as it is unaffected by the delta function. However, the ground state energy increases as the strength of the delta function increases. Hence, the energy difference decreases as the strength of the delta function increases. 
+\end{sol}

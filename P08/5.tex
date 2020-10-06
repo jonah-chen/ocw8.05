@@ -1,0 +1,43 @@
+\begin{sol}
+\begin{enumerate}[label=\textbf{(\alph*)}]
+\item
+The Hamiltonian can be written in matrix form as with the basis states
+$$\ket L=\begin{pmatrix}1\\0
+\end{pmatrix}\:\:\:\:\:\:\:\:\ket R=\begin{pmatrix}
+0\\1\end{pmatrix}\:\:\:\:\:\:\:\:\hat H=\Delta\begin{pmatrix}
+0&1\\1&0
+\end{pmatrix}$$
+This is proportional to $\sigma_x$ matrix, thus, the energy eigenstates are
+$$\ket+=\frac{1}{\sqrt{2}}\begin{pmatrix}
+1\\1
+\end{pmatrix}\:\:\:\:\:\:\:\:\ket-\frac{1}{\sqrt{2}}\begin{pmatrix}
+1\\-1
+\end{pmatrix}$$ 
+The eigenvalues are 
+$$\hat H\ket+=\Delta\ket+\:\:\:\:\:\:\:\:\hat H\ket-=-\Delta\ket-$$ 
+\item
+Given the initial state $\ket{\psi,0}=c_L\ket L+c_R\ket R$. To find time evolution, rewrite the state in the energy basis.
+$$\ket{\psi,0}=\ketbra{+}{+}(c_L\ket L+c_R\ket R)+\ketbra{-}{-}(c_L\ket L+c_R\ket R)$$ 
+$$=\frac{1}{\sqrt{2}}\left((c_L+c_R)\ket++(c_L-c_R)\ket-\right)$$ 
+Applying the unitary time evolution operator
+$$\hat U_t\ket{\psi,0}=\frac{1}{\sqrt{2}}\left(e^{-i\Delta t}(c_L+c_R)\ket++e^{i\Delta t}(c_L-c_R)\ket-\right)$$
+$$=\frac{1}{2}\left(e^{-i\Delta t}(c_L+c_R)(\ket L+\ket R)+e^{i\Delta t}(c_L-c_R)(\ket L-\ket R)\right)$$
+$$=\frac{1}{2}\left((e^{-i\Delta t}+e^{i\Delta t})c_L\ket L+(e^{-i\Delta t}-e^{i\Delta t})c_R\ket L+(e^{-i\Delta t}-e^{i\Delta t})c_L\ket R+(e^{-i\Delta t}+e^{i\Delta t})c_R\ket R\right)$$
+$$=\cos(\Delta t)(c_L\ket L+c_R\ket R)-i\sin(\Delta t)(c_L\ket R+c_R\ket L)$$ 
+This is why this notation is confusing. Here, $\Delta$ is a constant that multiplies $t$, and $\Delta t$ is NOT the change in time. 
+\item
+The state $\ket R$ corresponds to a state where $c_L=0$ and $c_R=1$. To compute the probability that the particle is on the left, just take the norm-square of the inner product.
+$$|\bra L\hat U_t\ket R|^2=|-i\sin(\Delta t)\braket{L}{L}|^2=\sin^2(\Delta t)$$ 
+\item
+The Hamiltonian $\Delta\ketbra{L}{R}$ is not hermitian. Therefore, the time evolution operator is not unitary which goes against the postulates of quantum mechanics. Time evolution under this Hamiltonian will also violate the conservation of probability. Take this time evolution operator.
+$$\hat U_t=\exp(it\ketbra{L}{R})$$ 
+Expand this operator into the power series. The higher order terms become zero as the square of the exponent is the zero operator since $\ket L\braket{R}{L}\ket R=0$
+$$\hat U_t=1+it\ketbra{L}{R}$$
+Take an arbitrary initial state $\ket\psi$ where $\braket{\psi}{\psi}=1$. Evolve this state with the time evolution operator and take its norm-square.
+$$\bra\psi\hat U_t^\dagger U_t\ket\psi=\bra\psi(1-it\ketbra{R}{L})(1+it\ketbra{L}{R})\ket\psi$$
+$$=\braket{\psi}{\psi}-it\braket{\psi}{R}\braket{L}{\psi}+it\braket{\psi}{L}\braket{R}{\psi}+t^2|\braket{R}{\psi}|^2$$
+Let $\kappa=2i\braket{\psi}{R}\braket{L}{\psi}$
+$$\bra\psi\hat U_t^\dagger U_t\ket\psi=1+\frac{\kappa+\kappa^*}{2}t+t^2|\braket{R}{\psi}|^2=1+\text{Re}(\kappa)t+t^2|\braket{R}{\psi}|^2$$
+If either of the quantities $\text{Re}(\kappa)$ or $|\braket{R}{\psi}|$ is nonzero, there must exist a time $t$ when $\bra\psi\hat U_t^\dagger U_t\ket\psi\neq 1$. Therefore, probability is not conserved. 
+\end{enumerate}
+\end{sol}

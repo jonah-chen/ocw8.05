@@ -1,0 +1,58 @@
+\begin{sol}
+\begin{lemma}
+$$[[A,B],B]=0\implies[A,e^B]=[A,B]e^B$$
+\end{lemma}
+\begin{proof}
+Multiply $[A,e^B]$ by the identity operator $\mathbf 1=e^{-B}e^B$ on the right to obtain
+$$[A,e^B]=[A,e^B]e^{-B}e^B=Ae^B-e^BAe^{-B}e^B=(A-e^BAe^{-B})e^B$$ 
+The \textit{Hadamard Lemma (p.30)} to $e^BAe^{-B}$ taking into consideration the hypothesis that $[[A,B],B]=0$ can be used to simplify this term to $A-[B,A]$. Because $-[B,A]=[A,B]$, 
+$$[A,e^B]=(A-A+[A,B])e^B=[A,B]e^B$$
+
+
+\end{proof}
+\begin{enumerate}[label=\textbf{(\alph*)}]
+    \item 
+    The position eigenstates of the harmonic oscillator is constructed by taking the limit as the squeezing parameter approaches infinity. 
+    $$S_\gamma = \exp\left(-\frac{\gamma}{2}(\hat a^\dagger\hat a^\dagger-\hat a\hat a)\right)=\frac{1}{\sqrt{\cosh\gamma}}\exp\left(-\frac{1}{2}\tanh\gamma\hat a^\dagger\hat a^\dagger\right)$$
+    $$S_\infty=e^{-\frac{1}{2}\hat a^\dagger\hat a^\dagger}$$
+    A state proportional to $S_\infty\ket 0$ will be annihilated by the position operator.\\
+    The position translation operator can be written using \textit{Baker-Campbell-Hausdorff Theorem} as
+    $$T_y = e^{y(\hat a^\dagger-\hat a)}=e^{y\hat a^\dagger}e^{-y\hat a}e^{-\frac{y}{2}[\hat a, \hat a^\dagger]}=e^{-\frac{y^2}{2}}e^{y\hat a^\dagger}e^{-y\hat a}$$ 
+    Where $y$ is the dimensionless position quantity $y= x\sqrt{2m\omega}$. The operator $e^{-y\hat a}$ can be expanded into its polynomial, which acting on the vacuum state will be equivalent to the identity operator. Thus, up to a normalization constant
+    $$T_y\ket 0=e^{-\frac{y^2}{2}}e^{y\hat a^\dagger}\ket 0$$
+    The general position eigenstate will be
+    $$\ket y = e^{-\frac{y^2}{2}}\exp\left(y\hat a^\dagger-\frac{1}{2}\hat a^\dagger\hat a^\dagger\right)\ket 0$$
+    The bra will then be 
+    $$\bra y =  e^{-\frac{y^2}{2}}\bra 0\exp\left(y\hat a^\dagger-\frac{1}{2}\hat a^\dagger\hat a^\dagger\right)$$ $$\braket{y}{2}=\frac{1}{\sqrt 2}e^{-\frac{y^2}{2}}\bra 0\exp\left(y\hat a-\frac{1}{2}\hat a\hat a\right)\hat a^\dagger\hat a^\dagger\ket 0$$
+    The creation operators will annihilate the bra. They can be commuted to the left by using the commutation relations. The commutators can be evaluated with Lemma 12.
+    $$\exp\left(y\hat a-\frac{1}{2}\hat a\hat a\right)a^\dagger =a^\dagger\exp\left(y\hat a-\frac{1}{2}\hat a\hat a\right)+\left[\exp\left(y\hat a-\frac{1}{2}\hat a\hat a\right),\hat a^\dagger\right]$$ $$\left[\exp\left(y\hat a-\frac{1}{2}\hat a\hat a\right),\hat a^\dagger\right]=\exp\left(y\hat a-\frac{1}{2}\hat a\hat a\right)\left[y\hat a-\frac{1}{2}\hat a\hat a,\hat a^\dagger\right]$$
+    $$=\exp\left(y\hat a-\frac{1}{2}\hat a\hat a\right)\left(y[\hat a, \hat a^\dagger]-\frac{1}{2}[\hat a\hat a,\hat a^\dagger] \right)=\exp\left(y\hat a-\frac{1}{2}\hat a\hat a\right)(y-\hat a)$$ 
+Then,
+$$\exp\left(y\hat a-\frac{1}{2}\hat a\hat a\right)a^\dagger=a^\dagger\exp\left(y\hat a-\frac{1}{2}\hat a\hat a\right)+\exp\left(y\hat a-\frac{1}{2}\hat a\hat a\right)(y-\hat a)$$
+    With this, the wave-function of $\ket 2$ can be rewritten as three terms by bring one of the creation operators to the left of the exponential.
+    $$\braket{y}{2}=\frac{1}{\sqrt{2}}e^{-\frac{y^2}{2}}\left(-\bra 0a^\dagger e^{y\hat a-\frac{1}{2}\hat a\hat a}a^\dagger\ket 0+y\bra 0e^{y\hat a-\frac{1}{2}\hat a\hat a}a^\dagger\ket 0-\bra 0e^{y\hat a-\frac{1}{2}\hat a\hat a}\hat a\hat a^\dagger\ket 0\right)$$ 
+    The first term evaluates to zero. The second term can be evaluated by commuting the creation and annihilation operators with $\hat a\hat a^\dagger = \hat a^\dagger \hat a+[\hat a, \hat a^\dagger]=\hat a^\dagger \hat a+1$. The third term can be expanded with the relation derived above.
+    $$\frac{1}{\sqrt 2}e^{-\frac{y^2}{2}}\left(y\bra 0a^\dagger e^{y\hat a-\frac{1}{2}\hat a\hat a}\ket 0-y\bra 0e^{y\hat a-\frac{1}{2}\hat a\hat a}\hat a\ket0+y^2\bra 0e^{y\hat a-\frac{1}{2}\hat a\hat a}\ket0-\bra 0e^{y\hat a-\frac{1}{2}\hat a\hat a}(a^\dagger a+1)\ket 0\right)$$
+    The first two terms evaluate to zero. In the final term, $\hat a^\dagger a+1$ acts like the identity on the ground state, thus, the wave function will take the form
+    $$\braket{y}{2}=\frac{1}{\sqrt 2}e^{-\frac{y^2}{2}}(y^2-1)\bra 0e^{y\hat a-\frac{1}{2}\hat a\hat a}\ket 0$$
+    \item
+    The momentum eigenstates can be constructed by a momentum translation of the zero momentum eigenstate, which is given by taking the limit as the squeezing parameter approaches negative infinity. 
+    $$\ket{p=0}=S_{-\infty}\ket 0=e^{\frac{1}{2}\hat a^\dagger\hat a^\dagger}\ket 0$$
+    The momentum translation operator is
+    $$T_q = e^{iq(\hat a+\hat a^\dagger)}$$
+    Where $p$ is the dimensionless momentum quantity $q=\frac{p\sqrt{2}}{\sqrt{m\omega}}$. Using the \textit{Baker-Campbell-Hausdorff Theorem}, 
+    $$T_q = e^{iq\hat a^\dagger}e^{iq\hat a}e^{\frac{iq}{2}[\hat a,\hat a^\dagger]}=e^{\frac{iq}{2}}e^{iq\hat a^\dagger}e^{iq\hat a}$$
+    The operator $e^{iq\hat a}$ can be expanded into its polynomial, which acting on the vacuum state will the equivalent to the identity operator. Thus, up to a phase
+    $$T_q\ket 0 = e^{iqa^\dagger}\ket 0$$
+    The general momentum eigenstates $\ket q$ can be constructed by
+    $$\ket q = S_{-\infty}T_q\ket 0=\exp\left(iq\hat a^\dagger+\frac{1}{2}a^\dagger a^\dagger\right)\ket0=e^{\frac{1}{2}\hat a^\dagger\hat a^\dagger}e^{iqa^\dagger}\ket 0=e^{iqa^\dagger}e^{\frac{1}{2}\hat a^\dagger\hat a^\dagger}\ket{0}$$
+    This state is a eigenstate of the momentum operator. Let the dimensionless momentum operator be $\hat q = i(a^\dagger-a)$. The commutator can be evaluated with Lemma 12
+    $$\hat q\ket q=ia^\dagger \ket q-ia\ket q=ia^\dagger \ket q-i\left[a, \exp\left(iq\hat a^\dagger+\frac{1}{2}a^\dagger a^\dagger\right)\right]\ket 0$$
+    $$=ia^\dagger \ket q-i\left[a, iq\hat a^\dagger+\frac{1}{2}a^\dagger a^\dagger\right]\exp\left(iq\hat a^\dagger+\frac{1}{2}a^\dagger a^\dagger\right)\ket 0$$
+    The commutator can be written as
+    $$\left[a, iq\hat a^\dagger+\frac{1}{2}a^\dagger a^\dagger\right]=iq[a,\hat a^\dagger]+\frac{1}{2}[a, (a^\dagger)^2]$$
+    From \textit{5b, p.52}, it has been shown that $[a, (a^\dagger)^2]=2a^\dagger$. Also, note that $\exp\left(iq\hat a^\dagger+\frac{1}{2}a^\dagger a^\dagger\right)\ket 0=\ket q$. 
+    $$\hat q\ket q=ia^\dagger \ket q+q\ket q-ia^\dagger \ket q=q\ket q$$
+   	$\because q=\frac{p\sqrt{2}}{\sqrt{m\omega}}$ and $\hat q = \frac{p\sqrt{2}}{\sqrt{m\omega}}$, $\hat q\ket q=q\ket q\iff\hat p\ket p=p\ket p$
+\end{enumerate}
+\end{sol}

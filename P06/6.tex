@@ -1,0 +1,123 @@
+\begin{sol}
+\begin{enumerate}[label=\textbf{(\alph*)}]
+\item
+Define the operators
+$$\hat a_x=\sqrt{\frac{m\omega_x}{2}}\left(\hat x+\frac{i\hat p_x}{m\omega_x}\right)\:\:\:\:\:\hat a_y=\sqrt{\frac{m\omega_y}{2}}\left(\hat y+\frac{i\hat p_y}{m\omega_y}\right)$$ 
+$$\hat a_x^\dagger=\sqrt{\frac{m\omega_x}{2}}\left(\hat x-\frac{i\hat p_x}{m\omega_x}\right)\:\:\:\:\:\hat a_y^\dagger=\sqrt{\frac{m\omega_y}{2}}\left(\hat y-\frac{i\hat p_y}{m\omega_y}\right)$$ 
+$$\hat N_x=\hat a_x^\dagger\hat a_x\:\:\:\:\:\:\:\:\:\:\hat N_y=\hat a_y^\dagger\hat a_y$$ 
+The commutators $[a_x,a_x^\dagger]=[a_y,a_y^\dagger]=\mathbf 1$.\\
+The Hamiltonian for the system is 
+$$\hat H=\frac{\hat p_x^2}{2m}+\frac{\hat p_y^2}{2m}+\frac{m\omega_x^2\hat x^2}{2}+\frac{m\omega_y^2\hat y^2}{2}$$
+Factor the Hamiltonian by grouping
+$$\hat H=\frac{m\omega_x^2}{2}\left(\hat x^2+\frac{\hat p_x^2}{m^2\omega_x^2}\right)+\frac{m\omega_y^2}{2}\left(\hat y^2+\frac{\hat p_y^2}{m^2\omega_y^2}\right)$$
+$$=\omega_x\left(\hat a_x^\dagger\hat a_x+\frac{1}{2}\right)+\omega_y\left(\hat a_y^\dagger\hat a_y+\frac{1}{2}\right)=\omega_x\left(\hat N_x+\frac{1}{2}\right)+\omega_y\left(\hat N_y+\frac{1}{2}\right)$$ 
+The time independent Schrodinger's equation for this system is a separable equation in $x$ and $y$, thus, an energy eigenstate must be simultaneous eigenfunctions of $\hat N_x$ and $\hat N_y$. These states can be labelled with two quantum numbers $n$ and $l$ respectively. \\
+The eigenstates must be well behaved. Since this system is analogous to two one-dimensional simple harmonic oscillators, there must exist a vacuum state $\ket{00}:\hat a_x\ket{00}=\mathbf 0,\hat a_y\ket{00}=\mathbf 0$. In a similar manner, the eigenstate $$\ket {nl}=\frac{1}{\sqrt{n!l!}}(\hat a_x^\dagger)^{n_x}(\hat a_y^\dagger)^{n_y}\ket{00}$$
+The energy of the state $\ket{n_xn_y}$ will be 
+$$E_{nl}=\omega_x\left(n_x+\frac{1}{2}\right)+\omega_y\left(n_y+\frac{1}{2}\right)$$
+\item
+With the states labelled $\ket{n_xn_y}$, the case $\omega_x=\omega_y$ on the left, and $\omega_x>>\omega_z$ on the right. 
+\begin{center}
+   \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\clip(-23.553418317641174,6.795101079060523) rectangle (-11.302431212136542,12.875976052344312);
+\draw [line width=2pt] (-22,11)-- (-21,11);
+\draw [line width=2pt] (-22,10)-- (-21,10);
+\draw [line width=2pt] (-22,9)-- (-21,9);
+\draw [line width=2pt] (-20,11)-- (-19,11);
+\draw [line width=2pt] (-20,10)-- (-19,10);
+\draw [line width=2pt] (-18,11)-- (-17,11);
+\draw [->,line width=2pt] (-23,8) -- (-23,12);
+\draw (-21.711308393868624,11.072110625259079) node[anchor=north west] {$\ket{20}$};
+\draw (-19.69709823500314,11.059362459696638) node[anchor=north west] {$\ket{11}$};
+\draw (-17.670139910575212,11.072110625259079) node[anchor=north west] {$\ket{02}$};
+\draw (-21.711308393868624,10.058631463045113) node[anchor=north west] {$\ket{10}$};
+\draw (-19.70347231778436,10.058631463045113) node[anchor=north west] {$\ket{01}$};
+\draw (-21.704934311087406,9.070648631956029) node[anchor=north west] {$\ket{00}$};
+\draw [->,line width=2pt] (-15,8) -- (-15,12);
+\draw [line width=2pt] (-14,9)-- (-13,9);
+\draw [line width=2pt] (-14.00340182099748,9.602795680057659)-- (-12.992287308507025,9.596396221117846);
+\draw [line width=2pt] (-14,10)-- (-13,10);
+\draw [line width=2pt] (-14.00340182099748,10.594711815728674)-- (-12.99868676744684,10.601111274668488);
+\draw [line width=2pt] (-14,11)-- (-13,11);
+\draw [line width=2pt] (-14.00340182099748,10.197945361460269)-- (-13.005086226386652,10.197945361460269);
+\draw (-12.9,9.2) node[anchor=north west] {$\ket{00}$};
+\draw (-12.9,9.7) node[anchor=north west] {$\ket{01}$};
+\draw (-12.9,10.2) node[anchor=north west] {$\ket{10}$};
+\draw (-12.9,10.6) node[anchor=north west] {$\ket{02}$};
+\draw (-12.9,11) node[anchor=north west] {$\ket{11}$};
+\draw (-12.9,11.5) node[anchor=north west] {$\ket{20}$};
+\draw (-23.10723252295578,12.455286588783798) node[anchor=north west] {$E$};
+\draw (-15.107758632524817,12.436164340440138) node[anchor=north west] {$E$};
+\end{tikzpicture}
+\end{center}
+\item
+Define the operators
+$$\hat N=\hat N_x+\hat N_y\:\:\:\:\:\:\:\:\:\:\:\hat n=\hat N_x-\hat N_y$$
+With the energy eigenstates labelled by these new eigenvalues $\ket{Nn}$
+$$E_{Nn}=\frac{\omega_x}{2}(N+n+1)+\frac{\omega_y}{2}(N-n+1)$$
+\begin{center}
+   \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\clip(-23.553418317641174,6.795101079060523) rectangle (-11.302431212136542,12.875976052344312);
+\draw [line width=2pt] (-22,11)-- (-21,11);
+\draw [line width=2pt] (-22,10)-- (-21,10);
+\draw [line width=2pt] (-22,9)-- (-21,9);
+\draw [line width=2pt] (-20,11)-- (-19,11);
+\draw [line width=2pt] (-20,10)-- (-19,10);
+\draw [line width=2pt] (-18,11)-- (-17,11);
+\draw [->,line width=2pt] (-23,8) -- (-23,12);
+\draw (-21.711308393868624,11.072110625259079) node[anchor=north west] {$\ket{2\,2}$};
+\draw (-19.69709823500314,11.059362459696638) node[anchor=north west] {$\ket{2\,0}$};
+\draw (-17.670139910575212,11.072110625259079) node[anchor=north west] {$\ket{2\,-2}$};
+\draw (-21.711308393868624,10.058631463045113) node[anchor=north west] {$\ket{1\,1}$};
+\draw (-19.70347231778436,10.058631463045113) node[anchor=north west] {$\ket{1\,-1}$};
+\draw (-21.704934311087406,9.070648631956029) node[anchor=north west] {$\ket{0\,0}$};
+\draw [->,line width=2pt] (-15,8) -- (-15,12);
+\draw [line width=2pt] (-14,9)-- (-13,9);
+\draw [line width=2pt] (-14.00340182099748,9.602795680057659)-- (-12.992287308507025,9.596396221117846);
+\draw [line width=2pt] (-14,10)-- (-13,10);
+\draw [line width=2pt] (-14.00340182099748,10.594711815728674)-- (-12.99868676744684,10.601111274668488);
+\draw [line width=2pt] (-14,11)-- (-13,11);
+\draw [line width=2pt] (-14.00340182099748,10.197945361460269)-- (-13.005086226386652,10.197945361460269);
+\draw (-12.9,9.2) node[anchor=north west] {$\ket{0\,0}$};
+\draw (-12.9,9.7) node[anchor=north west] {$\ket{1\,-1}$};
+\draw (-12.9,10.2) node[anchor=north west] {$\ket{1\,1}$};
+\draw (-12.9,10.6) node[anchor=north west] {$\ket{2\,-2}$};
+\draw (-12.9,11) node[anchor=north west] {$\ket{2\,0}$};
+\draw (-12.9,11.5) node[anchor=north west] {$\ket{2\,2}$};
+\draw (-23.10723252295578,12.455286588783798) node[anchor=north west] {$E$};
+\draw (-15.107758632524817,12.436164340440138) node[anchor=north west] {$E$};
+\end{tikzpicture}
+\end{center}
+If the spectrum is non-degenerate, all of the following are complete sets of commuting observables: $\{\hat N\},\{\hat N,\hat n\},\{\hat N_x,\hat N_y\}, \{\hat H\}$. However, if $\omega_x=\omega _y$, the sets $\{\hat N\}$ and $\{\hat H\}$ are no longer complete, since a distinct eigenstates can be constructed with the same eigenvalues under these operators, for example, the states $\ket{N=2,n=0}$ and $\ket{N=2,n=-2}$.\\
+Similarly, if the ratio is rational: if $\omega_x/\omega_y=\alpha/\beta$, the states 
+\item 
+For $\omega_x=\omega_y\equiv \omega$, Evaluate the following operators
+$$a_x^\dagger a_y=\frac{m\omega}{2}\left(x-\frac{ip_x}{m\omega}\right)\left(y+\frac{ip_y}{m\omega}\right)=\frac{m\omega}{2}\left(xy+\frac{p_xp_y}{m^2\omega^2}\right)+\frac{i}{2}(xp_y-yp_x)$$
+$$a_xa_y^\dagger=\frac{m\omega}{2}\left(x+\frac{ip_x}{m\omega}\right)\left(y-\frac{ip_y}{m\omega}\right)=\frac{m\omega}{2}\left(xy+\frac{p_xp_y}{m^2\omega^2}\right)-\frac{i}{2}(xp_y-yp_x)$$
+Therefore,
+$$a_x^\dagger a_y-a_xa_y^\dagger=i(xp_y-yp_x)$$
+$$\hat L\equiv xp_y-yp_x=i(a_x a_y^\dagger-a_x^\dagger a_y) $$ 
+Note that for this system, the Hamiltonian is just 
+$$\hat H=\omega(a_x^\dagger a_x+a_y^\dagger a_y+1)$$ 
+Since this system has gained rotational invariance, the angular momentum must be conserved by \textit{Noether's Theorem}. Therefore, $[\hat L,\hat H]$ must be zero.
+$$[\hat L,\hat H]=i\omega\left((a_x a_y^\dagger-a_x^\dagger a_y)(a_x^\dagger a_x+a_y^\dagger a_y+1)-(a_x^\dagger a_x+a_y^\dagger a_y+1)(a_x a_y^\dagger-a_x^\dagger a_y)\right)=0$$
+\item
+Define the operators
+$$\hat a_L=\frac{1}{\sqrt{2}}(\hat a_x+ia_y),\,\,\,\,\,\,\hat a_R=\frac{1}{\sqrt{2}}(\hat a_x-i\hat a_y),\,\,\,\,\,\,\hat N_L=\hat a_L^\dagger\hat a_L,\,\,\,\,\,\,\hat N_R=\hat a_R^\dagger\hat a_R$$
+Note the following
+$$\hat N_L=\frac{1}{2}\left(\hat a_x^\dagger\hat a_x+\hat a_y^\dagger\hat a_y-i(\hat a_x\hat a_y^\dagger-\hat a_x^\dagger\hat a_y)\right)=\frac{1}{2}(\hat N_x+\hat N_y-\hat L)$$
+$$\hat N_R=\frac{1}{2}\left(\hat a_x^\dagger\hat a_x+\hat a_y^\dagger\hat a_y+i(\hat a_x\hat a_y^\dagger-\hat a_x^\dagger\hat a_y)\right)=\frac{1}{2}(\hat N_x+\hat N_y+\hat L)$$
+The angular momentum operators can be easily re-written in terms of $\hat N_L$ and $\hat N_R$.
+$$\hat L=\hat N_R-\hat N_L$$ 
+The Hamiltonian can also be re-written
+$$\hat H=\omega(\hat N_x+\hat N_y+1)=\omega(\hat N_L+\hat N_R+1)$$ 
+Note that all eigenstates of the Hamiltonian are eigenstates of both $\hat N_L$ and $\hat N_R$, thus the states with their eigenvalues of these operators $\ket{LR}:\hat N_L\ket{LR}=L\ket{LR},\hat N_R\ket{LR}=R\ket{LR}$ 
+The state will have the respective eigenvalues under the Hamiltonian and angular momentum operators
+$$\hat H\ket{LR}=\omega(L+R+1)\ket{LR}\equiv E\ket{LR}$$
+$$\hat L\ket{LR}=(R-L)\ket{LR}\equiv l\ket{LR}$$ 
+Because the set of operators $\{\hat N_L,\hat a_L\}$ and $\{\hat N_R,\hat a_R\}$ have the algebra of the operators $\{\hat N,\hat a\}$ for the one-dimensional simple harmonic oscillator, many of the same conclusion can be drawn. Firstly, the eigenstates of $\hat N_L$ or $\hat N_R$ are unique and orthogonal and $\hat a_L$ and $\hat a_R$ act as annihilation operators while their adjoint acts as creation operators.\\
+Let an energy quantum number $n\equiv\frac{E}{\omega}-1\geq 0$. Note that $L+R=\epsilon$. Since $L$ and $R$ must take integer values and $l=R-L$
+$$l=2R-n\text{ for }0\leq R\leq n$$  
+Thus, for a specific energy level $n$, there are $n+1$ basis states with unique angular momentum. These states are already shown to be unique and orthogonal. Since the invariant subspace for the Hamiltonian with eigenvalue $E=\omega(n+1)$ is known to be $n+1$ dimensional, the eigenstates of angular momentum must span the entire subspace. Since this fact holds for all values of the energy, $\{\hat H,\hat L\}$ is a complete set of commuting observables for the entire Hilbert space.
+\end{enumerate}
+\end{sol}

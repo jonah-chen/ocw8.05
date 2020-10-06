@@ -1,0 +1,15 @@
+\begin{sol}
+\begin{enumerate}[label=\textbf{(\alph*)}]
+\item
+Since $\frac{x}{L}$ is dimensionless, dimensional analysis would estimate the ground state energy to be in the vicinity of $\frac{1}{mL^2}$
+\item
+For variational analysis, 
+$$E_gs\leq\bra\psi\hat H\ket\psi=\frac{1}{2m}\int_{-\infty}^\infty \psi(x)\left(-\frac{d^2}{dx^2}+\frac{x^{2n}}{L^{2n+2}}\right)\psi(x)dx$$
+Let $y=bx$, then $dx=dy/b$ and $x=y/b$
+$$=\frac{1}{2mb^{2n+1}L^{2n+2}}\int_{-\infty}^\infty y^{2n}e^{-2y^2}dy+\frac{b}{m}\int_{-\infty}^\infty e^{-2y^2}dy-\frac{2b}{m}\int_{-\infty}^\infty y^2e^{-2y^2}dy$$ $$=\frac{b}{m}\left(\frac{c_{2n}}{2(bL)^{2n+2}}+c_0-2c_1\right)$$
+\item
+As $n\to\infty$, the potential looks like a infinite square well. Thus, it would be expected that for sufficiently large $n$, the ground state energy would be that of the infinite square well with width $2L$.
+\item
+If $bL\texttildelow\sqrt{n}$,  then $\psi(x)\text{~}\exp\left(-\sqrt{n}(\frac{x}{L})^2\right)$. As $n\to\infty$, the trial wavefunction approaches the delta function, which is not the ground state of the infinite square well. Thus, this approximation gets worse as $n$ becomes larger.
+\end{enumerate}
+\end{sol}

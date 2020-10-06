@@ -1,0 +1,13 @@
+\begin{sol}
+\begin{enumerate}[label=\textbf{(\alph*)}]
+\item
+$$\frac{1}{4}\left(\bra{u+v}T\ket{u+v}-\bra{u-v}T\ket{u-v}-i\bra{u+iv}T\ket{u+iv}+i\bra{u-iv}T\ket{u-iv}\right)$$
+$$=\frac{1}{4}(\bra uT\ket u+\bra uT\ket v+\bra vT\ket u+\bra vT\ket v-\bra uT\ket u-\bra vT\ket v+\bra uT\ket v+\bra vT\ket u-i\bra uT\ket{iv}$$$$-i\bra{iv}T\ket u-i\bra uT\ket u-i\bra{iv}T\ket{iv}+i\bra u T\ket u+i\bra {iv}T\ket{iv}-i\bra uT\ket{iv}-i\bra{iv}T\ket{u})$$
+$$=\frac{1}{2}(\bra uT\ket v+\bra vT\ket u-i\bra vT\ket{iu}-i\bra{iu}T\ket v)$$
+$$=\text{Re}(\bra vT\ket u)+i\text{Im}(\bra{v}T\ket u)=\bra vT\ket u$$
+\item
+Assume $T$ is not the zero operator and $\bra w T\ket w=0\forall\ket w\in\mathbb V$.\\ Then, $\exists\ket u\in \mathbb V:\ket k\equiv T\ket u\neq \mathbf 0$. Choose $\ket v\in\mathbb V:\braket{v}{k}\neq 0$. From part (a), 
+$$\frac{1}{4}\left(\bra{u+v}T\ket{u+v}-\bra{u-v}T\ket{u-v}-i\bra{u+iv}T\ket{u+iv}+i\bra{u-iv}T\ket{u-iv}\right)\neq 0$$
+Since it is assumed that $\bra w T\ket w=0\forall\ket w\in\mathbb V$, the left hand side must be zero. This is a contradiction, so $T$ must be the zero operator.
+\end{enumerate}
+\end{sol}

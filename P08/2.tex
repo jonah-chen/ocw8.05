@@ -1,0 +1,57 @@
+\begin{sol}
+The coherent state $\ket\alpha$ is defined to be $e^{\alpha\hat a^\dagger-\alpha^*\hat a}\ket0$.
+\begin{enumerate}[label=\textbf{(\alph*)}]
+\item
+$$\hat a\ket\alpha=\hat ae^{\alpha\hat a^\dagger-\alpha^*\hat a}\ket0=[\hat a, e^{\alpha\hat a^\dagger-\alpha^*\hat a}]\ket 0=[\hat a, \alpha\hat a^\dagger-\alpha^*\hat a]e^{\alpha\hat a^\dagger-\alpha^*\hat a}\ket0=\alpha[a,a^\dagger]\ket\alpha=\alpha\ket\alpha$$ 
+\item
+Using the \textit{Baker-Campbell-Hausdorff Theorem},
+$$e^{\alpha\hat a^\dagger-\alpha^*\hat a}=e^{\alpha\hat a^\dagger}e^{-\alpha^*\hat a}e^{-\frac{|\alpha|^2}{2}[\hat a, \hat a^\dagger]}=e^{-\frac{|\alpha|^2}{2}}e^{\alpha\hat a^\dagger}e^{-\alpha^*\hat a}$$
+Acting on the vacuum state, $e^{-\alpha^*\hat a}$ will behave like the identity operator. 
+$$\ket\alpha=e^{-\frac{|\alpha|^2}{2}}e^{\alpha\hat a^\dagger}\ket0$$
+The exponential can be expanded with its series definition
+$$\ket\alpha=e^{-\frac{|\alpha|^2}{2}}\sum_{n=0}^\infty \frac{\alpha^n }{n!}(a^\dagger)^n\ket 0$$ 
+It is known that $(a^\dagger)^n\ket 0=\sqrt{n!}\ket n$ 
+$$\ket\alpha=e^{-\frac{|\alpha|^2}{2}}\sum_{n=0}^\infty \frac{\alpha^n }{\sqrt{n!}}\ket n$$ 
+The probability amplitude of each energy eigenstate is $e^{-\frac{|\alpha|^2}{2}}\frac{\alpha^n }{\sqrt{n!}}$. The norm squared is the probability. Defining $\lambda=|\alpha|^2$,
+$$|\braket{n}{\alpha}|^2=\frac{e^{-\lambda}\lambda^n}{n!}$$
+\item
+The inner product can be done in the energy basis. The bra is
+$$\bra\beta=e^{-\frac{|\beta|^2}{2}}\sum_{n=0}^\infty\frac{(\beta^*)^n}{\sqrt{n!}}\bra n$$  
+Since the energy basis is orthonormal, the inner product can be simplified to
+$$\braket{\beta}{\alpha}=e^{-\frac{|\alpha|^2+|\beta|^2}{2}}\sum_{n=0}^\infty\frac{(\beta^*\alpha)^n}{n!}=\exp\left(\beta^*\alpha-\frac{|\alpha|^2+|\beta|^2}{2}\right)$$ As $\beta$ and $\alpha$ are finite complex numbers, the argument in the exponential is also finite, thus, the inner product cannot be zero.
+\item
+Evaluate the expectation value of the energy and its square
+$$\bra\alpha\hat H\ket\alpha=e^{-\lambda}\sum_{n=0}^\infty\omega\left(n+\frac{1}{2}\right)\frac{\lambda^n}{n!}=\frac{\omega}{2}e^{-\lambda}\sum_{n=0}^\infty\frac{\lambda^n}{n!}+e^{-\lambda}\omega\lambda\frac{d}{d\lambda}\sum_{n=0}^\infty\frac{\lambda^n}{n!}=\omega\left(\lambda+\frac{1}{2}\right)$$
+$$\bra\alpha\hat H^2\ket\alpha=e^{-\lambda}\sum_{n=0}^\infty\omega^2\left(n+\frac{1}{2}\right)^2\frac{\lambda^n}{n!}=e^{-\lambda}\sum_{n=0}^\infty\omega^2\left(n^2+n+\frac{1}{4}\right)\frac{\lambda^n}{n!}$$ 
+$$=\omega^2e^{-\lambda}\left(\lambda^2\frac{d^2}{d\lambda^2}\sum_{n=0}^\infty\frac{\lambda^n}{n!}+2\lambda\frac{d}{d\lambda}\sum_{n=0}^\infty\frac{\lambda^n}{n!}+\frac{1}{4}\sum_{n=0}^\infty\frac{\lambda^n}{n!}\right)=\omega^2\left(\lambda^2+2\lambda+\frac{1}{4}\right)$$
+The uncertainty is given by $\Delta E = \sqrt{\langle E^2\rangle+\langle E\rangle^2}=\omega\sqrt{\lambda^2+2\lambda+\frac{1}{4}-\left(\lambda+\frac{1}{2}\right)^2}=\omega\sqrt\lambda$. Thus,
+$$\frac{\Delta E}{\langle E\rangle}=\frac{\sqrt{\lambda}}{\lambda+\frac{1}{2}}=\frac{|\alpha|}{|\alpha|^2+\frac{1}{2}}$$ 
+This ratio clearly decreases as $|\alpha|$ increases. It is also asymptotically equivalent to $|\alpha|^{-1}$.
+\item
+Define dimensionless position and momentum $y=x\sqrt{m\omega}$ and $q=\frac{p}{\sqrt{m\omega}}$ so $[y,q]=[x,p]=i\mathbf{1}$ 
+$$\bra\alpha\hat y\ket\alpha=\frac{1}{\sqrt{2}}\bra\alpha(a+a^\dagger)\ket\alpha=\frac{1}{\sqrt{2}}(\alpha+\alpha^*)\braket{\alpha}{\alpha}=\sqrt{2}\text{Re}(\alpha)$$ 
+$$\bra \alpha\hat q\ket \alpha=\frac{i}{\sqrt{2}}\bra\alpha(a^\dagger-a)\ket\alpha=\frac{-1}{\sqrt{2}i}(\alpha^*-\alpha)\braket{\alpha}{\alpha}=\sqrt{2}\text{Im}(\alpha)$$
+The expectation value of the square of the operator must be computed to find the uncertainties.
+$$\bra\alpha\hat y^2\ket\alpha=\frac{1}{2}\bra\alpha(a+a^\dagger)^2\ket\alpha=\frac{1}{2}\left(\bra\alpha a^2\ket\alpha+\bra\alpha (a^\dagger)^2\ket\alpha+\bra\alpha a^\dagger a\ket\alpha+\bra\alpha aa^\dagger\ket\alpha\right)$$
+The computation is straightforward as the bras and kets are eigenstates of the creation and annihilation operators respectively. For the final term, the commutation relation $[\hat a,\hat a^\dagger]=1$ can be used.
+$$\bra\alpha\hat y^2\ket\alpha=\frac{1}{2}(\alpha^2+(\alpha^*)^2+2\alpha^*\alpha+1)=2\text{Re}(\alpha)^2+\frac{1}{2}$$ 
+ $$\Delta y=\sqrt{\langle y^2\rangle-\langle y\rangle^2}=\frac{1}{\sqrt{2}}$$
+ The momentum uncertainty can be calculated in a similar manner.
+$$\bra\alpha\hat q^2\ket\alpha = -\frac{1}{2}\bra\alpha(a^\dagger-a)^2\ket\alpha=-\frac{1}{2}\left(\bra\alpha a^2\ket\alpha+\bra\alpha (a^\dagger)^2\ket\alpha-\bra\alpha a^\dagger a\ket\alpha-\bra\alpha aa^\dagger\ket\alpha\right)$$
+$$=-\frac{1}{2}(\alpha^2+(\alpha^*)^2-2\alpha^*\alpha-1)=2\text{Im}(\alpha)^2+\frac{1}{2}$$
+ $$\Delta q=\sqrt{\langle q^2\rangle-\langle q\rangle^2}=\frac{1}{\sqrt{2}}$$
+It can be seen that the uncertainty relation is saturated as $\Delta y\Delta q=\Delta x\Delta p=\frac{1}{2}$
+\item
+The coherent state expressed in the energy basis is
+$$\ket\alpha=e^{-\frac{|\alpha|^2}{2}}\sum_{n=0}^\infty \frac{\alpha^n }{\sqrt{n!}}\ket n$$
+Time evolution in the energy basis is revolution by an overall phase
+$$\ket{\alpha,t}=e^{-\frac{|\alpha|^2}{2}}\sum_{n=0}^\infty \frac{\alpha^ne^{-i\omega(n+\frac{1}{2} )t}}{\sqrt{n!}}\ket n=e^{-\frac{|\alpha|^2}{2}}e^{-\frac{1}{2}i\omega t}\sum_{n=0}^\infty \frac{\alpha^ne^{-i\omega nt}}{\sqrt{n!}}\ket n
+$$$$=e^{-\frac{|\alpha|^2}{2}}e^{-\frac{1}{2}i\omega t}\sum_{n=0}^\infty \frac{(\alpha e^{-i\omega t})^n}{\sqrt{n!}}\ket n$$ 
+Let the function $\alpha(t)=\alpha e^{-i\omega t}$. The time evolution of the coherent state $\ket\alpha$ will be $\ket{\alpha(t)}$ to a phase.
+\item
+Since it is computed above that the time evolution of a coherent state $\ket\alpha_0$ is $\ket{\beta(t)}$ where $\beta(t)=\alpha_0e^{-i\omega t}$, the previous computations of the expectation values for any coherent state $\ket\alpha$ can be used.
+$$\langle\hat y\rangle=\sqrt{2}\text{Re}(\beta(t))=\sqrt{2}\alpha_0\cos(\omega t)\:\:\:\:\:\:\:\:\:\:\:\:\langle\hat q\rangle=\sqrt{2}\text{Im}(\beta(t))=-\sqrt{2}\alpha_0\sin(\omega t)\:\:\:\:\:\:\:\:\:\:\:\:\langle E\rangle = \omega\left(\alpha_0^2+\frac{1}{2}\right)$$
+$$\Delta y = \Delta q = \frac{1}{\sqrt 2}$$
+Note that energy is conserved and the position-momentum uncertainty bound remains saturated for all time.
+\end{enumerate}
+\end{sol}

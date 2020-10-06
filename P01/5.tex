@@ -1,0 +1,24 @@
+\begin{sol}
+\begin{enumerate}[label=\textbf{(\alph*)}]
+	\item $$\hat{p}\ket{\psi}=-i\frac{d}{dx}\psi=-ie^{i\alpha}\phi'$$
+    $$\langle\hat{p}\rangle=\bra{\psi}\hat{p}\ket{\psi}=-i\int_{-\infty}^{\infty}\phi(x)\phi'(x)dx=-i[\phi(x)^2]_{-\infty}^{\infty}+i\int_{-\infty}^{\infty}\phi(x)\phi'(x)dx$$
+      $$2\int_{-\infty}^{\infty}\phi(x)\phi'(x)dx=[\phi(x)^2]_{-\infty}^{\infty}$$
+    Since $\phi(x)$ must vanish at $-\infty$ and $\infty$
+    $$\int_{-\infty}^{\infty}\phi(x)\phi'(x)dx=0$$
+    $$\langle\hat{p}\rangle=0$$
+    \item $$\hat{p}\ket{\psi}=-i\frac{d}{dx}\psi=-i(\phi_1'+e^{i\alpha}\phi_2')$$
+    $$\langle\hat{p}\rangle=\bra{\psi}\hat{p}\ket{\psi}=-i\int_{-\infty}^{\infty}(\phi_1 (x)+e^{-i\alpha}\phi_2(x))(\phi_1'(x)+e^{i\alpha}\phi_2'(x))dx$$
+    $$=-ie^{-i\alpha}\int_{-\infty}^{\infty}\phi_1'(x)\phi_2(x)dx-ie^{i\alpha}\int_{-\infty}^{\infty}\phi_1(x)\phi_2'(x)dx$$
+Using integration by parts on the second term will yield
+$$-ie^{i\alpha}\int_{-\infty}^{\infty}\phi_1(x)\phi_2'(x)dx=-ie^{i\alpha}[\phi_1(x)\phi_2(x)]_{-\infty}^{\infty}+ie^{i\alpha}\int_{-\infty}^{\infty}\phi_1'(x)\phi_2(x)dx$$
+Since both $\phi_1(x)$ and $\phi_2(x)$ must vanish at $-\infty$ and $\infty$, this term becomes $$ie^{i\alpha}\int_{-\infty}^{\infty}\phi_1'(x)\phi_2(x)dx$$
+Substituting this term into the expression,  $$\langle\hat{p}\rangle=i(e^{i\alpha}-e^{-i\alpha})\int_{-\infty}^{\infty}\phi_1'(x)\phi_2(x)dx$$
+It is trivial to see that $\langle\hat{p}\rangle=0$ when $e^{i\alpha}=e^{-i\alpha}$. This is true when $\alpha$ is a integer multiple of $\pi$.
+\item $$\hat{p}\ket{\psi}=-i\frac{d}{dx}\psi=k\phi-ie^{ikx}\phi'$$
+ $$\langle\hat{p}\rangle=\bra{\psi}\hat{p}\ket{\psi}=k\braket{\phi}{\phi}-i\braket{\phi}{e^{ikx}\phi'}$$
+The first term evaluates to k, the second term can be evaluated in a similar manner to part (a):$$-i\braket{\phi}{e^{ikx}\phi'}=-i\int_{-\infty}^{\infty}e^{ikx}\phi(x)\phi'(x)dx=-i[e^{ikx}\phi(x)^2]_{-\infty}^{\infty}+i\int_{-\infty}^{\infty}e^{ikx}\phi(x)\phi'(x)dx$$
+Since $\phi(x)$ must vanish at infinity, $e^{ikx}\phi(x)$ must also vanish at infinity, as $|e^{ikx}|=1\forall x\in\mathbb{R}$. Thus, this integral evaluates to zero.
+$$2\int_{-\infty}^{\infty}e^{ikx}\phi(x)\phi'(x)dx=[e^{ikx}\phi(x)^2]_{-\infty}^{\infty}=0$$
+The only contributing term to $\langle\hat{p}\rangle$ is the first term. Thus, $\langle\hat{p}\rangle=k$
+\end{enumerate}
+\end{sol}

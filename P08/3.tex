@@ -1,0 +1,53 @@
+\begin{sol}
+\begin{enumerate}[label=\textbf{(\alph*)}]
+\item
+The operator $a(\gamma)$ is in the form $e^ABe^{-A}$, with $A=\frac{\gamma}{2}(a^\dagger a^\dagger-aa)$ and $B=a$. First, compute some commutators.
+$$[A,a]=\frac{\gamma}{2}[(a^\dagger)^2,a]=-\gamma a^\dagger\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:[A,[A,a]]=[A,-\gamma a^\dagger]=\gamma^2a$$ 
+$$[A, a^\dagger]=\frac{\gamma}{2}[a^2, a^\dagger]=-\gamma a\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:[A,[A,a^\dagger]]=[A,-\gamma a]=\gamma^2a^\dagger$$ 
+Next, apply the \textit{Hadamard Lemma} proven on \textit{p.30}. Firstly, the construct the infinite sequence $W_n$. $W_0$ is defined to be $a$ and $W_1$ is computed above to be $\gamma a^\dagger$. From what is computed above, it can also be concluded that $W_{n+2}=\gamma^2W_n$. By induction, the entire sequence can be constructed as $W_{2n}=\gamma^{2n}a\text{  and  }W_{2n+1}=-\gamma^{2n+1}a^\dagger$ for all non-negative integers $n$. The \textit{Hadamard Lemma} states that 
+$$e^ABe^{-A}=\sum_{n=0}^\infty\frac{W_n}{n!}$$ 
+The left hand side is the operator of interest, $a(\gamma)$, whereas the right hand side can be split up into two terms.
+$$a(\gamma)=\sum_{n=0}^\infty\frac{W_{2n}}{(2n)!}+\sum_{n=0}^\infty\frac{W_{2n+1}}{(2n+1)!}=a\sum_{n=0}^\infty\frac{\gamma^{2n}}{(2n)!}-a^\dagger\sum_{n=0}^\infty\frac{\gamma^{2n+1}}{(2n+1)!}$$ 
+The infinite sums are the Taylor series of $\cosh(\gamma)$ and $\sinh(\gamma)$ respectively. Therefore, the operator can be written as
+$$a(\gamma)=\cosh(\gamma)a-\sinh(\gamma)a^\dagger$$ 
+Its adjoint is just the adjoint of each term
+$$a^\dagger(\gamma)=\cosh(\gamma)a^\dagger-\sinh(\gamma)a$$
+The value of the commutator between these operators is
+$$[a(\gamma),a^\dagger(\gamma)]=\cosh^2(\gamma)[a,a^\dagger]+\sinh^2(\gamma)[a^\dagger,a]=\cosh^2(\gamma)-\sinh^2(\gamma)=1$$
+\item
+The expectation value of the number operator can be computed with the new $a(\gamma)$ and $a^\dagger(\gamma)$ that is just derived on the vacuum state.
+$$\bra{0,\gamma}\hat N\ket{0,\gamma}=\bra0 a^\dagger(\gamma)a(\gamma)\ket0$$
+$$=\cosh^2(\gamma)\bra0 a^\dagger a\ket0+\sinh^2(\gamma)\bra0 aa^\dagger\ket0-\cosh(\gamma)\sinh(\gamma)\left(\bra0 a^2\ket0+\bra0 (a^\dagger)^2\ket0\right)$$   
+All but the second term evaluates to zero. The second term can be evaluated using the relation $aa^\dagger=a^\dagger a+[a,a^\dagger]$.
+$$\langle N\rangle = \sinh^2(\gamma)(\bra0a^\dagger a\ket0+\braket{0}{0})=\sinh^2(\gamma)$$
+To find the uncertainty, the expectation value of $N^2$ must be computed as well.
+$$\bra{0,\gamma}\hat N^2\ket{0,\gamma}=\bra0a^\dagger(\gamma)a(\gamma)a^\dagger(\gamma)a(\gamma)\ket0$$
+The operator $a^\dagger$ annihilates $\bra0$ and the operator $a$ annihilates $\ket0$. Using this fact can simplify the expression to 
+$$\bra{0,\gamma}\hat N^2\ket{0,\gamma}=\sinh^2(\gamma)\bra0aa(\gamma)a^\dagger(\gamma)a^\dagger\ket0$$
+$$=\sinh^2(\gamma)\cosh^2(\gamma)\bra0aaa^\dagger a^\dagger\ket0+\sinh^4(\gamma)\bra0aa^\dagger aa^\dagger\ket0$$
+$$+\cosh(\gamma)\sinh^3(\gamma)(\bra0aaaa^\dagger\ket0+\bra0aa^\dagger a^\dagger a^\dagger\ket0))$$  
+Firstly, the final term can be eliminated as
+$$\bra0 a^3=\frac{1}{\sqrt{6}}\bra 3\:\:\:\:\:\:\:\:\bra0 a=\bra1\:\:\:\:\:\:\:\:a^\dagger\ket0=\ket1\:\:\:\:\:\:\:\:(a^\dagger)^3\ket0=\frac{1}{\sqrt{6}}\ket3$$ 
+and the first and third excited energy eigenstates are orthogonal. \\\\
+To evaluate $\bra0aa^\dagger aa^\dagger\ket0$, use the commutation relation $aa^\dagger=a^\dagger a+[a,a^\dagger]=a^\dagger a+1$ to obtain $\bra0aa^\dagger aa^\dagger\ket0=\bra0(a^\dagger a+1)(a^\dagger a+1)\ket0=\braket{0}{0}=1$. 
+\\\\To evaluate $\bra0aaa^\dagger a^\dagger\ket0$ use the fact that $\bra0 aa=\frac{1}{\sqrt{2}}\bra2$ and $a^\dagger a^\dagger\ket0=\frac{1}{\sqrt{2}}\ket2$. This term takes on the value of $\frac{1}{2}$. Substituting the results into the original expression yields
+$$\langle\hat {N^2}\rangle=\sinh^4(\gamma)+\frac{1}{2}\sinh^2(\gamma)\cosh^2(\gamma)$$
+The uncertainty is
+$$\Delta N=\sqrt{\langle \hat {N^2}\rangle-\langle \hat N\rangle^2}=\sqrt{\sinh^4(\gamma)+\frac{1}{2}\sinh^2(\gamma)\cosh^2(\gamma)-\sinh^4(\gamma)}=\frac{1}{\sqrt{2}}|\sinh(\gamma)\cosh(\gamma)|$$
+$$\frac{\Delta N}{\langle N\rangle}=\frac{1}{\sqrt{2}}|\coth(\gamma)|$$ 
+This ratio is always greater than $\frac{1}{\sqrt{2}}$ for $\gamma\in\mathbb R$ so unfortunately, it cannot be made small.
+\item
+$$\bra{\alpha,\gamma}\hat N\ket{\alpha,\gamma}=\bra{\alpha,0}\hat S_\gamma^\dagger a^\dagger aS_\gamma\ket{\alpha,0}=\bra{\alpha,0}a^\dagger(\gamma)a(\gamma)\ket{\alpha,0}$$ 
+For simplicity, define $\ket\alpha\equiv\ket{\alpha,0}$ (totally not so it can be fit on one line)
+$$\langle N\rangle=\cosh^2(\gamma)\bra\alpha a^\dagger a\ket\alpha+\sinh^2(\gamma)\bra\alpha aa^\dagger\ket\alpha-\cosh(\gamma)\sinh(\gamma)\left(\bra\alpha a^2\ket\alpha+\bra\alpha (a^\dagger)^2\ket\alpha\right)$$   
+$$=\cosh^2(\gamma)|\alpha|^2+\sinh^2(\gamma)(|\alpha|^2+1)-\cosh(\gamma)\sinh(\gamma)(\alpha^2+(\alpha^*)^2)$$
+$$=\cosh(2\gamma)|\alpha|^2-\frac{1}{2}\sinh(2\gamma)(\alpha^2+(\alpha^*)^2)+\sinh^2(\gamma)$$
+$$=\cosh(2\gamma)|\alpha|^2-\frac{1}{2}\sinh(2\gamma)(4\text{Re}(\alpha)^2-2|\alpha|^2)+\sinh^2(\gamma)$$
+$$=e^{2\gamma}|\alpha|^2-2\sinh(2\gamma)\text{Re}(\alpha)^2+\sinh^2(\gamma)$$
+\item
+$$\bra{\alpha,\gamma}\hat E(t)\ket{\alpha,\gamma}=\mathcal{E}_0(e^{-i\omega t}\bra{\alpha,\gamma}a\ket{\alpha,\gamma}+e^{i\omega t}\bra{\alpha,\gamma}a^\dagger\ket{\alpha,\gamma})$$ 
+$$=\mathcal{E}_0(e^{-i\omega t}\bra{\alpha}a(\gamma)\ket\alpha+e^{i\omega t}\bra\alpha a^\dagger(\gamma)\ket\alpha)$$
+$$=\mathcal{E}_0(e^{-i\omega t}\bra{\alpha}\cosh(\gamma)a-\sinh(\gamma)a^\dagger\ket\alpha+e^{i\omega t}\bra\alpha\cosh(\gamma)a^\dagger-\sinh(\gamma)a\ket\alpha)$$
+$$=\mathcal E_0(e^{-i\omega t}(\cosh(\gamma)\alpha-\sinh(\gamma)\alpha^*)+e^{i\omega t}(\cosh(\gamma)\alpha^*-\sinh(\gamma)\alpha))$$ 
+\end{enumerate}
+\end{sol}

@@ -1,0 +1,15 @@
+\begin{sol}
+Notice the following about the matrix $\mathbf{M}$.
+$$\mathbf{MM}=\begin{pmatrix}0 & -i\\i&0\end{pmatrix}\begin{pmatrix}0 & -i\\i&0\end{pmatrix}=\begin{pmatrix}
+1&0\\0&1
+\end{pmatrix}\equiv\mathbf{1}$$ 
+By definition, $\mathbf{1M}\equiv\mathbf{M}$ and $\mathbf{M}^1=\mathbf{M}$, it can be deduced by induction from $\mathbf{MM}=\mathbf{1}$ that
+$$\mathbf{M}^{2n}=\mathbf{1} \text{ and } \mathbf{M}^{2n+1}=\mathbf{M}\text{ for }n\in\mathbb{Z}$$
+
+Take the taylor expansion of $e^{iM\theta}$
+$$e^{iM\theta}=\sum_{n=0}^\infty\frac{i^n(\mathbf{M}\theta)^n}{n!}=1+i\mathbf{M}\theta-\frac{(\mathbf{M}\theta)^2}{2}-\frac{i(\mathbf{M}\theta)^3}{6}...$$ 
+$$=\sum_{n=0}^\infty(-1)^n\frac{\mathbf{M}^{2n}\theta^{2n}}{(2n)!}+i\sum_{n=0}^\infty(-1)^n\frac{\mathbf{M}^{2n+1}\theta^{2n+1}}{(2n+1)!}$$
+$$=\mathbf{1}\sum_{n=0}^\infty(-1)^n\frac{\theta^{2n}}{(2n)!}+i\mathbf{M}\sum_{n=0}^\infty(-1)^n\frac{\theta^{2n+1}}{(2n+1)!}$$
+$$=\cos(\theta)\mathbf{1}+i\sin(\theta)\mathbf{M}$$
+The algebraic property of any matrix that would lead to this result is the matrix is its own inverse.
+\end{sol}

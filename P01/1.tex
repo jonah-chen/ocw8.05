@@ -1,0 +1,47 @@
+\begin{sol}
+\begin{enumerate}[label=\textbf{(\alph*)}]
+	\item The normalization condition requires $\braket{\psi}{\psi}=1$.
+	$$\braket{\psi}{\psi}=\int_{-\infty}^{\infty}\psi^*(x)\psi(x) dx$$
+	$$=N^2\int_{-\infty}^{\infty}x^2\exp(-\alpha x^2)dx=\frac{N^2\sqrt\pi}{2\alpha^\frac{3}{2}}=1$$
+	$$N=\sqrt{\frac{2\alpha^\frac{3}{2}}{\sqrt{\pi}}}$$
+	
+	The expected value of $x$ position is $\bra{\psi}\hat{x}\ket{\psi}$.
+	$$\bra{\psi}\hat{x}\ket{\psi}=N^2\int_{-\infty}^{\infty}x^3\exp(-\alpha x^2)dx=0$$
+	Similarly, the expected value of $x^2$ position is $\bra{\psi}\hat{x^2}\ket{\psi}$.
+	$$\bra{\psi}\hat{x^2}\ket{\psi}=N^2\int_{-\infty}^{\infty}x^4\exp(-\alpha x^2)dx
+	=\frac{2\alpha^\frac{3}{2}}{\sqrt{\pi}}\frac{3\sqrt{\pi}}{4\alpha^\frac{5}{2}}=\frac{3}{2\alpha}$$
+	
+	\item The momentum operators $\hat{p}$ and $\hat{p^2}$ are given as:
+	$$\hat{p}=-i\frac{\partial}{\partial x}$$
+	$$\hat{p^2}=-\frac{\partial^2}{\partial x^2}$$
+	These operators acting on the state $\ket{\psi}$ gives the following:
+	$$\hat{p}\ket{\psi}=-i\frac{\partial}{\partial x}\left(Nx\exp(-\frac{1}{2}\alpha x^2)\right)=
+	iN(\alpha x^2-1)\exp(-\frac{1}{2}\alpha x^2)$$
+	$$\hat{p^2}\ket{\psi}=-\frac{\partial^2}{\partial x^2}\left(Nx\exp(-\frac{1}{2}\alpha x^2)\right)=
+	N(3\alpha x - \alpha^2x^3)\exp(-\frac{1}{2}\alpha x^2)$$
+	The expected value of momentum is $\bra{\psi}\hat{p}\ket{\psi}$.
+	$$\bra{\psi}\hat{p}\ket{\psi}=iN^2\int_{-\infty}^{\infty}(\alpha x^3-x)\exp(-\alpha x^2)dx=0$$
+	Similarly, the expected value of $p^2$ is $\bra{\psi}\hat{p^2}\ket{\psi}$.
+	$$\bra{\psi}\hat{p^2}\ket{\psi}=N^2\int_{-\infty}^{\infty}3\alpha x^2 \exp(-\alpha x^2)dx-
+	\int_{-\infty}^{\infty}\alpha^2 x^4 \exp(-\alpha x^2)dx$$
+	$$=\frac{2\alpha^\frac{3}{2}}{\sqrt{\pi}}
+	\left(\frac{3\sqrt\pi}{2\sqrt\alpha}-\frac{3\sqrt{\pi}}{4\sqrt{\alpha}}\right)
+	=\frac{3\alpha}{2}$$
+	
+	\item It is previously shown that $\langle \hat{x^2} \rangle > \langle \hat{x}\rangle^2$ and $\langle \hat{p^2} \rangle > \langle \hat{p}\rangle^2$, hence, the uncertainties for both momentum and position are non-zero. Therefore, the state $\ket{\psi}$ is neither a position eigenstate nor a momentum eigenstate.
+	\item Since $\hat{H}=\frac{\hat{p^2}}{2m}+V$ and $V=0$. 
+	$$\langle\hat{H}\rangle=\frac{\langle\hat{p^2}\rangle}{2m}=\frac{3\alpha}{4m}$$
+	\item If $\ket{\psi}$ is an energy eigenstate, it must satisfy the time-independent Schrodinger's equation.
+	$$2m(V(x)-E)\ket\psi=\frac{d^2}{dx^2}\ket\psi$$
+	$$2m(V(x)-E)Nx\exp(-\frac{1}{2}\alpha x^2)=N(\alpha^2x^3-3\alpha x)\exp(-\frac{1}{2}\alpha x^2)$$
+	$$2m(V(x)-E)=\alpha^2x^2-3\alpha$$
+	\\
+	Given the additional condition that $V(0)=0$, $E=\displaystyle{\frac{3\alpha}{2m}}$.
+	\\
+	$$2m(V(x))-3\alpha=\alpha^2x^2-3\alpha$$
+	$$V(x)=\frac{\alpha^2x^2}{2m}$$
+	
+	
+	Since $\ket\psi$ has a node at $x=0$, the node theorem prohibits $\ket\psi$ to be the ground state of the potential.
+\end{enumerate}
+\end{sol}

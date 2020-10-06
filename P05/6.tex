@@ -1,0 +1,13 @@
+\begin{sol}
+Note: $a$ will be used for $\Delta$ in the question to avoid confusion.
+First, calculate the expectation values of $\hat x$ and $\hat p$
+$$\langle \hat x\rangle=\bra\Psi\hat x\ket\Psi=\int_{-\infty}^\infty \psi^*(x)x\psi(x)dx=\int_{-\infty}^\infty xe^{-\frac{x^2}{a^2}}dx=0$$ $$\langle \hat p\rangle=\bra\Psi\hat p\ket\Psi=\int_{-\infty}^\infty\psi^*(x)\left(-i\frac{d}{dx}\right)\psi(x)dx=N^2\int_{-\infty}^\infty e^{-i\langle p\rangle x}e^{-\frac{x^2}{2a^2}}(-i)\left(i\langle p\rangle-\frac{x}{a}\right)e^{i\langle p\rangle x}e^{-\frac{x^2}{2a^2}}dx$$  $$=\langle p\rangle N^2\int_{-\infty}^\infty e^{-\frac{x^2}{a^2}}dx-\frac{iN^2}{a}\int_{-\infty}^\infty x e^{-\frac{x^2}{a^2}}dx=\langle p\rangle $$ 
+Substituting the operators into the condition for saturation will yield
+$$(\hat p-\langle p\rangle)\ket\Psi=i\gamma\hat x\ket\Psi$$ 
+$$-i\frac{d\psi(x)}{dx}-\langle p\rangle \psi(x)=i\gamma x\psi(x)$$ 
+$$\langle p\rangle N^2e^{i\langle p\rangle x}e^{-\frac{x^2}{2a^2}}+i\frac{x N^2}{a}e^{i\langle p\rangle x}e^{-\frac{x^2}{2a^2}}-\langle p\rangle N^2 e^{i\langle p\rangle x}e^{-\frac{x^2}{2a^2}}=i\gamma  N^2x e^{i\langle p\rangle x}e^{-\frac{x^2}{2a^2}}$$ 
+$$i\frac{x N^2}{a}e^{i\langle p\rangle x}e^{-\frac{x^2}{2a^2}}=i\gamma  N^2x e^{i\langle p\rangle x}e^{-\frac{x^2}{2a^2}}$$
+
+
+$$\gamma=\frac{1}{a}$$ 
+\end{sol}

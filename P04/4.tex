@@ -1,0 +1,20 @@
+\begin{sol}
+\begin{enumerate}[label=\textbf{(\alph*)}]
+\item
+Define $G(t)\equiv e^{t(A+B)}e^{-tA}$,
+$$G^{-1}(t)=e^{tA}e^{-t(A+B)}$$
+$$\frac{d}{dt}G(t)=e^{t(A+B)}(A+B)e^{-tA}-e^{t(A+B)}Ae^{-tA}=e^{t(A+B)}Be^{-tA}$$
+$$G^{-1}\frac{d}{dt}G(t)=e^{tA}e^{-t(A+B)}e^{t(A+B)}Be^{-tA}=e^{tA}Be^{-tA}$$
+Using Lemma 8, 
+$$G^{-1}\frac{d}{dt}G(t)=B+ct$$ 
+\item
+$$G(t)=G(0)e^{tB}e^{\frac{1}{2}ct^2}$$
+$$\frac{d}{dt}G(t)=G(0)(Be^{tB}e^{\frac{1}{2}ct^2}+e^{tB}ct\,e^{\frac{1}{2}ct^2})$$
+It has been shown in \textit{2(a), p.29} that $[e^{tL},L]=0$. 
+$$\frac{d}{dt}G(t)=G(0)(e^{tB}e^{\frac{1}{2}ct^2})(B+ct)=G(t)(B+ct)$$
+\item
+$$G(1)\equiv e^{A+B}e^{-A}=G(0)e^Be^{c/2}$$
+$$e^{A+B}=e^Be^Ae^{c/2}$$ 
+Note that $[B,A]=-[A,B]$, thus $e^{A+B}=e^{B+A}=e^Ae^Be^{-c/2}$
+\end{enumerate}
+\end{sol}

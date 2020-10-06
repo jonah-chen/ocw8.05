@@ -1,0 +1,15 @@
+\begin{sol}
+It has been derived that the equation for the Heisenberg operator is
+$$\frac{d\hat A_H}{dt}=\frac{\partial \hat A_S}{\partial t}-i[\hat A_H,\hat H_H]$$
+Since the Schrodinger operators $\hat S_x,\hat S_y,\hat S_z$ are time-independent, therefore
+$$\frac{d\hat A_H}{dt}=-i[\hat A_H,\hat H_H]$$
+The time evolution of Heisenberg operator for $S_z$ is trivial since it commutes with the Hamiltonian. Thus, the it is time independent and it is equal to the Schrodinger operator.\\
+It is known that the commutators
+$$[\hat S_i,\hat S_j]=i\epsilon_{ijk}\hat S_k$$ 
+Thus,
+$$\frac{d(\hat S_x)_H}{dt}=-i[\hat S_x,\hat H]=i\lambda B[\hat S_x,\hat S_z]=\lambda B\hat S_y$$
+$$\frac{d(\hat S_y)_H}{dt}=-i[\hat S_y,\hat H]=i\lambda B[\hat S_y,\hat S_z]=-\lambda B\hat S_x$$
+Solving the differential equations with the initial conditons that $(\hat S_x)_H(0)=\hat S_x$ and $(\hat S_y)_H(0)=\hat S_y$. The Heisenberg operators can be obtained.
+$$(\hat S_x)_H=\hat S_x+\lambda Bt\hat S_y\:\:\:\:\:\:\:\:(\hat S_y)_H=\hat S_y-\lambda Bt\hat S_x\:\:\:\:\:\:\:\:\:(\hat S_z)_H=S_y$$ 
+
+\end{sol}

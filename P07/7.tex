@@ -1,0 +1,15 @@
+\begin{sol}
+Rewrite the unitary operator $e^{\alpha\hat a^\dagger-\alpha^*\hat a}$ in terms of the position and momentum operators. From the definition of the creation and annihilation operators,
+$$e^{\alpha\hat a^\dagger-\alpha^*\hat a}=\exp\left(\sqrt{\frac{m\omega}{2}}\left(\alpha\hat x-\frac{i\alpha\hat p}{m\omega}-\alpha^*\hat x-\frac{i\alpha^*\hat p}{m\omega}\right)\right)=\exp\left(i\sqrt{2m\omega}\left(\text{Im}(\alpha)\hat x-\frac{\text{Re}(\alpha)\hat p}{m\omega}\right)\right)$$
+Note this operator takes a similar form to the position and momentum translation operators. Let $x_0\equiv\sqrt{\frac{2}{m\omega}}\text{Re}(\alpha)$ and $p_0=\sqrt{2m\omega}\text{Im}(\alpha)$, the operator can be rewritten as
+$$e^{\alpha\hat a^\dagger-\alpha^*\hat a}=\exp(ip_0\hat x-i\hat px_0)$$
+Using the \textit{Baker-Campbell-Hausdorff Theorem}, 
+$$\exp(ip_0\hat x-i\hat px_0)=e^{ip_0\hat x}e^{-i\hat px_0}e^{-\frac{1}{2}[ip_0\hat x,-ix_0\hat p]}=T_{x_0}\tilde {T}_{p_0}e^{-\frac{1}{2}[ip_0\hat x,-ix_0\hat p]}$$ 
+The commutator has been computed on \textit{1b, p.37} to be $-ix_0p_0\mathbf{1}$. Thus, the exponentiation of the commutator will just be a pure phase.\\
+The coherent states are defined to be
+$$\ket\alpha=e^{\alpha\hat a^\dagger-\alpha^*\hat a}\ket 0=e^{-\frac{1}{2}ix_0p_0}T_{x_0}\tilde {T}_{p_0}\ket 0$$ 
+$$\braket{x}{0}=\frac{1}{\sqrt{a\sqrt{\pi}}}e^{-\frac{x^2}{2a^2}}$$
+Acting with the position and momentum translation operators will yield
+$$\braket{x}{\alpha}=e^{-\frac{1}{2}ix_0p_0}\bra xT_{x_0}\tilde {T}_{p_0}\ket 0=e^{ip_0x}\braket{x-x_0}{0}=\frac{e^{-\frac{1}{2}ix_0p_0}}{\sqrt{a\sqrt{\pi}}}e^{ipx}e^{-\frac{(x-x_0)^2}{2a^2}}$$ 
+This is indeed a Gaussian function that is normalized as $\braket{\alpha}{\alpha}=1$.
+\end{sol}
