@@ -9,7 +9,7 @@ Midterm Exams: ~~2011~~ 2012 2013
 
 Final Exams: 2011 2012 2013
 
-Solutions have yet to be checked. Any corrections will be appreciated. 
+Solutions have yet to be checked. Any corrections will be appreciated. Page 16 is blank due to some issues with LaTeX compilation but I am unable to fix it.
 
 
 Credits to Prof. Qilin Xue for physoly.sty file.
