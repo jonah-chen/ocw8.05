@@ -2,40 +2,71 @@
 \begin{enumerate}[label=\textbf{(\alph*)}]
     \item
     The probability density and probability current density in one dimension are defined as follows:
-    $$\rho(x,t)=\Psi^*\Psi,J(x,t)=\frac{1}{m}Im\left(\Psi^*\frac{\partial\Psi}{\partial x}\right).$$
-    Notice $Im(z)=\frac{1}{2i}(z-z^*)$. Thus, the probability current can be rewritten as:
-    $$J(x,t)=\frac{1}{2mi}\left(\Psi^*\frac{\partial\Psi}{\partial x}-\Psi\frac{\partial\Psi^*}{\partial x}\right)$$
+    \begin{align}
+        \rho(x,t)&=\Psi^*\Psi\\
+        J(x,t)&=\frac{1}{m}\text{Im}\left(\Psi^*\frac{\partial\Psi}{\partial x}\right)\label{probabilitycurrent}
+    \end{align}
+    Notice $\text{Im}(z)=\frac{1}{2i}(z-z^*)$. Thus, the probability current can be rewritten as:
+    \begin{equation}
+        J(x,t)=\frac{1}{2mi}\left(\Psi^*\frac{\partial\Psi}{\partial x}-\Psi\frac{\partial\Psi^*}{\partial x}\right)
+    \end{equation}
     The following partial derivatives can be computed.
-    $$\frac{\partial\rho}{\partial t}=\Psi^*\frac{\partial\Psi}{\partial t}+\Psi\frac{\partial\Psi^*}{\partial t}$$ $$\frac{\partial J}{\partial x}=\frac{1}{2mi}\left(\Psi^*\frac{\partial^2\Psi}{\partial x^2}-\Psi\frac{\partial^2\Psi^*}{\partial x^2}\right)$$ 
+    \begin{align}
+        \partial_t\rho&=\Psi^*\partial_t\psi+\Psi\partial_t\Psi^*\\
+        \partial_xJ&=\frac{1}{2mi}\left(\Psi^*\partial_x^2\Psi-\Psi\partial_x^2\Psi^*\right)
+    \end{align}
+
     Assuming the potential is real and time-independent, the time-dependent Schrodinger's equation can be written as:
-    $$\frac{\partial^2\Psi}{\partial x^2}=-2mi\frac{\partial\Psi}{\partial t}+V(x)\Psi$$ 
+    \begin{equation}
+        \partial_x^2\Psi=-2mi\partial_t\Psi+V(x)\Psi 
+    \end{equation}
     The complex conjugate of the time-dependent Schrodinger's equation is then
-     $$\frac{\partial^2\Psi^*}{\partial x^2}=2mi\frac{\partial\Psi^*}{\partial t}+V(x)\Psi^*$$
-    Substituting the second partial derivatives into the equation for $\frac{\partial J}{\partial x}$
-    $$\frac{\partial J}{\partial x}=\frac{1}{2mi}\left(\Psi^*\left(-2mi\frac{\partial\Psi}{\partial t}+V(x)\Psi\right)-\Psi\left(2mi\frac{\partial\Psi^*}{\partial t}+V(x)\Psi^*\right)\right)$$
-    $$=-\left(\Psi^*\frac{\partial\Psi}{\partial t}+\Psi\frac{\partial\Psi^*}{\partial t}\right)$$
+    \begin{equation}
+        \partial_x^2\Psi^*=2mi\partial_t\Psi^*+V(x)\Psi^*
+    \end{equation}
+    Substituting the second partial derivatives into the equation for $\partial_xJ$
+    \begin{equation}
+        \begin{aligned}
+            \partial_xJ&=\frac{1}{2mi}\left(\Psi^*\left(-2mi\partial_t\Psi+V(x)\Psi\right)-\Psi\left(2mi\partial_t\Psi^*+V(x)\Psi^*\right)\right)\\
+            &=-\left(\Psi^*\partial_t\Psi+\Psi\partial_t\Psi^*\right)
+        \end{aligned}
+    \end{equation}
     From this form, it is trivial to see that
-    $$\frac{\partial\rho}{\partial t}+\frac{\partial J}{\partial x}=0$$ 
-    The dimensions of $\rho$ is $Length^{-1}$, and the dimensions of $J$ is $Time^{-1}$.
+    \begin{equation}
+        \partial_t\rho+\partial_xJ=0
+    \end{equation}
+    This is the conservation of probability. The dimensions of $\rho$ is $Length^{-1}$, and the dimensions of $J$ is $Time^{-1}$.
    \item
-   $$\frac{dP_{ab}}{dt}=\frac{d}{dt}\int_{a}^{b}\rho(x,t)dx$$ 
+   \begin{equation}
+       \partial_tP_{ab}=\partial_t\int_{a}^{b}\rho(x,t)dx
+   \end{equation}
    Given $\rho(x,t)$ is well behaved in the region $a<x<b$, differentiation under the integral sign can be performed.
-   $$\frac{dP_{ab}}{dt}=\int_{a}^{b}\frac{\partial\rho}{\partial t}dx=
-   \int_{a}^{b}-\frac{\partial J}{\partial x}dx=J(a,t)-J(b,t)$$ If a state is normalized, then $\lim_{x\to\pm\infty}\Psi(x,t)=0$ and the probability $\lim_{a\to-\infty}\lim_{b\to\infty}P_{ab}=1$. It has been shown that $\frac{dP_{ab}}{dt}=J(a,t)-J(b,t)$. To show that the total if a state $\Psi(x,t)$ that is normalized at time $t$ will remain normalized, it suffices to show that $\lim_{x\to\pm\infty}J(x,t)=0$. \\
-   Recall $$J(x,t)=\frac{1}{m}\text{Im}\left(\Psi^*\frac{\partial\Psi}{\partial x}\right)$$
-   Under the assumption that $\frac{\partial\Psi}{\partial x}$ does not diverge at $\pm\infty$, it is trivial that $\lim_{x\to\pm\infty}J(x,t)=0$ since $\lim_{x\to\pm\infty}\Psi(x,t)=0$. Thus, a state that is normalized at time $t$ will remained normalized for all times.
+   \begin{equation}
+    \partial_tP_{ab}=\int_{a}^{b}\partial_t\rho dx=
+    \int_{a}^{b}-\partial_tJdx=J(a,t)-J(b,t)
+   \end{equation}
+   If a state is normalized, then $\lim_{x\to\pm\infty}\Psi(x,t)=0$ and the probability $\lim_{a\to-\infty}\lim_{b\to\infty}P_{ab}=1$. It has been shown that $\frac{dP_{ab}}{dt}=J(a,t)-J(b,t)$. To show that the total if a state $\Psi(x,t)$ that is normalized at time $t$ will remain normalized, it suffices to show that $\lim_{x\to\pm\infty}J(x,t)=0$. \\
+   Recall equation \eqref{probabilitycurrent}. Under the assumption that $\partial_x\Psi$ does not diverge at $\pm\infty$, it is trivial that $\lim_{x\to\pm\infty}J(x,t)=0$ since $\lim_{x\to\pm\infty}\Psi(x,t)=0$. Thus, a state that is normalized at time $t$ will remained normalized for all times.
    \item 
    For $\psi(x)=e^{i\alpha(x)}\phi(x)$
-  
-   $$=\frac{1}{m}\text{Im}((e^{-i\alpha(x)}\phi(x))(e^{i\alpha(x)}\phi'(x)+i\alpha'(x)e^{i\alpha(x)}\phi(x))$$
-$$=\frac{1}{m}\alpha'(x)\phi(x)^2$$ The probability density $\rho(x,t)=\phi(x)^2$. Thus, it is shown that
-$$\frac{J(x)}{\rho(x)}=\frac{1}{m}\alpha'(x)$$ 
+   \begin{equation}
+        J(x,t)=\frac{1}{m}\text{Im}((e^{-i\alpha(x)}\phi(x))(e^{i\alpha(x)}\phi'(x)+i\alpha'(x)e^{i\alpha(x)}\phi(x))=\frac{1}{m}\alpha'(x)\phi(x)^2
+   \end{equation}
+   The probability density $\rho(x,t)=\phi(x)^2$. Thus, it is shown that
+   \begin{equation}
+    \frac{J(x)}{\rho(x)}=\frac{1}{m}\alpha'(x)
+   \end{equation}
 Notice this quantity has dimensions of velocity. Furthermore, the current is normalized is against the probability density at a point, thus, this ratio can be viewed as the local velocity of a quantum state.
 \item
-For $\psi(x)=Ae^{ipx}+Be^{-ipx}$
-$$J(x,t)=\frac{1}{m}\text{Im}((A^*e^{-ipx}+B^*e^{ipx})ip(Ae^{ipx}-Be^{-ipx}))$$
-$$=\frac{1}{m}\text{Im}(ip(|A|^2-|B|^2+AB^*e^{2ipx}-A^*Be^{-2ipx}))$$
-$$=\frac{p}{m}(|A|^2-|B|^2+Re(AB^*e^{2ipx}-A^*Be^{-2ipx}))$$ 
+For $\psi(x)=Ae^{ipx}+Be^{-ipx}$,
+\begin{equation}
+    \begin{aligned}
+        J(x,t)&=\frac{1}{m}\text{Im}((A^*e^{-ipx}+B^*e^{ipx})ip(Ae^{ipx}-Be^{-ipx}))\\
+        &=\frac{1}{m}\text{Im}(ip(|A|^2-|B|^2+AB^*e^{2ipx}-A^*Be^{-2ipx}))\\
+        &=\frac{p}{m}(|A|^2-|B|^2+Re(AB^*e^{2ipx}-A^*Be^{-2ipx}))
+    \end{aligned}
+\end{equation}
+
 Yes, there are cross terms in $J$ between the left and right moving parts of $\psi$ if $A\neq B$.
 
 \end{enumerate}

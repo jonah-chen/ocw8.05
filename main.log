@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.9.3)  2 NOV 2020 13:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.9.3)  20 NOV 2020 10:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -612,22 +612,22 @@ File: pgflibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )) (/home/hina/PycharmProjects/ocw8.05/main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -683,7 +683,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 \AtBeginShipoutBox=\box75
-Package hyperref Info: Link coloring ON on input line 17.
+Package hyperref Info: Link coloring ON on input line 18.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -693,41 +693,41 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count325
 )
-LaTeX Info: Redefining \ref on input line 17.
-LaTeX Info: Redefining \pageref on input line 17.
-LaTeX Info: Redefining \nameref on input line 17.
+LaTeX Info: Redefining \ref on input line 18.
+LaTeX Info: Redefining \pageref on input line 18.
+LaTeX Info: Redefining \nameref on input line 18.
  (/home/hina/PycharmProjects/ocw8.05/main.out) (/home/hina/PycharmProjects/ocw8.05/main.out)
 \@outlinefile=\write8
 \openout8 = `main.out'.
 
 \symgns@font=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 17.
-Package gensymb Info: Math companion symbols declared on input line 17.
-LaTeX Info: Redefining \degree on input line 17.
-LaTeX Info: Redefining \celsius on input line 17.
-Package gensymb Info: Using text companion symbols for \degree, \celsius and \perthousand on input line 17.
-LaTeX Info: Redefining \ohm on input line 17.
-Package gensymb Info: Using \textohm for \ohm on input line 17.
-Package gensymb Info: Using \textmu for \micro on input line 17.
+(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 18.
+Package gensymb Info: Math companion symbols declared on input line 18.
+LaTeX Info: Redefining \degree on input line 18.
+LaTeX Info: Redefining \celsius on input line 18.
+Package gensymb Info: Using text companion symbols for \degree, \celsius and \perthousand on input line 18.
+LaTeX Info: Redefining \ohm on input line 18.
+Package gensymb Info: Using \textohm for \ohm on input line 18.
+Package gensymb Info: Using \textmu for \micro on input line 18.
 
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable tick labels; missing features). Consider writing \pgfplotsset{compat=1.16} into your preamble.
- on input line 17.
+ on input line 18.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 20.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 21.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 20.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 21.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 20.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 21.
  (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Underfull \hbox (badness 10000) in paragraph at lines 20--21
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
 
  []
 
@@ -738,46 +738,46 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--21
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (/home/hina/PycharmProjects/ocw8.05/P01/1.tex
-Underfull \hbox (badness 10000) in paragraph at lines 37--41
+Underfull \hbox (badness 10000) in paragraph at lines 62--64
 
  []
 
 [2]) (/home/hina/PycharmProjects/ocw8.05/P01/2.tex) (/home/hina/PycharmProjects/ocw8.05/P01/3.tex
-Underfull \hbox (badness 10000) in paragraph at lines 13--16
+Underfull \hbox (badness 10000) in paragraph at lines 23--26
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--25
+Underfull \hbox (badness 10000) in paragraph at lines 26--35
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--25
+Underfull \hbox (badness 10000) in paragraph at lines 26--35
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--25
+Underfull \hbox (badness 10000) in paragraph at lines 26--35
 
  []
 
-[3]) (/home/hina/PycharmProjects/ocw8.05/P01/4.tex [4]) (/home/hina/PycharmProjects/ocw8.05/P01/5.tex [5]) (/home/hina/PycharmProjects/ocw8.05/P01/6.tex [6]) (/home/hina/PycharmProjects/ocw8.05/P01/7.tex
-Underfull \hbox (badness 10000) in paragraph at lines 16--18
+[3]) (/home/hina/PycharmProjects/ocw8.05/P01/4.tex [4]) (/home/hina/PycharmProjects/ocw8.05/P01/5.tex) (/home/hina/PycharmProjects/ocw8.05/P01/6.tex [5] [6]) (/home/hina/PycharmProjects/ocw8.05/P01/7.tex
+Underfull \hbox (badness 10000) in paragraph at lines 25--27
 
  []
 
-[7]) (/home/hina/PycharmProjects/ocw8.05/P02/1.tex
+) (/home/hina/PycharmProjects/ocw8.05/P02/1.tex
 Underfull \hbox (badness 10000) in paragraph at lines 22--26
 
  []
 
-[8]) (/home/hina/PycharmProjects/ocw8.05/P02/2.tex
+[7] [8]) (/home/hina/PycharmProjects/ocw8.05/P02/2.tex
 Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
  []
 
-[9]) (/home/hina/PycharmProjects/ocw8.05/P02/3.tex
+) (/home/hina/PycharmProjects/ocw8.05/P02/3.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
@@ -787,12 +787,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--17
 
  []
 
-[10]) (/home/hina/PycharmProjects/ocw8.05/P02/4.tex [11] [12]) (/home/hina/PycharmProjects/ocw8.05/P02/5.tex
+[9]) (/home/hina/PycharmProjects/ocw8.05/P02/4.tex [10] [11]) (/home/hina/PycharmProjects/ocw8.05/P02/5.tex
 Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
  []
 
-<P02/HO4.png, id=173, 722.7pt x 442.65375pt>
+<P02/HO4.png, id=235, 722.7pt x 442.65375pt>
 File: P02/HO4.png Graphic file (type png)
 <use P02/HO4.png>
 Package pdftex.def Info: P02/HO4.png  used on input line 17.
@@ -802,12 +802,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
  []
 
-<P02/HO1.png, id=174, 722.7pt x 447.6725pt>
+<P02/HO1.png, id=236, 722.7pt x 447.6725pt>
 File: P02/HO1.png Graphic file (type png)
 <use P02/HO1.png>
 Package pdftex.def Info: P02/HO1.png  used on input line 41.
 (pdftex.def)             Requested size: 289.07487pt x 179.06583pt.
-[13] [14 </home/hina/PycharmProjects/ocw8.05/P02/HO4.png (PNG copy)>]) (/home/hina/PycharmProjects/ocw8.05/P02/6.tex) (/home/hina/PycharmProjects/ocw8.05/P03/1.tex [15 </home/hina/PycharmProjects/ocw8.05/P02/HO1.png (PNG copy)>]) (/home/hina/PycharmProjects/ocw8.05/P03/2.tex
+[12] [13 </home/hina/PycharmProjects/ocw8.05/P02/HO4.png (PNG copy)>]) (/home/hina/PycharmProjects/ocw8.05/P02/6.tex) (/home/hina/PycharmProjects/ocw8.05/P03/1.tex [14 </home/hina/PycharmProjects/ocw8.05/P02/HO1.png (PNG copy)>]) (/home/hina/PycharmProjects/ocw8.05/P03/2.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--3
 
  []
@@ -817,17 +817,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--10
 
  []
 
-[16] [17]) (/home/hina/PycharmProjects/ocw8.05/P03/3.tex
+[15] [16]) (/home/hina/PycharmProjects/ocw8.05/P03/3.tex
 Underfull \hbox (badness 10000) in paragraph at lines 16--19
 
  []
 
-[18] [19]) (/home/hina/PycharmProjects/ocw8.05/P03/4.tex
+[17] [18]) (/home/hina/PycharmProjects/ocw8.05/P03/4.tex
 Underfull \hbox (badness 10000) in paragraph at lines 30--33
 
  []
 
-[20]) (/home/hina/PycharmProjects/ocw8.05/P03/5.tex
+[19]) (/home/hina/PycharmProjects/ocw8.05/P03/5.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--15
 
  []
@@ -842,12 +842,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--32
 
  []
 
-[21]) (/home/hina/PycharmProjects/ocw8.05/P03/6.tex) (/home/hina/PycharmProjects/ocw8.05/P04/1.tex [22]) (/home/hina/PycharmProjects/ocw8.05/P04/2.tex [23]
+[20]) (/home/hina/PycharmProjects/ocw8.05/P03/6.tex) (/home/hina/PycharmProjects/ocw8.05/P04/1.tex [21]) (/home/hina/PycharmProjects/ocw8.05/P04/2.tex [22]
 Underfull \hbox (badness 10000) in paragraph at lines 25--28
 
  []
 
-) (/home/hina/PycharmProjects/ocw8.05/P04/3.tex [24]) (/home/hina/PycharmProjects/ocw8.05/P04/4.tex [25]) (/home/hina/PycharmProjects/ocw8.05/P04/5.tex) (/home/hina/PycharmProjects/ocw8.05/P04/6.tex
+) (/home/hina/PycharmProjects/ocw8.05/P04/3.tex [23]) (/home/hina/PycharmProjects/ocw8.05/P04/4.tex [24]) (/home/hina/PycharmProjects/ocw8.05/P04/5.tex) (/home/hina/PycharmProjects/ocw8.05/P04/6.tex
 Underfull \hbox (badness 10000) in paragraph at lines 12--14
 
  []
@@ -857,37 +857,37 @@ Underfull \hbox (badness 1742) in paragraph at lines 12--14
 \OT1/cmr/m/n/10 Note that the choice of $\OML/cmm/m/it/10 M[]$ \OT1/cmr/m/n/10 is ir-rel-e-vant to the prob-lem and for any in-vert-ible ma-trix $\OML/cmm/m/it/10 S$\OT1/cmr/m/n/10 ,
  []
 
-[26]) (/home/hina/PycharmProjects/ocw8.05/P04/7.tex
+[25]) (/home/hina/PycharmProjects/ocw8.05/P04/7.tex
 Underfull \hbox (badness 10000) in paragraph at lines 30--31
 
  []
 
-<P04/sinx.PNG, id=295, 534.798pt x 335.45325pt>
+<P04/sinx.PNG, id=357, 534.798pt x 335.45325pt>
 File: P04/sinx.PNG Graphic file (type png)
 <use P04/sinx.PNG>
 Package pdftex.def Info: P04/sinx.PNG  used on input line 32.
 (pdftex.def)             Requested size: 374.35605pt x 234.81566pt.
-<P04/sin error.PNG, id=297, 532.389pt x 331.2375pt>
+<P04/sin error.PNG, id=359, 532.389pt x 331.2375pt>
 File: P04/sin error.PNG Graphic file (type png)
 <use P04/sin error.PNG>
 Package pdftex.def Info: P04/sin error.PNG  used on input line 36.
 (pdftex.def)             Requested size: 372.66975pt x 231.86465pt.
-<P04/cosx.PNG, id=298, 517.33275pt x 316.18124pt>
+<P04/cosx.PNG, id=360, 517.33275pt x 316.18124pt>
 File: P04/cosx.PNG Graphic file (type png)
 <use P04/cosx.PNG>
 Package pdftex.def Info: P04/cosx.PNG  used on input line 40.
 (pdftex.def)             Requested size: 362.13045pt x 221.32535pt.
-<P04/cos error.PNG, id=299, 541.42274pt x 327.624pt>
+<P04/cos error.PNG, id=361, 541.42274pt x 327.624pt>
 File: P04/cos error.PNG Graphic file (type png)
 <use P04/cos error.PNG>
 Package pdftex.def Info: P04/cos error.PNG  used on input line 45.
 (pdftex.def)             Requested size: 378.99333pt x 229.33522pt.
-[27] [28 </home/hina/PycharmProjects/ocw8.05/P04/sinx.PNG>] [29 </home/hina/PycharmProjects/ocw8.05/P04/sin error.PNG> </home/hina/PycharmProjects/ocw8.05/P04/cosx.PNG>]) (/home/hina/PycharmProjects/ocw8.05/P05/1.tex) (/home/hina/PycharmProjects/ocw8.05/P05/2.tex [30 </home/hina/PycharmProjects/ocw8.05/P04/cos error.PNG>] [31]) (/home/hina/PycharmProjects/ocw8.05/P05/3.tex
+[26] [27 </home/hina/PycharmProjects/ocw8.05/P04/sinx.PNG>] [28 </home/hina/PycharmProjects/ocw8.05/P04/sin error.PNG> </home/hina/PycharmProjects/ocw8.05/P04/cosx.PNG>]) (/home/hina/PycharmProjects/ocw8.05/P05/1.tex) (/home/hina/PycharmProjects/ocw8.05/P05/2.tex [29 </home/hina/PycharmProjects/ocw8.05/P04/cos error.PNG>] [30]) (/home/hina/PycharmProjects/ocw8.05/P05/3.tex
 Underfull \hbox (badness 10000) in paragraph at lines 5--8
 
  []
 
-[32]) (/home/hina/PycharmProjects/ocw8.05/P05/4.tex
+[31]) (/home/hina/PycharmProjects/ocw8.05/P05/4.tex
 Underfull \hbox (badness 10000) in paragraph at lines 38--41
 
  []
@@ -897,17 +897,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--48
 
  []
 
-[33]) (/home/hina/PycharmProjects/ocw8.05/P05/5.tex) (/home/hina/PycharmProjects/ocw8.05/P05/6.tex [34]) (/home/hina/PycharmProjects/ocw8.05/P05/7.tex) (/home/hina/PycharmProjects/ocw8.05/P05/8.tex [35]) (/home/hina/PycharmProjects/ocw8.05/P05/9.tex
+[32]) (/home/hina/PycharmProjects/ocw8.05/P05/5.tex) (/home/hina/PycharmProjects/ocw8.05/P05/6.tex [33]) (/home/hina/PycharmProjects/ocw8.05/P05/7.tex) (/home/hina/PycharmProjects/ocw8.05/P05/8.tex [34]) (/home/hina/PycharmProjects/ocw8.05/P05/9.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
-[36]) (/home/hina/PycharmProjects/ocw8.05/P06/1.tex) (/home/hina/PycharmProjects/ocw8.05/P06/2.tex [37] [38]) (/home/hina/PycharmProjects/ocw8.05/P06/3.tex
+[35]) (/home/hina/PycharmProjects/ocw8.05/P06/1.tex) (/home/hina/PycharmProjects/ocw8.05/P06/2.tex [36] [37]) (/home/hina/PycharmProjects/ocw8.05/P06/3.tex
 Underfull \hbox (badness 10000) in paragraph at lines 15--18
 
  []
 
-) (/home/hina/PycharmProjects/ocw8.05/P06/4.tex [39] [40]) (/home/hina/PycharmProjects/ocw8.05/P06/5.tex
+) (/home/hina/PycharmProjects/ocw8.05/P06/4.tex [38] [39]) (/home/hina/PycharmProjects/ocw8.05/P06/5.tex
 Underfull \hbox (badness 10000) in paragraph at lines 75--78
 
  []
@@ -917,7 +917,7 @@ Underfull \hbox (badness 1005) in paragraph at lines 75--78
 \OT1/cmr/m/n/10 In a clas-si-cal os-cil-la-tor, the to-tal en-ergy is di-rectly re-lated to the max-i-mum ex-cur-sion $\OML/cmm/m/it/10 x[]$\OT1/cmr/m/n/10 ,
  []
 
-[41] [42]) (/home/hina/PycharmProjects/ocw8.05/P06/6.tex [43] [44]) (/home/hina/PycharmProjects/ocw8.05/P07/1.tex [45]) (/home/hina/PycharmProjects/ocw8.05/P07/2.tex [46]) (/home/hina/PycharmProjects/ocw8.05/P07/3.tex [47]) (/home/hina/PycharmProjects/ocw8.05/P07/4.tex [48]) (/home/hina/PycharmProjects/ocw8.05/P07/5.tex [49]) (/home/hina/PycharmProjects/ocw8.05/P07/6.tex) (/home/hina/PycharmProjects/ocw8.05/P07/7.tex [50]) (/home/hina/PycharmProjects/ocw8.05/P08/1.tex [51] [52]) (/home/hina/PycharmProjects/ocw8.05/P08/2.tex [53] [54]) (/home/hina/PycharmProjects/ocw8.05/P08/3.tex
+[40] [41]) (/home/hina/PycharmProjects/ocw8.05/P06/6.tex [42] [43]) (/home/hina/PycharmProjects/ocw8.05/P07/1.tex [44]) (/home/hina/PycharmProjects/ocw8.05/P07/2.tex [45]) (/home/hina/PycharmProjects/ocw8.05/P07/3.tex [46]) (/home/hina/PycharmProjects/ocw8.05/P07/4.tex [47]) (/home/hina/PycharmProjects/ocw8.05/P07/5.tex [48]) (/home/hina/PycharmProjects/ocw8.05/P07/6.tex) (/home/hina/PycharmProjects/ocw8.05/P07/7.tex [49]) (/home/hina/PycharmProjects/ocw8.05/P08/1.tex [50] [51]) (/home/hina/PycharmProjects/ocw8.05/P08/2.tex [52] [53]) (/home/hina/PycharmProjects/ocw8.05/P08/3.tex
 Underfull \hbox (badness 10000) in paragraph at lines 30--34
 
  []
@@ -927,40 +927,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--34
 
  []
 
-[55]) (/home/hina/PycharmProjects/ocw8.05/P08/4.tex [56]) (/home/hina/PycharmProjects/ocw8.05/P08/5.tex [57]) (/home/hina/PycharmProjects/ocw8.05/P08/6.tex [58]) (/home/hina/PycharmProjects/ocw8.05/P09/1.tex) (/home/hina/PycharmProjects/ocw8.05/P09/2.tex [59]) (/home/hina/PycharmProjects/ocw8.05/E1/1.tex) (/home/hina/PycharmProjects/ocw8.05/E1/2.tex) (/home/hina/PycharmProjects/ocw8.05/E1/3.tex [60]) (/home/hina/PycharmProjects/ocw8.05/E1/4.tex) (/home/hina/PycharmProjects/ocw8.05/E1/5.tex [61]) (/home/hina/PycharmProjects/ocw8.05/E2/1.tex) (/home/hina/PycharmProjects/ocw8.05/E2/2.tex
+[54]) (/home/hina/PycharmProjects/ocw8.05/P08/4.tex [55]) (/home/hina/PycharmProjects/ocw8.05/P08/5.tex [56]) (/home/hina/PycharmProjects/ocw8.05/P08/6.tex [57]) (/home/hina/PycharmProjects/ocw8.05/P09/1.tex) (/home/hina/PycharmProjects/ocw8.05/P09/2.tex [58]) (/home/hina/PycharmProjects/ocw8.05/P09/3.tex) (/home/hina/PycharmProjects/ocw8.05/E1/1.tex) (/home/hina/PycharmProjects/ocw8.05/E1/2.tex [59]) (/home/hina/PycharmProjects/ocw8.05/E1/3.tex) (/home/hina/PycharmProjects/ocw8.05/E1/4.tex) (/home/hina/PycharmProjects/ocw8.05/E1/5.tex [60]) (/home/hina/PycharmProjects/ocw8.05/E2/1.tex [61]) (/home/hina/PycharmProjects/ocw8.05/E2/2.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--4
 
  []
 
-[62]) (/home/hina/PycharmProjects/ocw8.05/E2/3.tex) (/home/hina/PycharmProjects/ocw8.05/E2/4.tex
+) (/home/hina/PycharmProjects/ocw8.05/E2/3.tex) (/home/hina/PycharmProjects/ocw8.05/E2/4.tex
 
 LaTeX Warning: Command \texttildelow invalid in math mode on input line 13.
 
 
 LaTeX Warning: Command \texttildelow invalid in math mode on input line 13.
 
-[63]) (/home/hina/PycharmProjects/ocw8.05/E2/5.tex) [64]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 103.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 103.
+[62]) (/home/hina/PycharmProjects/ocw8.05/E2/5.tex) [63]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 105.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 105.
  (/home/hina/PycharmProjects/ocw8.05/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 103.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 103.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 105.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 105.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 218ACE6369DD873FBCCEF7B865B8A0BD;540.
  ) 
 Here is how much of TeX's memory you used:
- 34675 strings out of 481239
- 826577 string characters out of 5920378
+ 34756 strings out of 481239
+ 827667 string characters out of 5920378
  1299009 words of memory out of 5000000
- 48826 multiletter control sequences out of 15000+600000
+ 48827 multiletter control sequences out of 15000+600000
  543875 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,11n,99p,974b,1530s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 67i,15n,99p,974b,1530s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on /home/hina/PycharmProjects/ocw8.05/main.pdf (64 pages, 629950 bytes).
+Output written on /home/hina/PycharmProjects/ocw8.05/main.pdf (63 pages, 631713 bytes).
 PDF statistics:
- 759 PDF objects out of 1000 (max. 8388607)
- 656 compressed objects within 7 object streams
- 332 named destinations out of 1000 (max. 500000)
+ 851 PDF objects out of 1000 (max. 8388607)
+ 748 compressed objects within 8 object streams
+ 410 named destinations out of 1000 (max. 500000)
  131 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,47 +1,43 @@
 \begin{sol}
 The expectation value of the spin operator on the arbitrary spin state can be calculated separately. As the arbitrary spin state and the spin operators are known in the orthonormal z basis
-        \[
-            \ket{n;+}=\begin{pmatrix} \cos\left( \frac{\theta}{2} \right) \\e^{i\phi}\sin\left( \frac{\theta}{2} \right)  \end{pmatrix} 
-        \] 
-        \[
-            \left<\hat{S}_x \right> = \bra{n;+}\hat{S}_x\ket{n;+}=\frac{1}{2}\begin{pmatrix} \cos\left( \frac{\theta}{2} \right)&e^{-i\phi}\sin\left( \frac{\theta}{2} \right)   \end{pmatrix} 
+    \begin{equation}
+        \ket{n;+}=\begin{pmatrix} \cos\left( \frac{\theta}{2} \right) \\e^{i\phi}\sin\left( \frac{\theta}{2} \right)  \end{pmatrix} 
+    \end{equation}
+    \begin{equation}
+        \begin{aligned}
+            \left<\hat{S}_x \right> &= \bra{n;+}\hat{S}_x\ket{n;+}=\frac{1}{2}\begin{pmatrix} \cos\left( \frac{\theta}{2} \right)&e^{-i\phi}\sin\left( \frac{\theta}{2} \right)   \end{pmatrix} 
             \begin{pmatrix} 0&1\\1&0 \end{pmatrix}
-            \begin{pmatrix} \cos\left( \frac{\theta}{2} \right)\\e^{i\phi}\sin\left( \frac{\theta}{2} \right)   \end{pmatrix}     
-        \]
-        \[
-            =\frac{1}{2}\cos\left( \frac{\theta}{2} \right)\sin\left( \frac{\theta}{2} \right)\left(e^{i\phi}+e^{-i\phi}\right)=\frac{1}{2}\sin\theta\cos\phi  
-        \]
-        \[
-            \left<\hat{S}_y \right> = \bra{n;+}\hat{S}_y\ket{n;+}=\frac{1}{2}\begin{pmatrix} \cos\left( \frac{\theta}{2} \right) & e^{-i\phi}\sin\left( \frac{\theta}{2} \right)  \end{pmatrix}
-            \begin{pmatrix} 0&-i\\i&0 \end{pmatrix}\begin{pmatrix} \cos\left( \frac{\theta}{2} \right) \\ e^{i\phi}\sin\left( \frac{\theta}{2} \right)  \end{pmatrix}  
-        \]     
-            \[
-                =-\frac{i}{2}\cos\left( \frac{\theta}{2} \right)\sin\left( \frac{\theta}{2} \right)\left( e^{i\phi}-e^{-i\phi} \right)=\frac{1}{2}\sin\theta\sin\phi   
-            \] 
-        \[
-            \left<\hat{S}_z \right> = \bra{n;+}\hat{S}_z\ket{n;+}=\frac{1}{2}\begin{pmatrix} \cos\left( \frac{\theta}{2} \right)& e^{-i\phi}\sin\left( \frac{\theta}{2} \right)  \end{pmatrix} 
-            \begin{pmatrix} 1&0\\0&-1 \end{pmatrix}\begin{pmatrix} \cos\left( \frac{\theta}{2} \right)\\e^{i\phi}\sin\left( \frac{\theta}{2} \right)   \end{pmatrix}
-        \] 
-        \[
-            =\frac{1}{2}\left(\cos^2\left( \frac{\theta}{2} \right)-\sin^2\left( \frac{\theta}{2} \right)\right)=\frac{1}{2}\cos\theta  
-        \]         
-        The vector expectation value can be written as
-        \[
-            \left<\mathbf{S} \right>_\mathbf{n}\equiv\begin{pmatrix} \left<S_x \right>\\\left<S_y \right>\\\left<S_z \right> \end{pmatrix} =\frac{1}{2}\begin{pmatrix} \sin\theta\cos\phi\\ \sin\theta\sin\phi \\ \cos\theta \end{pmatrix} 
-        \] 
-        Given another unit vector $\mathbf{n'}$, the expectation value $\left<\mathbf{S}\cdot\mathbf{n'} \right>_\mathbf{n}$ can be computed by taking the dot product between the new normal vector and the spin expectation vector
-        \[
-            \left<\mathbf{S}\cdot\mathbf{n'} \right>_\mathbf{n}\equiv \left<S_x \right>n'_x+\left<S_y \right>n'_y+\left<S_z \right>n'_z=\left<\mathbf{S} \right>_\mathbf{n}\cdot\mathbf{n'}
-        \] 
-            \[
-             =\frac{1}{2}\left(\sin\theta\cos\phi n'_x+\sin\theta\sin\phi n'_y+\cos\theta n'_z\right)
-            \] 
-        In spherical coordinates, $\mathbf{n'}$ can be written as a function of the two angles $\theta'$ and $\phi'$.
-        \[
-        \left<\mathbf{S}\cdot\mathbf{n'} \right>_\mathbf{n}=\frac{1}{2}\left(\sin\theta\cos\phi\sin\theta'\cos\phi'+\sin\theta\sin\phi\sin\theta'\sin\phi'+\cos\theta\cos\theta'\right)
-        \] 
-        \[
-            =\frac{1}{2}\left(\sin\theta\sin\theta'\cos\left(\phi-\phi' \right) + \cos\theta\cos\theta'\right)=\frac{1}{2}\mathbf{n}\cdot\mathbf{n'}
-        \] 
-
+            \begin{pmatrix} \cos\left( \frac{\theta}{2} \right)\\e^{i\phi}\sin\left( \frac{\theta}{2} \right)   \end{pmatrix}\\
+            &=\frac{1}{2}\cos\left( \frac{\theta}{2} \right)\sin\left( \frac{\theta}{2} \right)\left(e^{i\phi}+e^{-i\phi}\right)=\frac{1}{2}\sin\theta\cos\phi  
+        \end{aligned}
+    \end{equation}
+    \begin{equation}
+        \begin{aligned}
+            \left<\hat{S}_y \right> &= \bra{n;+}\hat{S}_y\ket{n;+}=\frac{1}{2}\begin{pmatrix} \cos\left( \frac{\theta}{2} \right) & e^{-i\phi}\sin\left( \frac{\theta}{2} \right)  \end{pmatrix}
+            \begin{pmatrix} 0&-i\\i&0 \end{pmatrix}\begin{pmatrix} \cos\left( \frac{\theta}{2} \right) \\ e^{i\phi}\sin\left( \frac{\theta}{2} \right)  \end{pmatrix}\\
+            &=-\frac{i}{2}\cos\left( \frac{\theta}{2} \right)\sin\left( \frac{\theta}{2} \right)\left( e^{i\phi}-e^{-i\phi} \right)=\frac{1}{2}\sin\theta\sin\phi
+        \end{aligned}
+    \end{equation}
+    \begin{equation}
+        \begin{aligned}
+            \left<\hat{S}_z \right> &= \bra{n;+}\hat{S}_z\ket{n;+}=\frac{1}{2}\begin{pmatrix} \cos\left( \frac{\theta}{2} \right)& e^{-i\phi}\sin\left( \frac{\theta}{2} \right)  \end{pmatrix} 
+            \begin{pmatrix} 1&0\\0&-1 \end{pmatrix}\begin{pmatrix} \cos\left( \frac{\theta}{2} \right)\\e^{i\phi}\sin\left( \frac{\theta}{2} \right)   \end{pmatrix}\\
+            &=\frac{1}{2}\left(\cos^2\left( \frac{\theta}{2} \right)-\sin^2\left( \frac{\theta}{2} \right)\right)=\frac{1}{2}\cos\theta  
+        \end{aligned}
+    \end{equation}  
+    The vector expectation value can be written as
+    \begin{equation}
+        \left<\mathbf{S} \right>_\mathbf{n}\equiv\begin{pmatrix} \left<S_x \right>\\\left<S_y \right>\\\left<S_z \right> \end{pmatrix} =\frac{1}{2}\begin{pmatrix} \sin\theta\cos\phi\\ \sin\theta\sin\phi \\ \cos\theta \end{pmatrix}
+    \end{equation}
+    Given another unit vector $\mathbf{n'}$, the expectation value $\left<\mathbf{S}\cdot\mathbf{n'} \right>_\mathbf{n}$ can be computed by taking the dot product between the new normal vector and the spin expectation vector
+    \begin{equation}
+        \left<\mathbf{S}\cdot\mathbf{n'} \right>_\mathbf{n}\equiv \left<S_x \right>n'_x+\left<S_y \right>n'_y+\left<S_z \right>n'_z=\left<\mathbf{S} \right>_\mathbf{n}\cdot\mathbf{n'}=\frac{1}{2}\left(\sin\theta\cos\phi n'_x+\sin\theta\sin\phi n'_y+\cos\theta n'_z\right)
+    \end{equation}
+    In spherical coordinates, $\mathbf{n'}$ can be written as a function of the two angles $\theta'$ and $\phi'$.
+    \begin{equation}
+        \begin{aligned}
+            \left<\mathbf{S}\cdot\mathbf{n'} \right>_\mathbf{n}&=\frac{1}{2}\left(\sin\theta\cos\phi\sin\theta'\cos\phi'+\sin\theta\sin\phi\sin\theta'\sin\phi'+\cos\theta\cos\theta'\right)\\
+            &=\frac{1}{2}\left(\sin\theta\sin\theta'\cos\left(\phi-\phi' \right) + \cos\theta\cos\theta'\right)=\frac{1}{2}\mathbf{n}\cdot\mathbf{n'}
+        \end{aligned}
+    \end{equation}
 \end{sol}

@@ -2,9 +2,21 @@
 \begin{enumerate}[label=\textbf{(\alph*)}]
 	\item
     Equation 2.138 (\textit{Griffiths}) states that $\tan(z)=\sqrt{(\frac{z_0}{z})^2-1}$ can be obtained. This is a necessary condition for even solutions of the finite square well. The odd solutions must satisfy $\cot(z)=\sqrt{(\frac{z_0}{z})^2-1}$. Let $Z_1$ be a set of energies z that satisfies equation 2.138. Let $z_{max}$ be the maximal element of $Z_1$, which must satisfy equation 2.138
-    $$\tan(z_{max})=\sqrt{(\frac{z_0}{z_{max}})^2-1}$$ Several conclusions can be drawn from this equation. Firstly, $z_{max}<z_0$ otherwise the right hand side will be imaginary. Secondly, for $z_{max}\approx z_0$, $\tan(z_{max})\approx 0$. Thus, $z_{max}\approx\pi N$, where N is a integer. Thirdly, for each interval $z\in(\pi (M-1), \pi M)$ for positive integer values of M, there exist exactly one solution to equation 2.138. Thus, the total amount of even bound states  for $z_{max}>>0$ is  $\frac{1}{\pi}z_{max}$.\\Since $\cot(x)=-\tan(\frac{\pi}{2}-x)$, the odd solutions behave in a similar manner to the even solutions for $z_{max}>>0$, therefore, the total number of solutions is $\frac{2}{\pi}z_{max}$.
+    \begin{equation}
+        \tan(z_{max})=\sqrt{\left(\frac{z_0}{z_{max}}\right)^2-1}
+    \end{equation}
+    Several conclusions can be drawn from this equation. Firstly, $z_{max}<z_0$ otherwise the right hand side will be imaginary. Secondly, for $z_{max}\approx z_0$, $\tan(z_{max})\approx 0$. Thus, $z_{max}\approx\pi N$, where N is a integer. Thirdly, for each interval $z\in(\pi (M-1), \pi M)$ for positive integer values of M, there exist exactly one solution to equation 2.138. Thus, the total amount of even bound states  for $z_{max}>>0$ is  $\frac{1}{\pi}z_{max}$.\\Since $\cot(x)=-\tan(\frac{\pi}{2}-x)$, the odd solutions behave in a similar manner to the even solutions for $z_{max}>>0$, therefore, the total number of solutions is $\frac{2}{\pi}z_{max}$.
     \\Since $z=a\sqrt{2m(E+V_0)}$, $z_{max}\approx \sqrt{2ma^2V_0}$. Thus, the total number of bound states of a particle of mass $m$ in the finite square well with the given parameters is $\displaystyle{\sqrt{\frac{8ma^2V_0}{\pi^2}}}$ .
     \item For shallow well, equation 2.138 must still be satisfied. Since $z<z_0$, a shallow well would also imply a small $z$. As a result of Taylor's theorem, $\tan(z)\approx z$ for small $z$. Thus, equation 2.138 can be well approximated by
-    $$z^2=(\frac{z_0}{z})^2-1$$ Solving for $z^2$ for the quadratic equation leads to $$z^2=\frac{1}{2}(\pm\sqrt{1+4z_0 ^2}-1)=2ma^2(E+V_0) $$ $$E=\frac{\sqrt{1+4z_0 ^2}-1}{4ma^2}-V_0=\frac{V_0}{2z_0^2}(\sqrt{1+4z_0 ^2}-2z_0^2-1)$$
+    \begin{equation}
+        z^2=(\frac{z_0}{z})^2-1
+    \end{equation}
+    Solving for $z^2$ for the quadratic equation leads to 
+    \begin{equation}
+        z^2=\frac{1}{2}(\pm\sqrt{1+4z_0 ^2}-1)=2ma^2(E+V_0)
+    \end{equation}
+    \begin{equation}
+        E=\frac{\sqrt{1+4z_0 ^2}-1}{4ma^2}-V_0=\frac{V_0}{2z_0^2}(\sqrt{1+4z_0 ^2}-2z_0^2-1)
+    \end{equation}
 \end{enumerate}
 \end{sol}

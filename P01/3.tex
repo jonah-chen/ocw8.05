@@ -4,13 +4,23 @@
 	
 	\item
 	Given a a state $\ket\psi$ that is subject to the potential $V(x)=-V_0a\delta(x)$. The state must obey the time-independent Schrodinger's equation, which can be rewritten in the following form.
-	$$d\psi'=2m(-V_0a\delta(x)-E)\psi dx$$
-	The discontinuity of the first derivative $\Delta\psi'(0)=\psi'(0^+)-\psi'(0^-)$. This quantity can be computed in the by integrating the time-independent Schrodinger's equation.
-	$$\lim_{\epsilon \to 0}\int_{-\epsilon}^{\epsilon}d\psi'=
-	\lim_{\epsilon \to 0}\int_{-\epsilon}^{\epsilon}2m(-V_0a\delta(x)-E)\psi dx$$
-	$$\Delta\psi'(0)=-2mV_0a\psi(0)$$
+    \begin{equation}
+        d\psi'=2m(-V_0a\delta(x)-E)\psi dx  
+    \end{equation}
+    
+    The discontinuity of the first derivative $\Delta\psi'(0)=\psi'(0^+)-\psi'(0^-)$. This quantity can be computed in the by integrating the time-independent Schrodinger's equation.
+    \begin{equation}
+        \lim_{\epsilon \to 0}\int_{-\epsilon}^{\epsilon}d\psi'=
+        \lim_{\epsilon \to 0}\int_{-\epsilon}^{\epsilon}2m(-V_0a\delta(x)-E)\psi dx
+    \end{equation}
+    \begin{equation}
+        \Delta\psi'(0)=-2mV_0a\psi(0)
+    \end{equation}
+    
 	As the delta functions are completely localized, this result can be applied to all three delta functions.
-	$$\Delta\psi'(\pm a)=-2mV_0a\psi(\pm a)$$
+	\begin{equation}
+        \Delta\psi'(\pm a)=-2mV_0a\psi(\pm a)
+    \end{equation}
 	\\
 	\item
 	Note: Bound states of the potential $V(x)=-V_0a\displaystyle{\sum_{n=-1}^1\delta(x-na)}$ must have $E<0$. \\
@@ -24,20 +34,30 @@
     \item 
 	For arbitrarily large $V_0$ there are three bound states. Unfortunately, I cannot draw with \LaTeX    \item
     For the anti-symmetric bound state, the time-independent Schrodinger's equation can be solved in the three regions where the potential is constant. The normalizability and parity conditions can be imposed to reduce the solution to three terms, where $\alpha>0$, $-E=\frac{\alpha^2}{2m}$.
-    $$\psi(x)=A(-\exp(\alpha x)\Theta(-a-x)+\exp(-\alpha x)\Theta(x-a))+B\sinh(\alpha x)\Theta(x+a)\Theta(a-x)$$
-    
+    \begin{equation}
+        \psi(x)=A(-\exp(\alpha x)\Theta(-a-x)+\exp(-\alpha x)\Theta(x-a))+B\sinh(\alpha x)\Theta(x+a)\Theta(a-x)
+    \end{equation}
     Since the solution is anti-symmetric, it suffices to impose the boundary conditions at one point, $x=a$.
     $\psi(a^+)=\psi(a^-)$, and $\psi'(a^+)-\psi'(a^-)=-2mV_0a\psi(a)$.
-    $$B\sinh(\alpha a)=A\exp(-\alpha a)$$
-$$-\alpha A \exp(-\alpha a)-\alpha B\cosh(\alpha a)=-2mV_0aB\sinh(\alpha a)$$
-    The system of equations can be  simplified
+    \begin{align}
+        B\sinh(\alpha a)&=A\exp(-\alpha a)\\
+        -\alpha A \exp(-\alpha a)-\alpha B\cosh(\alpha a)&=-2mV_0aB\sinh(\alpha a)
+    \end{align}
     
-    $$(2mV_0a-\alpha)\sinh(\alpha a)=\alpha \cosh(\alpha a)$$
-   $$2mV_0a=\alpha+\alpha\coth(\alpha a)$$
+    The system of equations can be  simplified
+    \begin{equation}
+        \begin{aligned}
+            (2mV_0a-\alpha)\sinh(\alpha a)&=\alpha \cosh(\alpha a)\\
+            2mV_0a&=\alpha+\alpha\coth(\alpha a)
+        \end{aligned}
+    \end{equation}
+    
    For energies near the top of the well, $\alpha\approx 0$,
-   $$2mV_0a\approx\frac{1}{a}$$
-   $$V_0\approx\frac{1}{2ma^2}$$
-   
-	
+   \begin{equation}
+       \begin{aligned}
+            2mV_0a&\approx\frac{1}{a}\\
+            V_0&\approx\frac{1}{2ma^2}
+       \end{aligned}
+   \end{equation}	
 \end{enumerate}
 \end{sol}

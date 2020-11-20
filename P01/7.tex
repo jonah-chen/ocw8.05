@@ -1,31 +1,45 @@
 \begin{sol}
 \begin{enumerate}[label=\textbf{(\alph*)}]
 \item
-It is known that the initial wave-function: the ground state of an infinite square well with width $L$ is 
-$$\Psi(x)=\sqrt{\frac{2}{L}}sin(\frac{\pi x}{L}),x\in(0,L)$$
+It is known that the initial wave-function: the ground state of an infinite square well with width $L$ is
+\begin{equation}
+    \Psi(x)=\sqrt{\frac{2}{L}}\sin(\frac{\pi x}{L}),x\in(0,L)
+\end{equation}
 The set of energy eigenstates of the an infinite square well with width $2L$ is
-$$\psi_n(x)=\sqrt{\frac{1}{L}}sin(\frac{n\pi x}{2L}),x\in(0,2L)$$
+\begin{equation}
+    \psi_n(x)=\sqrt{\frac{1}{L}}\sin(\frac{n\pi x}{2L}),x\in(0,2L)
+\end{equation}
 Notice the energy eigenvalues are $\displaystyle{E_n=\frac{n^2\pi^2}{4mL^2}}$\\
 The probability to measure a particular energy is the norm-squared inner product of the wave-function and the energy eigenstate associated with that energy. 
-$$\braket{\psi_n}{\Psi}=\frac{\sqrt 2}{L}\int_0^{L}\sin(\frac{\pi x}{L})\sin(\frac{n\pi x}{2L})dx$$ 
+\begin{equation}
+    \braket{\psi_n}{\Psi}=\frac{\sqrt 2}{L}\int_0^{L}\sin(\frac{\pi x}{L})\sin(\frac{n\pi x}{2L})dx
+\end{equation}
 Notice the limits of integration are $0$ to $L$, since the initial wave-function $\Psi(x)$ is zero for $x>L$.\\
 A change of variables $y=\frac{\pi x}{L}$ can be made to yield
-$$\braket{\psi_n}{\Psi}=\frac{\sqrt 2}{\pi}\int_0^{\pi}\sin(y)\sin(\frac{n}{2}y)dy$$
-$$=\frac{4\sqrt 2 \sin(\frac{n\pi}{2})}{(4-n^2)\pi}$$
+\begin{equation}
+    \braket{\psi_n}{\Psi}=\frac{\sqrt 2}{\pi}\int_0^{\pi}\sin(y)\sin(\frac{n}{2}y)dy=\frac{4\sqrt 2 \sin(\frac{n\pi}{2})}{(4-n^2)\pi}
+\end{equation}
 Taking the norm squared of the inner product yields
-$$P_n=|\braket{\psi_n}{\Psi}|^2=\frac{32\sin^2(\frac{n\pi}{2})}{(4-n^2)^2\pi^2}$$
+\begin{equation}
+    P_n=|\braket{\psi_n}{\Psi}|^2=\frac{32\sin^2(\frac{n\pi}{2})}{(4-n^2)^2\pi^2}
+\end{equation}
 It is trivial that the probability of measuring a state with even $n$ is zero except for $n=2$. Using L'Hospital's rule, it can be found that $P_2=\frac{1}{2}$.\\
 
 The probability of measuring a state with odd $n$ is
-$$P_n=\frac{32}{\pi^2(4-n^2)^2}$$ 
+\begin{equation}
+    P_n=\frac{32}{\pi^2(4-n^2)^2}
+\end{equation}
 Decomposing this state in full generality, it can be concluded that the most probable result is $n=2$, corresponding to the energy $\displaystyle{E=\frac{\pi^2}{mL^2}}$ with the probability of $\displaystyle{\frac{1}{2}}$.
 \item
 From the previous result, the next most probable measured energy is that of the ground state, $\displaystyle{E_1=\frac{\pi^2}{4mL^2}}$ with the probability $\displaystyle{\frac{32}{9\pi^2}}$.
 \item
 The expectation value of the energy is also the expectation value of the hamiltonian.
-$$\langle\hat{H}\rangle=\bra{\Psi}\hat{H}\ket{\Psi}=\frac{2}{L}\int_0^L\sin(\frac{\pi x}{L})\frac{-1}{2m}\frac{d^2}{dx^2}\sin(\frac{\pi x}{L})dx$$ $$=\frac{\pi^2}{mL^3}\int_0^L\sin^2(\frac{\pi x}{L})dx$$
+\begin{equation}
+    \langle\hat{H}\rangle=\frac{2}{L}\int_0^L\sin(\frac{\pi x}{L})\frac{-1}{2m}\frac{d^2}{dx^2}\sin(\frac{\pi x}{L})dx=\frac{\pi^2}{mL^3}\int_0^L\sin^2(\frac{\pi x}{L})dx
+\end{equation}
 The substitution $y=\frac{\pi x}{L}$ can be made to yield the following integral, whose value is listed in a table to be $\frac{\pi}{2}$.
-$$\langle\hat{H}\rangle=\frac{\pi}{mL^2}\int_0^\pi\sin^2(y)dy=\frac{\pi^2}{2mL^2}$$
-
+\begin{equation}
+    \langle\hat{H}\rangle=\frac{\pi}{mL^2}\int_0^\pi\sin^2(y)dy=\frac{\pi^2}{2mL^2}
+\end{equation}
 \end{enumerate}
 \end{sol}
