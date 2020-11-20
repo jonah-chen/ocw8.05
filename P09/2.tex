@@ -2,20 +2,16 @@
         \begin{enumerate}[label=\textbf{(\alph*)}]
             \item
             The rotation operator can be expanded into its series
-            \[
-                R_\epsilon(\mathbf{n})=\exp\left(- i\epsilon\mathbf{n}\cdot\mathbf{S} \right)=1-i\epsilon\mathbf{n}\cdot\mathbf{S}+\mathcal{O}\left( \epsilon^2 \right) \:\:\:\:\:\: 
-                R_\epsilon^\dagger(\mathbf{n})=\exp\left( -i\epsilon\mathbf{n}\cdot\mathbf{S} \right)=1+i\epsilon\mathbf{n}\cdot\mathbf{S}+\mathcal{O}\left( \epsilon^2 \right)  
-            \]
-            \[
-                R_\epsilon^\dagger(\mathbf{n})\mathbf{S}R_\epsilon^\dagger(\mathbf{n})=\mathbf{S}+i\epsilon\mathbf{n\cdot S}\mathbf{S}-i\epsilon\mathbf{Sn\cdot S}
-            \] 
-            \[
-                =\mathbf{S}+i\epsilon[\mathbf{n\cdot S},\mathbf{S}]=\mathbf{S}+\epsilon(\mathbf{n}\times\mathbf{S})
-            \] 
+            \begin{align}
+                R_\epsilon(\mathbf{n})&=\exp\left(- i\epsilon\mathbf{n}\cdot\mathbf{S} \right)=1-i\epsilon\mathbf{n}\cdot\mathbf{S}+\mathcal{O}\left( \epsilon^2 \right)\\
+                R_\epsilon^\dagger(\mathbf{n})&=\exp\left( -i\epsilon\mathbf{n}\cdot\mathbf{S} \right)=1+i\epsilon\mathbf{n}\cdot\mathbf{S}+\mathcal{O}\left( \epsilon^2 \right)\\
+                R_\epsilon^\dagger(\mathbf{n})\mathbf{S}R_\epsilon^\dagger(\mathbf{n})&=\mathbf{S}+i\epsilon\mathbf{n\cdot S}\mathbf{S}-i\epsilon\mathbf{Sn\cdot S}=\mathbf{S}+i\epsilon[\mathbf{n\cdot S},\mathbf{S}]=\mathbf{S}+\epsilon(\mathbf{n}\times\mathbf{S})
+            \end{align}
         \item
-            \[
-                \bra{\mathbf{n'};+}R_\epsilon^\dagger(\mathbf{n})\mathbf{S}R_\epsilon(\mathbf{n})\ket{\mathbf{n'};+} = 
-            .\] 
-
+            The expectation value of the rotated state obtained by the rotation operator (up to first order in $\epsilon$) acting on the unrotated spin state $\ket{\mathbf{n'};+}$ yields the two terms.
+            \begin{equation}
+                \bra{\mathbf{n'};+}R_\epsilon^\dagger(\mathbf{n})\mathbf{S}R_\epsilon(\mathbf{n})\ket{\mathbf{n'};+} = \bra{\mathbf{n'};+}\mathbf{S}\ket{\mathbf{n'};+}+\epsilon\bra{\mathbf{n'};+}\mathbf{n}\times\mathbf{S}\ket{\mathbf{n'};+}
+            \end{equation}
+            Note that the first term represents the expectation value of spin for the unrotated spin state $\ket{\mathbf{n'};+}$ in the same direction as $\mathbf S$, and the second term represent a small contribution of the expectation value for the same state in the perpindicular direction as $\mathbf{S}$, as denoted by the cross product. Thus, the rotation operator does indeed rotate the spin state about the normal vector $\mathbf{n}$.
         \end{enumerate}
     \end{sol}    
