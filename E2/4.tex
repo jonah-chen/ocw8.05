@@ -4,9 +4,15 @@
 Since $\frac{x}{L}$ is dimensionless, dimensional analysis would estimate the ground state energy to be in the vicinity of $\frac{1}{mL^2}$
 \item
 For variational analysis, 
-$$E_gs\leq\bra\psi\hat H\ket\psi=\frac{1}{2m}\int_{-\infty}^\infty \psi(x)\left(-\frac{d^2}{dx^2}+\frac{x^{2n}}{L^{2n+2}}\right)\psi(x)dx$$
+\begin{equation}
+	E_gs\leq\bra\psi\hat H\ket\psi=\frac{1}{2m}\int_{-\infty}^\infty \psi(x)\left(-\frac{d^2}{dx^2}+\frac{x^{2n}}{L^{2n+2}}\right)\psi(x)dx
+\end{equation}
 Let $y=bx$, then $dx=dy/b$ and $x=y/b$
-$$=\frac{1}{2mb^{2n+1}L^{2n+2}}\int_{-\infty}^\infty y^{2n}e^{-2y^2}dy+\frac{b}{m}\int_{-\infty}^\infty e^{-2y^2}dy-\frac{2b}{m}\int_{-\infty}^\infty y^2e^{-2y^2}dy$$ $$=\frac{b}{m}\left(\frac{c_{2n}}{2(bL)^{2n+2}}+c_0-2c_1\right)$$
+\begin{equation}
+	=\frac{1}{2mb^{2n+1}L^{2n+2}}\int_{-\infty}^\infty y^{2n}e^{-2y^2}dy+\frac{b}{m}\int_{-\infty}^\infty e^{-2y^2}dy-\frac{2b}{m}\int_{-\infty}^\infty y^2e^{-2y^2}dy
+\end{equation} \begin{equation}
+	=\frac{b}{m}\left(\frac{c_{2n}}{2(bL)^{2n+2}}+c_0-2c_1\right)
+\end{equation}
 \item
 As $n\to\infty$, the potential looks like a infinite square well. Thus, it would be expected that for sufficiently large $n$, the ground state energy would be that of the infinite square well with width $2L$.
 \item

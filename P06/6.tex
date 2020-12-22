@@ -2,19 +2,35 @@
 \begin{enumerate}[label=\textbf{(\alph*)}]
 \item
 Define the operators
-$$\hat a_x=\sqrt{\frac{m\omega_x}{2}}\left(\hat x+\frac{i\hat p_x}{m\omega_x}\right)\:\:\:\:\:\hat a_y=\sqrt{\frac{m\omega_y}{2}}\left(\hat y+\frac{i\hat p_y}{m\omega_y}\right)$$ 
-$$\hat a_x^\dagger=\sqrt{\frac{m\omega_x}{2}}\left(\hat x-\frac{i\hat p_x}{m\omega_x}\right)\:\:\:\:\:\hat a_y^\dagger=\sqrt{\frac{m\omega_y}{2}}\left(\hat y-\frac{i\hat p_y}{m\omega_y}\right)$$ 
-$$\hat N_x=\hat a_x^\dagger\hat a_x\:\:\:\:\:\:\:\:\:\:\hat N_y=\hat a_y^\dagger\hat a_y$$ 
+\begin{equation}
+	\hat a_x=\sqrt{\frac{m\omega_x}{2}}\left(\hat x+\frac{i\hat p_x}{m\omega_x}\right)\:\:\:\:\:\hat a_y=\sqrt{\frac{m\omega_y}{2}}\left(\hat y+\frac{i\hat p_y}{m\omega_y}\right)
+\end{equation} 
+\begin{equation}
+	\hat a_x^\dagger=\sqrt{\frac{m\omega_x}{2}}\left(\hat x-\frac{i\hat p_x}{m\omega_x}\right)\:\:\:\:\:\hat a_y^\dagger=\sqrt{\frac{m\omega_y}{2}}\left(\hat y-\frac{i\hat p_y}{m\omega_y}\right)
+\end{equation} 
+\begin{equation}
+	\hat N_x=\hat a_x^\dagger\hat a_x\:\:\:\:\:\:\:\:\:\:\hat N_y=\hat a_y^\dagger\hat a_y
+\end{equation} 
 The commutators $[a_x,a_x^\dagger]=[a_y,a_y^\dagger]=\mathbf 1$.\\
 The Hamiltonian for the system is 
-$$\hat H=\frac{\hat p_x^2}{2m}+\frac{\hat p_y^2}{2m}+\frac{m\omega_x^2\hat x^2}{2}+\frac{m\omega_y^2\hat y^2}{2}$$
+\begin{equation}
+	\hat H=\frac{\hat p_x^2}{2m}+\frac{\hat p_y^2}{2m}+\frac{m\omega_x^2\hat x^2}{2}+\frac{m\omega_y^2\hat y^2}{2}
+\end{equation}
 Factor the Hamiltonian by grouping
-$$\hat H=\frac{m\omega_x^2}{2}\left(\hat x^2+\frac{\hat p_x^2}{m^2\omega_x^2}\right)+\frac{m\omega_y^2}{2}\left(\hat y^2+\frac{\hat p_y^2}{m^2\omega_y^2}\right)$$
-$$=\omega_x\left(\hat a_x^\dagger\hat a_x+\frac{1}{2}\right)+\omega_y\left(\hat a_y^\dagger\hat a_y+\frac{1}{2}\right)=\omega_x\left(\hat N_x+\frac{1}{2}\right)+\omega_y\left(\hat N_y+\frac{1}{2}\right)$$ 
+\begin{equation}
+	\hat H=\frac{m\omega_x^2}{2}\left(\hat x^2+\frac{\hat p_x^2}{m^2\omega_x^2}\right)+\frac{m\omega_y^2}{2}\left(\hat y^2+\frac{\hat p_y^2}{m^2\omega_y^2}\right)
+\end{equation}
+\begin{equation}
+	=\omega_x\left(\hat a_x^\dagger\hat a_x+\frac{1}{2}\right)+\omega_y\left(\hat a_y^\dagger\hat a_y+\frac{1}{2}\right)=\omega_x\left(\hat N_x+\frac{1}{2}\right)+\omega_y\left(\hat N_y+\frac{1}{2}\right)
+\end{equation} 
 The time independent Schrodinger's equation for this system is a separable equation in $x$ and $y$, thus, an energy eigenstate must be simultaneous eigenfunctions of $\hat N_x$ and $\hat N_y$. These states can be labelled with two quantum numbers $n$ and $l$ respectively. \\
-The eigenstates must be well behaved. Since this system is analogous to two one-dimensional simple harmonic oscillators, there must exist a vacuum state $\ket{00}:\hat a_x\ket{00}=\mathbf 0,\hat a_y\ket{00}=\mathbf 0$. In a similar manner, the eigenstate $$\ket {nl}=\frac{1}{\sqrt{n!l!}}(\hat a_x^\dagger)^{n_x}(\hat a_y^\dagger)^{n_y}\ket{00}$$
+The eigenstates must be well behaved. Since this system is analogous to two one-dimensional simple harmonic oscillators, there must exist a vacuum state $\ket{00}:\hat a_x\ket{00}=\mathbf 0,\hat a_y\ket{00}=\mathbf 0$. In a similar manner, the eigenstate \begin{equation}
+	\ket {nl}=\frac{1}{\sqrt{n!l!}}(\hat a_x^\dagger)^{n_x}(\hat a_y^\dagger)^{n_y}\ket{00}
+\end{equation}
 The energy of the state $\ket{n_xn_y}$ will be 
-$$E_{nl}=\omega_x\left(n_x+\frac{1}{2}\right)+\omega_y\left(n_y+\frac{1}{2}\right)$$
+\begin{equation}
+	E_{nl}=\omega_x\left(n_x+\frac{1}{2}\right)+\omega_y\left(n_y+\frac{1}{2}\right)
+\end{equation}
 \item
 With the states labelled $\ket{n_xn_y}$, the case $\omega_x=\omega_y$ on the left, and $\omega_x>>\omega_z$ on the right. 
 \begin{center}
@@ -52,9 +68,13 @@ With the states labelled $\ket{n_xn_y}$, the case $\omega_x=\omega_y$ on the lef
 \end{center}
 \item
 Define the operators
-$$\hat N=\hat N_x+\hat N_y\:\:\:\:\:\:\:\:\:\:\:\hat n=\hat N_x-\hat N_y$$
+\begin{equation}
+	\hat N=\hat N_x+\hat N_y\:\:\:\:\:\:\:\:\:\:\:\hat n=\hat N_x-\hat N_y
+\end{equation}
 With the energy eigenstates labelled by these new eigenvalues $\ket{Nn}$
-$$E_{Nn}=\frac{\omega_x}{2}(N+n+1)+\frac{\omega_y}{2}(N-n+1)$$
+\begin{equation}
+	E_{Nn}=\frac{\omega_x}{2}(N+n+1)+\frac{\omega_y}{2}(N-n+1)
+\end{equation}
 \begin{center}
    \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
 \clip(-23.553418317641174,6.795101079060523) rectangle (-11.302431212136542,12.875976052344312);
@@ -92,32 +112,60 @@ If the spectrum is non-degenerate, all of the following are complete sets of com
 Similarly, if the ratio is rational: if $\omega_x/\omega_y=\alpha/\beta$, the states 
 \item 
 For $\omega_x=\omega_y\equiv \omega$, Evaluate the following operators
-$$a_x^\dagger a_y=\frac{m\omega}{2}\left(x-\frac{ip_x}{m\omega}\right)\left(y+\frac{ip_y}{m\omega}\right)=\frac{m\omega}{2}\left(xy+\frac{p_xp_y}{m^2\omega^2}\right)+\frac{i}{2}(xp_y-yp_x)$$
-$$a_xa_y^\dagger=\frac{m\omega}{2}\left(x+\frac{ip_x}{m\omega}\right)\left(y-\frac{ip_y}{m\omega}\right)=\frac{m\omega}{2}\left(xy+\frac{p_xp_y}{m^2\omega^2}\right)-\frac{i}{2}(xp_y-yp_x)$$
+\begin{equation}
+	a_x^\dagger a_y=\frac{m\omega}{2}\left(x-\frac{ip_x}{m\omega}\right)\left(y+\frac{ip_y}{m\omega}\right)=\frac{m\omega}{2}\left(xy+\frac{p_xp_y}{m^2\omega^2}\right)+\frac{i}{2}(xp_y-yp_x)
+\end{equation}
+\begin{equation}
+	a_xa_y^\dagger=\frac{m\omega}{2}\left(x+\frac{ip_x}{m\omega}\right)\left(y-\frac{ip_y}{m\omega}\right)=\frac{m\omega}{2}\left(xy+\frac{p_xp_y}{m^2\omega^2}\right)-\frac{i}{2}(xp_y-yp_x)
+\end{equation}
 Therefore,
-$$a_x^\dagger a_y-a_xa_y^\dagger=i(xp_y-yp_x)$$
-$$\hat L\equiv xp_y-yp_x=i(a_x a_y^\dagger-a_x^\dagger a_y) $$ 
+\begin{equation}
+	a_x^\dagger a_y-a_xa_y^\dagger=i(xp_y-yp_x)
+\end{equation}
+\begin{equation}
+	\hat L\equiv xp_y-yp_x=i(a_x a_y^\dagger-a_x^\dagger a_y) 
+\end{equation} 
 Note that for this system, the Hamiltonian is just 
-$$\hat H=\omega(a_x^\dagger a_x+a_y^\dagger a_y+1)$$ 
+\begin{equation}
+	\hat H=\omega(a_x^\dagger a_x+a_y^\dagger a_y+1)
+\end{equation} 
 Since this system has gained rotational invariance, the angular momentum must be conserved by \textit{Noether's Theorem}. Therefore, $[\hat L,\hat H]$ must be zero.
-$$[\hat L,\hat H]=i\omega\left((a_x a_y^\dagger-a_x^\dagger a_y)(a_x^\dagger a_x+a_y^\dagger a_y+1)-(a_x^\dagger a_x+a_y^\dagger a_y+1)(a_x a_y^\dagger-a_x^\dagger a_y)\right)=0$$
+\begin{equation}
+	[\hat L,\hat H]=i\omega\left((a_x a_y^\dagger-a_x^\dagger a_y)(a_x^\dagger a_x+a_y^\dagger a_y+1)-(a_x^\dagger a_x+a_y^\dagger a_y+1)(a_x a_y^\dagger-a_x^\dagger a_y)\right)=0
+\end{equation}
 \item
 Define the operators
-$$\hat a_L=\frac{1}{\sqrt{2}}(\hat a_x+ia_y),\,\,\,\,\,\,\hat a_R=\frac{1}{\sqrt{2}}(\hat a_x-i\hat a_y),\,\,\,\,\,\,\hat N_L=\hat a_L^\dagger\hat a_L,\,\,\,\,\,\,\hat N_R=\hat a_R^\dagger\hat a_R$$
+\begin{equation}
+	\hat a_L=\frac{1}{\sqrt{2}}(\hat a_x+ia_y),\,\,\,\,\,\,\hat a_R=\frac{1}{\sqrt{2}}(\hat a_x-i\hat a_y),\,\,\,\,\,\,\hat N_L=\hat a_L^\dagger\hat a_L,\,\,\,\,\,\,\hat N_R=\hat a_R^\dagger\hat a_R
+\end{equation}
 Note the following
-$$\hat N_L=\frac{1}{2}\left(\hat a_x^\dagger\hat a_x+\hat a_y^\dagger\hat a_y-i(\hat a_x\hat a_y^\dagger-\hat a_x^\dagger\hat a_y)\right)=\frac{1}{2}(\hat N_x+\hat N_y-\hat L)$$
-$$\hat N_R=\frac{1}{2}\left(\hat a_x^\dagger\hat a_x+\hat a_y^\dagger\hat a_y+i(\hat a_x\hat a_y^\dagger-\hat a_x^\dagger\hat a_y)\right)=\frac{1}{2}(\hat N_x+\hat N_y+\hat L)$$
+\begin{equation}
+	\hat N_L=\frac{1}{2}\left(\hat a_x^\dagger\hat a_x+\hat a_y^\dagger\hat a_y-i(\hat a_x\hat a_y^\dagger-\hat a_x^\dagger\hat a_y)\right)=\frac{1}{2}(\hat N_x+\hat N_y-\hat L)
+\end{equation}
+\begin{equation}
+	\hat N_R=\frac{1}{2}\left(\hat a_x^\dagger\hat a_x+\hat a_y^\dagger\hat a_y+i(\hat a_x\hat a_y^\dagger-\hat a_x^\dagger\hat a_y)\right)=\frac{1}{2}(\hat N_x+\hat N_y+\hat L)
+\end{equation}
 The angular momentum operators can be easily re-written in terms of $\hat N_L$ and $\hat N_R$.
-$$\hat L=\hat N_R-\hat N_L$$ 
+\begin{equation}
+	\hat L=\hat N_R-\hat N_L
+\end{equation} 
 The Hamiltonian can also be re-written
-$$\hat H=\omega(\hat N_x+\hat N_y+1)=\omega(\hat N_L+\hat N_R+1)$$ 
+\begin{equation}
+	\hat H=\omega(\hat N_x+\hat N_y+1)=\omega(\hat N_L+\hat N_R+1)
+\end{equation} 
 Note that all eigenstates of the Hamiltonian are eigenstates of both $\hat N_L$ and $\hat N_R$, thus the states with their eigenvalues of these operators $\ket{LR}:\hat N_L\ket{LR}=L\ket{LR},\hat N_R\ket{LR}=R\ket{LR}$ 
 The state will have the respective eigenvalues under the Hamiltonian and angular momentum operators
-$$\hat H\ket{LR}=\omega(L+R+1)\ket{LR}\equiv E\ket{LR}$$
-$$\hat L\ket{LR}=(R-L)\ket{LR}\equiv l\ket{LR}$$ 
+\begin{equation}
+	\hat H\ket{LR}=\omega(L+R+1)\ket{LR}\equiv E\ket{LR}
+\end{equation}
+\begin{equation}
+	\hat L\ket{LR}=(R-L)\ket{LR}\equiv l\ket{LR}
+\end{equation} 
 Because the set of operators $\{\hat N_L,\hat a_L\}$ and $\{\hat N_R,\hat a_R\}$ have the algebra of the operators $\{\hat N,\hat a\}$ for the one-dimensional simple harmonic oscillator, many of the same conclusion can be drawn. Firstly, the eigenstates of $\hat N_L$ or $\hat N_R$ are unique and orthogonal and $\hat a_L$ and $\hat a_R$ act as annihilation operators while their adjoint acts as creation operators.\\
 Let an energy quantum number $n\equiv\frac{E}{\omega}-1\geq 0$. Note that $L+R=\epsilon$. Since $L$ and $R$ must take integer values and $l=R-L$
-$$l=2R-n\text{ for }0\leq R\leq n$$  
+\begin{equation}
+	l=2R-n\text{ for }0\leq R\leq n
+\end{equation}  
 Thus, for a specific energy level $n$, there are $n+1$ basis states with unique angular momentum. These states are already shown to be unique and orthogonal. Since the invariant subspace for the Hamiltonian with eigenvalue $E=\omega(n+1)$ is known to be $n+1$ dimensional, the eigenstates of angular momentum must span the entire subspace. Since this fact holds for all values of the energy, $\{\hat H,\hat L\}$ is a complete set of commuting observables for the entire Hilbert space.
 \end{enumerate}
 \end{sol}

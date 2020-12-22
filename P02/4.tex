@@ -8,7 +8,9 @@ An attractive potential in one dimension $V(x)$ is a potential where:
 \item $V(x)=-|V(x)|\forall x\in\mathbb{R}$
 \item $V(x)\neq 0$ 
 \end{enumerate}
-$$\forall V(x)\implies \exists\psi(x):\left(-\frac{1}{2m}\frac{d^2}{dx^2}+V(x)\right)\psi=E\psi(x), E<0$$
+\begin{equation}
+	\forall V(x)\implies \exists\psi(x):\left(-\frac{1}{2m}\frac{d^2}{dx^2}+V(x)\right)\psi=E\psi(x), E<0
+\end{equation}
 \end{theorem}
 \begin{lemma}
 $\exists x_0:V(x_0)\equiv -2v_0<0$ 
@@ -27,21 +29,41 @@ I can't prove this just assume that it is true.
 \end{proof}
 \begin{lemma}
 Use an interval $(x_1,x_2)$ from Lemma 2, where $V(x)\leq v_0$.
-$$\bar{V}(x)\equiv v_0 \text{ for } x\in(x_1,x_2),\bar{V}(x)\equiv 0 \text{ elsewhere}$$
+\begin{equation}
+	\bar{V}(x)\equiv v_0 \text{ for } x\in(x_1,x_2),\bar{V}(x)\equiv 0 \text{ elsewhere}
+\end{equation}
 If
-$$\hat{H}\equiv -\frac{1}{2m}\frac{d^2}{dx^2}+V(x)$$
-$$\bar{H}\equiv -\frac{1}{2m}\frac{d^2}{dx^2}+\bar V(x)$$
+\begin{equation}
+	\hat{H}\equiv -\frac{1}{2m}\frac{d^2}{dx^2}+V(x)
+\end{equation}
+\begin{equation}
+	\bar{H}\equiv -\frac{1}{2m}\frac{d^2}{dx^2}+\bar V(x)
+\end{equation}
 Then
-$$\bra\psi\hat H\ket\psi\leq\bra\psi\bar H\ket\psi\forall\psi$$
+\begin{equation}
+	\bra\psi\hat H\ket\psi\leq\bra\psi\bar H\ket\psi\forall\psi
+\end{equation}
 \end{lemma}
 \begin{proof}
-$$\bra\psi\hat O\ket\psi=\int_{-\infty}^\infty\psi^*\hat O\psi dx$$
-$$\int_{-\infty}^\infty\psi^*\left(-\frac{1}{2m}\frac{d^2\psi}{dx^2}+V(x)\psi(x)\right)dx\leq\int_{-\infty}^\infty\psi^*\left(-\frac{1}{2m}\frac{d^2\psi}{dx^2}+\bar V(x)\psi(x)\right)dx$$
-$$\int_{-\infty}^\infty V(x)|\psi(x)|^2dx\leq\int_{-\infty}^\infty\bar V(x)|\psi(x)|^2dx$$
+\begin{equation}
+	\bra\psi\hat O\ket\psi=\int_{-\infty}^\infty\psi^*\hat O\psi dx
+\end{equation}
+\begin{equation}
+	\int_{-\infty}^\infty\psi^*\left(-\frac{1}{2m}\frac{d^2\psi}{dx^2}+V(x)\psi(x)\right)dx\leq\int_{-\infty}^\infty\psi^*\left(-\frac{1}{2m}\frac{d^2\psi}{dx^2}+\bar V(x)\psi(x)\right)dx
+\end{equation}
+\begin{equation}
+	\int_{-\infty}^\infty V(x)|\psi(x)|^2dx\leq\int_{-\infty}^\infty\bar V(x)|\psi(x)|^2dx
+\end{equation}
 Replacing the interval $(-\infty,\infty)$ with $(-\infty,x_1)$, $(x_1,x_2)$, and $(x_2, \infty)$ will yield:
 
-$$\int_{-\infty}^{x_1} V(x)|\psi(x)|^2dx+\int_{x_1}^{x_2} V(x)|\psi(x)|^2dx+\int_{x_2}^\infty V(x)|\psi(x)|^2dx\leq \int_{x_1}^{x_2} -v_0|\psi(x)|^2dx$$ $$\because V(x)\leq -v_0, \int_{x_1}^{x_2} V(x)|\psi(x)|^2dx\leq \int_{x_1}^{x_2} -v_0|\psi(x)|^2dx$$
-$$\therefore\int_{-\infty}^{x_1} V(x)|\psi(x)|^2dx+\int_{x_2}^\infty V(x)|\psi(x)|^2dx\leq 0$$
+\begin{equation}
+	\int_{-\infty}^{x_1} V(x)|\psi(x)|^2dx+\int_{x_1}^{x_2} V(x)|\psi(x)|^2dx+\int_{x_2}^\infty V(x)|\psi(x)|^2dx\leq \int_{x_1}^{x_2} -v_0|\psi(x)|^2dx
+\end{equation} \begin{equation}
+	\because V(x)\leq -v_0, \int_{x_1}^{x_2} V(x)|\psi(x)|^2dx\leq \int_{x_1}^{x_2} -v_0|\psi(x)|^2dx
+\end{equation}
+\begin{equation}
+	\therefore\int_{-\infty}^{x_1} V(x)|\psi(x)|^2dx+\int_{x_2}^\infty V(x)|\psi(x)|^2dx\leq 0
+\end{equation}
 This inequality must be satisfied $\because V(x)\leq 0\forall x\in\mathbb{R}$. 
 \end{proof}
 \begin{lemma}
@@ -51,29 +73,53 @@ If
 \item $\lim_{x\to a^+}f(x)=K$
 \item $\lim_{x\to a^+}f'(x)=-\infty$
 \end{enumerate}
-$$\implies\exists x_0>a:f(x_0)<K$$
+\begin{equation}
+	\implies\exists x_0>a:f(x_0)<K
+\end{equation}
 \end{lemma}
 \begin{proof}
 $\because f'(x)$ is continuous $\forall x>a$, $\exists\delta>0:f'(x)<-1\forall x\in(a,a+\delta)$\\
 $\therefore f(x)$ satisfies the hypotheses of the \textit{Mean Value Theorem} on the interval $[a,a+\delta]$\\
 Applying the \textit{Mean Value Theorem} yields
-$$f'(c)=\frac{f(a+\delta)-f(a)}{\delta}<-1$$ $$f(a+\delta)-K<-\delta$$ Let $x_0=a+\delta$ 
-$$f(x_0)<K-\delta<K$$
+\begin{equation}
+	f'(c)=\frac{f(a+\delta)-f(a)}{\delta}<-1
+\end{equation} \begin{equation}
+	f(a+\delta)-K<-\delta
+\end{equation} Let $x_0=a+\delta$ 
+\begin{equation}
+	f(x_0)<K-\delta<K
+\end{equation}
 \end{proof}
 \begin{proof}
 Let a set of trial states be
-$$\braket{x}{\psi_\alpha}=\Big(\frac{\alpha}{\pi}\Big)^\frac{1}{4}e^{-\frac{1}{2}\alpha x^2}$$
+\begin{equation}
+	\braket{x}{\psi_\alpha}=\Big(\frac{\alpha}{\pi}\Big)^\frac{1}{4}e^{-\frac{1}{2}\alpha x^2}
+\end{equation}
 The ground state energy is bounded below $\bra\psi_\alpha\hat H\ket\psi_\alpha$. Using Lemma 3, the ground state energy is also bounded below $\bra\psi_\alpha\bar H\ket\psi_\alpha$.
-$$\bra\psi_\alpha\bar H\ket\psi_\alpha=\int_{-\infty}^{\infty} \psi^*\left(-\frac{1}{2m}\frac{d^2\psi}{dx^2}-\bar V(x)\psi\right)dx$$
-$$=\int_{-\infty}^\infty\psi^*\left(-\frac{1}{2m}\frac{d^2\psi}{dx^2}\right)dx+\int_{x_1}^{x_2}-v_0\psi dx$$ 
-$$=\frac{\alpha}{4m}-\frac{v_0}{2}(\mathrm{erf}(x_2\sqrt{\alpha})-\mathrm{erf}(x_1\sqrt{\alpha}))$$ 
+\begin{equation}
+	\bra\psi_\alpha\bar H\ket\psi_\alpha=\int_{-\infty}^{\infty} \psi^*\left(-\frac{1}{2m}\frac{d^2\psi}{dx^2}-\bar V(x)\psi\right)dx
+\end{equation}
+\begin{equation}
+	=\int_{-\infty}^\infty\psi^*\left(-\frac{1}{2m}\frac{d^2\psi}{dx^2}\right)dx+\int_{x_1}^{x_2}-v_0\psi dx
+\end{equation} 
+\begin{equation}
+	=\frac{\alpha}{4m}-\frac{v_0}{2}(\mathrm{erf}(x_2\sqrt{\alpha})-\mathrm{erf}(x_1\sqrt{\alpha}))
+\end{equation} 
 Taking the partial derivative with respect to $\alpha$ 
-$$\frac{\partial}{\partial\alpha}\bra\psi_\alpha\bar H\ket\psi_\alpha=\frac{1}{4m}-\frac{v_0}{2\sqrt{\pi\alpha}}(x_2e^{-\alpha x_2^2}-x_1e^{-\alpha x_1^2})$$
+\begin{equation}
+	\frac{\partial}{\partial\alpha}\bra\psi_\alpha\bar H\ket\psi_\alpha=\frac{1}{4m}-\frac{v_0}{2\sqrt{\pi\alpha}}(x_2e^{-\alpha x_2^2}-x_1e^{-\alpha x_1^2})
+\end{equation}
 Note that the partial derivative is continuous for $x>0$. Next, take the limit as $\alpha\to 0$ where $x_2>x_1$.
-$$\lim_{\alpha\to 0}\bra\psi_\alpha\bar H\ket\psi_\alpha=0$$
-$$\lim_{\alpha\to 0}\frac{\partial}{\partial\alpha}\bra\psi_\alpha\bar H\ket\psi_\alpha=-\infty$$ 
+\begin{equation}
+	\lim_{\alpha\to 0}\bra\psi_\alpha\bar H\ket\psi_\alpha=0
+\end{equation}
+\begin{equation}
+	\lim_{\alpha\to 0}\frac{\partial}{\partial\alpha}\bra\psi_\alpha\bar H\ket\psi_\alpha=-\infty
+\end{equation} 
 Using Lemma 4, $\exists\alpha>0: \bra\psi_a\bar H\ket\psi_a<0$.
-$$\because E_0\leq\bra\psi\hat H\ket\psi\leq\bra\psi\bar H\ket\psi<0$$ 
+\begin{equation}
+	\because E_0\leq\bra\psi\hat H\ket\psi\leq\bra\psi\bar H\ket\psi<0
+\end{equation} 
 For all attractive potentials in one dimension there must exist at least one bound state.
 \end{proof}
 \end{sol}

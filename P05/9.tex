@@ -1,11 +1,23 @@
 \begin{sol}
 Because the matrices $A_1$ and $A_2$ commute, they share common eigenvectors. The unit eigenvalues of $A_1A_2$ are
-$$\ket{u_1}=\frac{1}{2}\begin{pmatrix}-1\\-1\\1\\1\end{pmatrix}\:\:\:\ket{u_2}=\frac{1}{2}\begin{pmatrix}1\\-1\\-1\\1\end{pmatrix}\:\:\:\ket{u_3}=\frac{1}{2}\begin{pmatrix}-1\\1\\-1\\1\end{pmatrix}\:\:\:\ket{u_4}=\frac{1}{2}\begin{pmatrix}1\\1\\1\\1\end{pmatrix}$$
+\begin{equation}
+	\ket{u_1}=\frac{1}{2}\begin{pmatrix}-1\\-1\\1\\1\end{pmatrix}\:\:\:\ket{u_2}=\frac{1}{2}\begin{pmatrix}1\\-1\\-1\\1\end{pmatrix}\:\:\:\ket{u_3}=\frac{1}{2}\begin{pmatrix}-1\\1\\-1\\1\end{pmatrix}\:\:\:\ket{u_4}=\frac{1}{2}\begin{pmatrix}1\\1\\1\\1\end{pmatrix}
+\end{equation}
 A unitary matrix can be constructed to be
-$$U=\frac{1}{2}\begin{pmatrix}-1&1&-1&1\\-1&-1&1&1\\1&-1&-1&1\\1&1&1&1\end{pmatrix}\:\:\:\:\:U^{-1}=U^\dagger=\begin{pmatrix}-1&-1&1&1\\1&-1&-1&1\\-1&1&-1&1\\1&1&1&1\end{pmatrix}$$
+\begin{equation}
+	U=\frac{1}{2}\begin{pmatrix}-1&1&-1&1\\-1&-1&1&1\\1&-1&-1&1\\1&1&1&1\end{pmatrix}\:\:\:\:\:U^{-1}=U^\dagger=\begin{pmatrix}-1&-1&1&1\\1&-1&-1&1\\-1&1&-1&1\\1&1&1&1\end{pmatrix}
+\end{equation}
 The matrices can be diagonalized with $U$
-$$D_1=U^{-1}A_1U$$$$=\frac{1}{4}\begin{pmatrix}-1&-1&1&1\\1&-1&-1&1\\-1&1&-1&1\\1&1&1&1\end{pmatrix} \begin{pmatrix}1&1&0&-1\\1&1&-1&0\\0&-1&1&1\\-1&0&1&1\end{pmatrix}\begin{pmatrix}-1&1&-1&1\\-1&-1&1&1\\1&-1&-1&1\\1&1&1&1\end{pmatrix}
-=\begin{pmatrix}3&0&0&0\\0&-1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix}$$\\
-$$D_2=U^{-1}A_2U$$$$=\frac{1}{4}\begin{pmatrix}-1&-1&1&1\\1&-1&-1&1\\-1&1&-1&1\\1&1&1&1\end{pmatrix} \begin{pmatrix}1&\frac{1}{2}&-1&\frac{1}{2}\\\frac{1}{2}&1&\frac{1}{2}&-1\\-1&\frac{1}{2}&1&\frac{1}{2}\\\frac{1}{2}&-1&\frac{1}{2}&1\end{pmatrix}\begin{pmatrix}-1&1&-1&1\\-1&-1&1&1\\1&-1&-1&1\\1&1&1&1\end{pmatrix}=\begin{pmatrix}2&0&0&0\\0&2&0&0\\0&0&-1&0\\0&0&0&1\end{pmatrix}$$\\
+\begin{equation}
+	D_1=U^{-1}A_1U
+\end{equation}\begin{equation}
+	=\frac{1}{4}\begin{pmatrix}-1&-1&1&1\\1&-1&-1&1\\-1&1&-1&1\\1&1&1&1\end{pmatrix} \begin{pmatrix}1&1&0&-1\\1&1&-1&0\\0&-1&1&1\\-1&0&1&1\end{pmatrix}\begin{pmatrix}-1&1&-1&1\\-1&-1&1&1\\1&-1&-1&1\\1&1&1&1\end{pmatrix}
+=\begin{pmatrix}3&0&0&0\\0&-1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix}
+\end{equation}\\
+\begin{equation}
+	D_2=U^{-1}A_2U
+\end{equation}\begin{equation}
+	=\frac{1}{4}\begin{pmatrix}-1&-1&1&1\\1&-1&-1&1\\-1&1&-1&1\\1&1&1&1\end{pmatrix} \begin{pmatrix}1&\frac{1}{2}&-1&\frac{1}{2}\\\frac{1}{2}&1&\frac{1}{2}&-1\\-1&\frac{1}{2}&1&\frac{1}{2}\\\frac{1}{2}&-1&\frac{1}{2}&1\end{pmatrix}\begin{pmatrix}-1&1&-1&1\\-1&-1&1&1\\1&-1&-1&1\\1&1&1&1\end{pmatrix}=\begin{pmatrix}2&0&0&0\\0&2&0&0\\0&0&-1&0\\0&0&0&1\end{pmatrix}
+\end{equation}\\
 It appears that $\ket{u_1}$ has an eigenvalue of 3 and 2; $\ket{u_2}$ has an eigenvalue of -1 and 2; $\ket{u_3}$ has a eigenvalue of 1 and -1; $\ket{u_4}$ has an eigenvalue of 1 and 1 for the matrices $A_1$ and $A_2$ respectively.
 \end{sol}

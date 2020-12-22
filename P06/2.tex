@@ -1,57 +1,108 @@
 \begin{sol}
 \\\textbf{Define}
-$$\cos^2\phi\equiv|\braket{\Psi,0}{\Psi,t}|^2,\phi\in\left[0,\frac{\pi}{2}\right]$$
-$$Q\equiv\ketbra{\Psi,0}{\Psi,0}$$
+\begin{equation}
+	\cos^2\phi\equiv|\braket{\Psi,0}{\Psi,t}|^2,\phi\in\left[0,\frac{\pi}{2}\right]
+\end{equation}
+\begin{equation}
+	Q\equiv\ketbra{\Psi,0}{\Psi,0}
+\end{equation}
 \begin{enumerate}[label=\textbf{(\alph*)}]
 \item
 First, note the operator $Q$ is time-independent. 
-$$\frac{d}{dt}\cos^2\phi=\frac{d}{dt}|\braket{\Psi,0}{\Psi,t}|^2$$
-$$-2\cos\phi\sin\phi\frac{d\phi}{dt}=\frac{d}{dt}\left(\braket{\Psi,t}{\Psi,0}\braket{\Psi,0}{\Psi,t}\right)$$
-$$-\sin(2\phi)\frac{d\phi}{dt}=\frac{d}{dt}\bra{\Psi,t}Q\ket{\Psi,t}$$
-$$-\sin(2\phi)\frac{d\phi}{dt}=\frac{d\langle Q\rangle}{dt}$$
+\begin{equation}
+	\frac{d}{dt}\cos^2\phi=\frac{d}{dt}|\braket{\Psi,0}{\Psi,t}|^2
+\end{equation}
+\begin{equation}
+	-2\cos\phi\sin\phi\frac{d\phi}{dt}=\frac{d}{dt}\left(\braket{\Psi,t}{\Psi,0}\braket{\Psi,0}{\Psi,t}\right)
+\end{equation}
+\begin{equation}
+	-\sin(2\phi)\frac{d\phi}{dt}=\frac{d}{dt}\bra{\Psi,t}Q\ket{\Psi,t}
+\end{equation}
+\begin{equation}
+	-\sin(2\phi)\frac{d\phi}{dt}=\frac{d\langle Q\rangle}{dt}
+\end{equation}
 It is known that $\sin(2\phi)\in[0,1]\forall\phi\in\left[0,\frac{\pi}{2}\right]$, thus, it can be established that
-$$\bigg|\frac{d\phi}{dt}\bigg|\leq\bigg|\frac{d\langle Q\rangle}{dt}\bigg|$$
+\begin{equation}
+	\bigg|\frac{d\phi}{dt}\bigg|\leq\bigg|\frac{d\langle Q\rangle}{dt}\bigg|
+\end{equation}
 From the uncertainty principle,
-$$\Delta E\Delta Q\geq\frac{1}{2}\bigg|\frac{d\langle Q\rangle}{dt}\bigg|$$
+\begin{equation}
+	\Delta E\Delta Q\geq\frac{1}{2}\bigg|\frac{d\langle Q\rangle}{dt}\bigg|
+\end{equation}
 Substituting for $\big|\frac{d\langle Q\rangle}{dt}\big|$ into the inequality,
-$$\bigg|\frac{d\phi}{dt}\bigg|\leq 2\Delta E\Delta Q$$
+\begin{equation}
+	\bigg|\frac{d\phi}{dt}\bigg|\leq 2\Delta E\Delta Q
+\end{equation}
 Since the operator $Q$ is known to be a projector, the uncertainty is defined as 
-$$(\Delta Q)^2=\langle Q^2\rangle-\langle Q\rangle^2=\langle Q\rangle-\langle Q\rangle^2$$
+\begin{equation}
+	(\Delta Q)^2=\langle Q^2\rangle-\langle Q\rangle^2=\langle Q\rangle-\langle Q\rangle^2
+\end{equation}
 It is known that $\langle Q\rangle\in[0,1]$ for any states. Since $(\Delta Q)^2$ is quadratic in $\langle Q\rangle$, it is trivial to find the minimum value which is $(\Delta Q)^2=\frac{1}{4}$ Thus,
-$$\bigg|\frac{d\phi}{dt}\bigg|\leq \Delta E$$
+\begin{equation}
+	\bigg|\frac{d\phi}{dt}\bigg|\leq \Delta E
+\end{equation}
 \begin{lemma}
 If the system is governed by a time-independent Hamiltonian, the expectation value for all positive powers of the Hamiltonian must be time-independent.
 \end{lemma}
 \begin{proof}
 Since the Hamiltonian is a hermitian operator, all states can be written as a superposition of eigenstates. Let $\ket{\Psi,0}$ be an arbitrary normalized state at a initial time and $\ket{E}$ be the orthonormal eigenstates of the Hamiltonian with eigenvalue $E$
-$$\ket{\Psi,0}=\int\ketbra{E}{E}\ket{\Psi,0} dE$$
+\begin{equation}
+	\ket{\Psi,0}=\int\ketbra{E}{E}\ket{\Psi,0} dE
+\end{equation}
 At the initial time, the expectation value of $\hat H^n$ is
-$$\langle \hat H^n\rangle(0)=\braket{\Psi,0}{\Psi,0}=\int\bra{E}\hat H^n\ketbra{E}{E}\ket{\Psi,0}dE=\int E^n\ketbra{E}{E}\ket{\Psi,0}dE$$
+\begin{equation}
+	\langle \hat H^n\rangle(0)=\braket{\Psi,0}{\Psi,0}=\int\bra{E}\hat H^n\ketbra{E}{E}\ket{\Psi,0}dE=\int E^n\ketbra{E}{E}\ket{\Psi,0}dE
+\end{equation}
 Since the Hamiltonian is time independent, its eigenstates evolve with a phase $e^{-iEt}$, thus
-$$\ket{\Psi,t}=\int e^{-iEt}\ketbra{E}{E}\ket{\Psi,0} dE$$
+\begin{equation}
+	\ket{\Psi,t}=\int e^{-iEt}\ketbra{E}{E}\ket{\Psi,0} dE
+\end{equation}
 The expectation value of $\hat H^n$ is
-$$\langle \hat H^n\rangle(t)=\braket{\Psi,t}{\Psi,t}=\int\bra{E}e^{iEt}\hat H^ne^{-iEt}\ketbra{E}{E}\ket{\Psi,0}dE$$$$=\int E^n\ketbra{E}{E}\ket{\Psi,0}dE=\langle \hat H^n\rangle(0)$$
+\begin{equation}
+	\langle \hat H^n\rangle(t)=\braket{\Psi,t}{\Psi,t}=\int\bra{E}e^{iEt}\hat H^ne^{-iEt}\ketbra{E}{E}\ket{\Psi,0}dE
+\end{equation}\begin{equation}
+	=\int E^n\ketbra{E}{E}\ket{\Psi,0}dE=\langle \hat H^n\rangle(0)
+\end{equation}
 \end{proof}
 The minimum time it will take for the system to evolve into an orthogonal state can be computed with
-$$\int_0^{t_{min}}\frac{d\phi}{dt}dt=\frac{\pi}{2}$$
+\begin{equation}
+	\int_0^{t_{min}}\frac{d\phi}{dt}dt=\frac{\pi}{2}
+\end{equation}
 As the minimum time is concerned, the maximum value of $\frac{d\phi}{dt}$ can be used. Due to Lemma 11, the maximum value is $\Delta E$, resulting in
-$$\int_0^{t_{min}}\Delta Edt=\frac{\pi}{2}$$
-$$t_{min}\Delta E=\frac{\pi}{2}$$
+\begin{equation}
+	\int_0^{t_{min}}\Delta Edt=\frac{\pi}{2}
+\end{equation}
+\begin{equation}
+	t_{min}\Delta E=\frac{\pi}{2}
+\end{equation}
 Since $t_{min}$ is the minimum time required, a general inequality can be constructed to be
-$$\Delta E\Delta t_\perp\geq\frac{\pi}{2}$$
+\begin{equation}
+	\Delta E\Delta t_\perp\geq\frac{\pi}{2}
+\end{equation}
 
 \item
  $\phi(0)$ is defined to be $0$. It has been shown that 
-$$\bigg|\frac{d\phi}{dt}\bigg|\leq \Delta E$$
+\begin{equation}
+	\bigg|\frac{d\phi}{dt}\bigg|\leq \Delta E
+\end{equation}
 Define $\phi_{min}(t_1),\phi_{max}(t_1):\phi_{min}(t)\leq\phi(t)\leq\phi_{max}(t)\forall t\in[0,t_1]$  
-$$\phi(t)_{min}\geq\phi(0)-\int_0^t\bigg|\frac{d\phi}{dt}\bigg|_{max}dt=\phi(0)-\Delta Et=-\Delta Et$$
-$$\phi(t)_{max}\leq\phi(0)+\int_0^t\bigg|\frac{d\phi}{dt}\bigg|_{max}dt=\phi(0)+\Delta Et=\Delta Et
-$$
+\begin{equation}
+	\phi(t)_{min}\geq\phi(0)-\int_0^t\bigg|\frac{d\phi}{dt}\bigg|_{max}dt=\phi(0)-\Delta Et=-\Delta Et
+\end{equation}
+\begin{equation}
+	\phi(t)_{max}\leq\phi(0)+\int_0^t\bigg|\frac{d\phi}{dt}\bigg|_{max}dt=\phi(0)+\Delta Et=\Delta Et
+\end{equation}
 
 Let $\displaystyle{g\equiv\frac{\pi}{2\Delta E}}$. It is known that $\displaystyle{\Delta E\Delta t_\perp\geq\frac{\pi}{2}}$ or $\Delta t_\perp\geq g$.
-$$\therefore \phi(\Delta t_\perp)_{min}\geq-\frac{\pi}{2},\phi(\Delta t_\perp)_{max}\leq\frac{\pi}{2}$$
+\begin{equation}
+	\therefore \phi(\Delta t_\perp)_{min}\geq-\frac{\pi}{2},\phi(\Delta t_\perp)_{max}\leq\frac{\pi}{2}
+\end{equation}
 Within the interval $[0,\Delta t_\perp]$, $\phi$ is constrained within the interval $\left[-\frac{\pi}{2},\frac{\pi}{2}\right]$. Thus, $\cos^2(\phi)$ is constrained within the interval $[0,1]$. 
-$$\because\cos^2(\theta)=\cos^2(-\theta), \forall t\in[0,\Delta t_\perp], \cos^2(\phi)\geq\cos^2(\Delta Et)$$ $$\therefore|\braket{\Psi,0}{\Psi,t}|^2\geq\cos^2(\Delta Et)$$ 
+\begin{equation}
+	\because\cos^2(\theta)=\cos^2(-\theta), \forall t\in[0,\Delta t_\perp], \cos^2(\phi)\geq\cos^2(\Delta Et)
+\end{equation} \begin{equation}
+	\therefore|\braket{\Psi,0}{\Psi,t}|^2\geq\cos^2(\Delta Et)
+\end{equation} 
 
 
 \end{enumerate}

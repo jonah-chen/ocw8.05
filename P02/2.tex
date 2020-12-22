@@ -2,29 +2,44 @@
 \begin{enumerate}[label=\textbf{(\alph*)}]
 \item
 The left hand side of the identity can be rewritten as
-$$(\psi_{k+1}\psi_k'-\psi_k\psi_{k+1}')|_a^b=\int_a^b \frac{d}{dx}(\psi_{k+1}\psi_k'-\psi_k\psi_{k+1}')dx$$
-$$=\int_a^b\psi_{k+1}'\psi_k'+\psi_{k+1}\psi_k''-\psi_k'\psi_{k+1}'-\psi_k\psi_{k+1}''dx
-=\int_a^b\psi_{k+1}\psi_k''-\psi_k\psi_{k+1}''dx$$
+\begin{equation}
+\begin{aligned}
+    (\psi_{k+1}\psi_k'-\psi_k\psi_{k+1}')|_a^b&=\int_a^b \frac{d}{dx}(\psi_{k+1}\psi_k'-\psi_k\psi_{k+1}')dx\\
+    &=\int_a^b\psi_{k+1}'\psi_k'+\psi_{k+1}\psi_k''-\psi_k'\psi_{k+1}'-\psi_k\psi_{k+1}''dx
+    =\int_a^b\psi_{k+1}\psi_k''-\psi_k\psi_{k+1}''dx
+\end{aligned}
+\end{equation}
 Replacing $\psi''$ with $(U(x)-\epsilon)\psi$
-$$=\int_a^b\psi_{k+1}\psi_k(U(x)-\epsilon_k)-\psi_k\psi_{k+1}(U(x)-\epsilon_{k+1})dx$$
-$$=\int_a^b\psi_k\psi_{k+1}(\epsilon_{k+1}-\epsilon_k)dx=(\epsilon_{k+1}-\epsilon_k)\int_a^b\psi_k\psi_{k+1}dx$$
+\begin{equation}
+\begin{aligned}
+    &=\int_a^b\psi_{k+1}\psi_k(U(x)-\epsilon_k)-\psi_k\psi_{k+1}(U(x)-\epsilon_{k+1})dx\\
+    &=\int_a^b\psi_k\psi_{k+1}(\epsilon_{k+1}-\epsilon_k)dx=(\epsilon_{k+1}-\epsilon_k)\int_a^b\psi_k\psi_{k+1}dx
+\end{aligned}
+\end{equation}
 \item
 If $\psi_{k}(a)=\psi_{k}(b)=0, \epsilon_{k+1}>\epsilon_k,\psi_{k}>0\forall x\in(a,b)\implies\exists x_0\in(a,b):\psi_{k+1}(x_0)=0$.
 \begin{proof}
 Assume $\exists\psi_{k+1}: sgn(\psi_{k+1})=C$  for $x\in(a,b)$, where $C$ is a non-zero constant. \\
 
-$$(\epsilon_{k+1}-\epsilon_k)\int_a^b\psi_k\psi_{k+1}dx=(\psi_{k+1}\psi_k'-\psi_k\psi_{k+1}')|_a^b=\psi_{k+1}\psi_k'|_a^b$$
-$$\int_a^b\psi_k\psi_{k+1}dx=\frac{\psi_{k+1}\psi_k'|_a^b}{(\epsilon_{k+1}-\epsilon_k)}$$
-
+\begin{align}
+    (\epsilon_{k+1}-\epsilon_k)\int_a^b\psi_k\psi_{k+1}dx&=(\psi_{k+1}\psi_k'-\psi_k\psi_{k+1}')|_a^b=\psi_{k+1}\psi_k'|_a^b\\
+    \int_a^b\psi_k\psi_{k+1}dx&=\frac{\psi_{k+1}\psi_k'|_a^b}{(\epsilon_{k+1}-\epsilon_k)}
+\end{align}
 Given that $\psi_k$ is continuous and $\psi_k(a)=\psi_k(b)=0, \psi_k(x)>0\forall x\in(a,b)$\\ 
 $\implies\psi_k'(a)>0,\psi_k'(b)<0$.\\
 Let $\alpha,\beta$ be positive real constants. The previous equation can be rewritten as
-$$\int_a^b\psi_k\psi_{k+1}dx=-(\alpha\psi_{k+1}(b)+\beta\psi_{k+1}(a))$$
+\begin{equation}
+    \int_a^b\psi_k\psi_{k+1}dx=-(\alpha\psi_{k+1}(b)+\beta\psi_{k+1}(a))
+\end{equation}
 Firstly, consider the case where $sgn(\psi_{k+1})=1\forall x\in(a,b)$ $\therefore \psi_{k+1}(a)\geq 0,\psi_{k+1}(b)\geq 0$. Then,
-$$\int_a^b\psi_k\psi_{k+1}dx\leq 0$$
+\begin{equation}
+    \int_a^b\psi_k\psi_{k+1}dx\leq 0
+\end{equation}
 Since it is defined that $\psi_{k}>0\forall x\in(a,b)$, the integral trivially evaluates to a positive number. This leads to a contradiction.\\
 Secondly, consider the case where  $sgn(\psi_{k+1})=-1\forall x\in(a,b)$ $\therefore \psi_{k+1}(a)\leq 0,\psi_{k+1}(b)\leq 0$. \\Then,
-$$\int_a^b\psi_k\psi_{k+1}dx\geq 0$$
+\begin{equation}
+    \int_a^b\psi_k\psi_{k+1}dx\geq 0
+\end{equation}
 Since it is defined that $\psi_{k}>0\forall x\in(a,b)$, the integral trivially evaluates to a negative number. This also leads to a contradiction.\\ It has been shown that $sgn(\psi_{k+1})$ cannot be constant in the interval $(a,b)$, and two points $x_1,x_2\in(a,b):\psi_{k+1}(x_1)>0,\psi_{k+1}(x_2)<0$ can be chosen. According to the intermediate value theorem, $\exists x_0\in(x_1,x_2):\psi_{k+1}(x_0)=0$. $\because(x_1,x_2)\subset(a,b)\exists x_0\in(a,b):\psi_{k+1}(x_0)=0$. QED.
 \end{proof}
 \end{enumerate}

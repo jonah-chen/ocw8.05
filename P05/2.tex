@@ -2,23 +2,49 @@
 \begin{enumerate}[label=\textbf{(\alph*)}]
 \item
 Apply the identity operator $\mathbf{1}=\int\ketbra{p}{p}dp$ 
-$$\bra x\hat p^n\ket\psi=\int\bra x\hat p^n\ketbra{p}{p}\ket\psi dp=\int p^n\braket{x}{p}\braket{p}{\psi}dp$$  It is known that 
-$$\braket{x}{p}=\frac{1}{\sqrt{2\pi}}e^{ipx}$$
-$$\frac{d}{dx}\braket{x}{p}=\frac{ip}{\sqrt{2\pi}}e^{ipx}=ip\braket{x}{p}$$ 
-$$\frac{d^{n+1}}{dx^{n+1}}\braket{x}{p}=\frac{d}{dx}\frac{d^n}{dx^n}\braket{x}{p}=ip\frac{(ip)^n}{\sqrt{2\pi}}e^{ipx}=ip\frac{d^n}{dx^n}\braket{x}{p}$$ 
-By induction,$$\frac{d^n}{dx^n}\braket{x}{p}=i^np^n\braket{x}{p}$$ 
+\begin{equation}
+	\bra x\hat p^n\ket\psi=\int\bra x\hat p^n\ketbra{p}{p}\ket\psi dp=\int p^n\braket{x}{p}\braket{p}{\psi}dp
+\end{equation}  It is known that 
+\begin{equation}
+	\braket{x}{p}=\frac{1}{\sqrt{2\pi}}e^{ipx}
+\end{equation}
+\begin{equation}
+	\frac{d}{dx}\braket{x}{p}=\frac{ip}{\sqrt{2\pi}}e^{ipx}=ip\braket{x}{p}
+\end{equation} 
+\begin{equation}
+	\frac{d^{n+1}}{dx^{n+1}}\braket{x}{p}=\frac{d}{dx}\frac{d^n}{dx^n}\braket{x}{p}=ip\frac{(ip)^n}{\sqrt{2\pi}}e^{ipx}=ip\frac{d^n}{dx^n}\braket{x}{p}
+\end{equation} 
+By induction,\begin{equation}
+	\frac{d^n}{dx^n}\braket{x}{p}=i^np^n\braket{x}{p}
+\end{equation} 
 The $i^n$ can be moved to the left hand side, then this expression can be substituted for $p^n\braket{x}{p}$ to yield
-$$\bra x\hat p^n\ket\psi=\int \frac{1}{i^n}\frac{d^n}{dx^n}\braket{x}{p}\braket{p}{\psi}dp=\frac{1}{i^n}\frac{d^n}{dx^n}\int \braket{x}{p}\braket{p}{\psi}dp=\frac{1}{i^n}\frac{d^n}{dx^n}\braket{x}{\psi}$$ \item
+\begin{equation}
+	\bra x\hat p^n\ket\psi=\int \frac{1}{i^n}\frac{d^n}{dx^n}\braket{x}{p}\braket{p}{\psi}dp=\frac{1}{i^n}\frac{d^n}{dx^n}\int \braket{x}{p}\braket{p}{\psi}dp=\frac{1}{i^n}\frac{d^n}{dx^n}\braket{x}{\psi}
+\end{equation} \item
 First note that
-$$\braket{p}{x}=\braket{x}{p}^*=\frac{1}{\sqrt{2\pi}}e^{-ipx}$$
-$$\frac{d}{dp}\braket{p}{x}=\frac{-ix}{\sqrt{2\pi}}e^{-ipx}=-ix\braket{p}{x}$$
+\begin{equation}
+	\braket{p}{x}=\braket{x}{p}^*=\frac{1}{\sqrt{2\pi}}e^{-ipx}
+\end{equation}
+\begin{equation}
+	\frac{d}{dp}\braket{p}{x}=\frac{-ix}{\sqrt{2\pi}}e^{-ipx}=-ix\braket{p}{x}
+\end{equation}
 The result can be obtained in a similar manner as in part a by applying the identity operator $\mathbf{1}=\int\ketbra{x}{x}dx$ 
-$$ \bra p\hat x\ket\psi=\int \bra p\hat x\ketbra {x}{x}\ket\psi dx=\int x\braket{p}{x}\braket{x}{\psi}dx=i\frac{d}{dp}\int \braket{p}{x}\braket{x}{\psi}dx=i\frac{d}{dp}\braket{p}{\psi}$$ 
+\begin{equation}
+	 \bra p\hat x\ket\psi=\int \bra p\hat x\ketbra {x}{x}\ket\psi dx=\int x\braket{p}{x}\braket{x}{\psi}dx=i\frac{d}{dp}\int \braket{p}{x}\braket{x}{\psi}dx=i\frac{d}{dp}\braket{p}{\psi}
+\end{equation} 
 \item
-$$\bra p[\hat x,\hat p]\ket\psi=\bra p\hat x\hat p-\hat p\hat x\ket\psi=\bra p\hat x\hat p\ket\psi-\bra p\hat p\hat x\ket\psi=\bra p\hat x\hat p\ket\psi-p\bra p\hat x\ket\psi$$  
-$$=i\frac{d}{dp}\bra p\hat p\ket\psi-ip\frac{d}{dp}\braket{p}{\psi}$$
-$$=i\frac{d}{dp}(p\braket{p}{\psi})-ip\frac{d}{dp}\braket{p}{\psi}$$
-$$i\braket{p}{\psi}+ip\frac{d}{dp}\braket{p}{\psi}-ip\frac{d}{dp}\braket{p}{\psi}=i\braket{p}{\psi}$$ 
+\begin{equation}
+	\bra p[\hat x,\hat p]\ket\psi=\bra p\hat x\hat p-\hat p\hat x\ket\psi=\bra p\hat x\hat p\ket\psi-\bra p\hat p\hat x\ket\psi=\bra p\hat x\hat p\ket\psi-p\bra p\hat x\ket\psi
+\end{equation}  
+\begin{equation}
+	=i\frac{d}{dp}\bra p\hat p\ket\psi-ip\frac{d}{dp}\braket{p}{\psi}
+\end{equation}
+\begin{equation}
+	=i\frac{d}{dp}(p\braket{p}{\psi})-ip\frac{d}{dp}\braket{p}{\psi}
+\end{equation}
+\begin{equation}
+	i\braket{p}{\psi}+ip\frac{d}{dp}\braket{p}{\psi}-ip\frac{d}{dp}\braket{p}{\psi}=i\braket{p}{\psi}
+\end{equation} 
 Since it is known that $[\hat x,\hat p]=i\mathbf{1}$, the expected result is $\bra p[\hat x,\hat p]\ket\psi=i\braket{p}{x}$ which is obtained.
 
 \end{enumerate}

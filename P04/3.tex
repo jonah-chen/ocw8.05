@@ -1,27 +1,55 @@
 \begin{sol}
 \begin{theorem}
 For any two operators $A$ and $B$; define $W_0=B, W_{n+1}=[A,W_n]$,
-$$e^ABe^{-A}=\sum_{n=0}^\infty\frac{W_n}{n!}=B+[A,B]+\frac{1}{2}[A,[A,B]]+\frac{1}{6}[A,[A,[A,B]]]+...$$ 
+\begin{equation}
+	e^ABe^{-A}=\sum_{n=0}^\infty\frac{W_n}{n!}=B+[A,B]+\frac{1}{2}[A,[A,B]]+\frac{1}{6}[A,[A,[A,B]]]+...
+\end{equation} 
 \end{theorem}
 \begin{proof}
 Since commutator expressions will be common, define
-$$\text{ad } A(X)\equiv[A,X]\therefore W_{n+1}=\text{ad }  A(W_n)$$
-$$W_n=\text{ad }A^n(B)$$
+\begin{equation}
+	\text{ad } A(X)\equiv[A,X]\therefore W_{n+1}=\text{ad }  A(W_n)
+\end{equation}
+\begin{equation}
+	W_n=\text{ad }A^n(B)
+\end{equation}
 Define $f(t)=e^{tA}Be^{-tA}$. Since $f(t)$ is analytic at $t=0$, it can be expanded as a Taylor series.
-$$f(t)=\sum_{n=0}^\infty \frac{t^n}{n!}\frac{d^nf(t)}{dt^n}=f(0)+f'(0)t+\frac{1}{2}f''(0)t^2+\frac{1}{6}f'''(0)t^3+...$$ 
+\begin{equation}
+	f(t)=\sum_{n=0}^\infty \frac{t^n}{n!}\frac{d^nf(t)}{dt^n}=f(0)+f'(0)t+\frac{1}{2}f''(0)t^2+\frac{1}{6}f'''(0)t^3+...
+\end{equation} 
 Note the first term is $f(0)=1$. The second term can be computed using the product rule.
-$$\frac{df}{dt}=Ae^{tA}Be^{-tA}+e^{tA}B(-Ae^{-tA})$$ $$=e^{tA}ABe^{-tA}-e^{tA}BAe^{-tA}=e^{tA}[A,B]e^{-tA}=e^{tA}\text{ ad }A(B)e^{-tA}$$ 
+\begin{equation}
+	\frac{df}{dt}=Ae^{tA}Be^{-tA}+e^{tA}B(-Ae^{-tA})
+\end{equation} \begin{equation}
+	=e^{tA}ABe^{-tA}-e^{tA}BAe^{-tA}=e^{tA}[A,B]e^{-tA}=e^{tA}\text{ ad }A(B)e^{-tA}
+\end{equation} 
 Taking another derivative will yield
-$$\frac{d}{dt}\left(\frac{df}{dt}\right)=e^{tA}A\text{ ad }A(B)e^{-tA}-e^{tA}\text{ ad }A(B)Ae^{-tA}$$ 
-$$=e^{tA}[A,\text{ad }A(B)]e^{-tA}=e^{tA}\text{ ad }A^2(B)e^{-tA}$$  
+\begin{equation}
+	\frac{d}{dt}\left(\frac{df}{dt}\right)=e^{tA}A\text{ ad }A(B)e^{-tA}-e^{tA}\text{ ad }A(B)Ae^{-tA}
+\end{equation} 
+\begin{equation}
+	=e^{tA}[A,\text{ad }A(B)]e^{-tA}=e^{tA}\text{ ad }A^2(B)e^{-tA}
+\end{equation}  
 Given 
-$$\frac{d^nf}{dt^n}=e^{tA}\text{ ad }A^n(B)e^{-tA}$$
-$$\frac{d^{n+1}f}{dt^{n+1}}=\frac{d}{dt}\left(\frac{d^nf}{dt^n}\right)=\frac{d}{dt}\left(e^{tA}\text{ ad }A^n(B)e^{-tA}\right)$$
-$$=e^{tA}A\text{ ad }A^{n}(B)e^{-tA}-e^{tA}\text{ ad }A^{n}(B)Ae^{-tA}$$ 
-$$=e^{tA}[A,\text{ad }A^{n}(B)]e^{-tA}=e^{tA}\text{ ad }A^{n+1}(B)e^{-tA}$$
+\begin{equation}
+	\frac{d^nf}{dt^n}=e^{tA}\text{ ad }A^n(B)e^{-tA}
+\end{equation}
+\begin{equation}
+	\frac{d^{n+1}f}{dt^{n+1}}=\frac{d}{dt}\left(\frac{d^nf}{dt^n}\right)=\frac{d}{dt}\left(e^{tA}\text{ ad }A^n(B)e^{-tA}\right)
+\end{equation}
+\begin{equation}
+	=e^{tA}A\text{ ad }A^{n}(B)e^{-tA}-e^{tA}\text{ ad }A^{n}(B)Ae^{-tA}
+\end{equation} 
+\begin{equation}
+	=e^{tA}[A,\text{ad }A^{n}(B)]e^{-tA}=e^{tA}\text{ ad }A^{n+1}(B)e^{-tA}
+\end{equation}
 Therefore, by induction, it is shown that 
-$$\frac{d^nf}{dt^n}=e^{tA}\text{ ad }A^n(B)e^{-tA}=e^{tA}W_ne^{-tA}$$
+\begin{equation}
+	\frac{d^nf}{dt^n}=e^{tA}\text{ ad }A^n(B)e^{-tA}=e^{tA}W_ne^{-tA}
+\end{equation}
 The specific case of interest is $t=1$, where 
-$$f(1)=e^{A}Be^{-A}=\sum_{n=0}^\infty\frac{W_n}{n!}$$
+\begin{equation}
+	f(1)=e^{A}Be^{-A}=\sum_{n=0}^\infty\frac{W_n}{n!}
+\end{equation}
 \end{proof}
 \end{sol}

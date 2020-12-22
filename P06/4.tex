@@ -2,54 +2,106 @@
 \begin{enumerate}[label=\textbf{(\alph*)}]
 \item
 
-$$\sum_{a'}|\bra a\hat x\ket{a'}|^2(E_{a'}-E_a)=\sum_{a'}\bra a\hat x\ketbra {a'}{a'}\hat x\ket{a}(E_{a'}-E_a)$$
-$$=\bra a\hat x\sum_{a'}E_{a'}\ketbra{a'}{a'}\hat x\ket a-E_{a}\bra a\hat x\sum_{a'}\ketbra{a'}{a'}\hat x\ket a$$
+\begin{equation}
+	\sum_{a'}|\bra a\hat x\ket{a'}|^2(E_{a'}-E_a)=\sum_{a'}\bra a\hat x\ketbra {a'}{a'}\hat x\ket{a}(E_{a'}-E_a)
+\end{equation}
+\begin{equation}
+	=\bra a\hat x\sum_{a'}E_{a'}\ketbra{a'}{a'}\hat x\ket a-E_{a}\bra a\hat x\sum_{a'}\ketbra{a'}{a'}\hat x\ket a
+\end{equation}
 From completeness, note the following:
-$$\sum_{a'}\ketbra{a'}{a'}=\mathbf{1}\text{ and }\sum_{a'}E_{a'}\ketbra{a'}{a'}=\hat H$$ 
+\begin{equation}
+	\sum_{a'}\ketbra{a'}{a'}=\mathbf{1}\text{ and }\sum_{a'}E_{a'}\ketbra{a'}{a'}=\hat H
+\end{equation} 
 The sum can be rewritten in terms of single matrix elements
-$$\sum_{a'}|\bra a\hat x\ket{a'}|^2(E_{a'}-E_a)=\bra a\hat x\hat H\hat x\ket a-E_a\bra a\hat x^2\ket a$$
+\begin{equation}
+	\sum_{a'}|\bra a\hat x\ket{a'}|^2(E_{a'}-E_a)=\bra a\hat x\hat H\hat x\ket a-E_a\bra a\hat x^2\ket a
+\end{equation}
 
 Consider the commutator $[[\hat x,\hat H],\hat x]$
-$$[[\hat x,\hat H],\hat x]=[\hat x,\hat H]\hat x-\hat x[\hat x,\hat H]=\hat x\hat H\hat x-\hat H\hat x^2-\hat x^2\hat H+\hat x\hat H\hat x=2\hat x\hat H\hat x-\{\hat x^2,\hat H\}$$ 
+\begin{equation}
+	[[\hat x,\hat H],\hat x]=[\hat x,\hat H]\hat x-\hat x[\hat x,\hat H]=\hat x\hat H\hat x-\hat H\hat x^2-\hat x^2\hat H+\hat x\hat H\hat x=2\hat x\hat H\hat x-\{\hat x^2,\hat H\}
+\end{equation} 
 Evaluate this commutator on the state $\ket a$ will yield
-$$\bra a 2\hat x\hat H\hat x\ket a-\bra a\hat x^2\hat H\ket a-\bra a\hat H\hat x^2\ket a=2\bra a \hat x\hat H\hat x\ket a-2E_a\bra a\hat x^2\ket a$$
-$$=2\sum_{a'}|\bra a\hat x\ket{a'}|^2(E_{a'}-E_a)$$ 
+\begin{equation}
+	\bra a 2\hat x\hat H\hat x\ket a-\bra a\hat x^2\hat H\ket a-\bra a\hat H\hat x^2\ket a=2\bra a \hat x\hat H\hat x\ket a-2E_a\bra a\hat x^2\ket a
+\end{equation}
+\begin{equation}
+	=2\sum_{a'}|\bra a\hat x\ket{a'}|^2(E_{a'}-E_a)
+\end{equation} 
 Evaluate the commutator with respect to the position and momentum operators
-$$[[\hat x,\hat H],\hat x]=\frac{1}{2m}[[\hat x,\hat p^2],\hat x]=\frac{1}{2m}[[\hat x,\hat p]\hat p+\hat p[\hat x,\hat p],\hat x]=\frac{i}{m}[\hat p,\hat x]=\frac{1}{m}$$   
+\begin{equation}
+	[[\hat x,\hat H],\hat x]=\frac{1}{2m}[[\hat x,\hat p^2],\hat x]=\frac{1}{2m}[[\hat x,\hat p]\hat p+\hat p[\hat x,\hat p],\hat x]=\frac{i}{m}[\hat p,\hat x]=\frac{1}{m}
+\end{equation}   
 Therefore,
-$$\sum_{a'}|\bra a\hat x\ket{a'}|^2(E_{a'}-E_a)=\frac{1}{2m}$$
+\begin{equation}
+	\sum_{a'}|\bra a\hat x\ket{a'}|^2(E_{a'}-E_a)=\frac{1}{2m}
+\end{equation}
 \item
 Consider the matrix elements of $[\hat H,\hat x]$
-$$\bra a[\hat H,\hat x]\ket {a'}=\bra a\hat H\hat x\ket{a'}-\bra a\hat x\hat H\ket {a'}=(E_a-E_{a'})\bra a\hat x\ket {a'}$$ 
+\begin{equation}
+	\bra a[\hat H,\hat x]\ket {a'}=\bra a\hat H\hat x\ket{a'}-\bra a\hat x\hat H\ket {a'}=(E_a-E_{a'})\bra a\hat x\ket {a'}
+\end{equation} 
 Evaluate the commutator with respect to the position and momentum operators
-$$[\hat H,\hat x]=-[\hat x,\hat H]=\frac{\hat p}{im}$$
+\begin{equation}
+	[\hat H,\hat x]=-[\hat x,\hat H]=\frac{\hat p}{im}
+\end{equation}
 The identity can be established
-$$\bra a[\hat H,\hat x]\ket {a'}=\bra a\frac{\hat p}{im}\ket a'=(E_a-E_{a'})\bra a\hat x\ket {a'}$$
-$$\bra a\hat p\ket {a'}=im(E_a-E_{a'})\bra a\hat x\ket{a'}$$ 
+\begin{equation}
+	\bra a[\hat H,\hat x]\ket {a'}=\bra a\frac{\hat p}{im}\ket a'=(E_a-E_{a'})\bra a\hat x\ket {a'}
+\end{equation}
+\begin{equation}
+	\bra a\hat p\ket {a'}=im(E_a-E_{a'})\bra a\hat x\ket{a'}
+\end{equation} 
 Take the norm square of the previous identity
-$$\bra a\hat p\ketbra{a'}\hat p\ket a=(-im(E_a-E_{a'})\bra a\hat x\ket{a'})(im(E_a-E_{a'})\bra {a'}\hat x\ket{a})$$
-$$\bra a\hat p\ketbra{a'}\hat p\ket a=m^2(E_a-E_{a'})^2|\bra a\hat x\ket{a'}|^2$$ 
+\begin{equation}
+	\bra a\hat p\ketbra{a'}\hat p\ket a=(-im(E_a-E_{a'})\bra a\hat x\ket{a'})(im(E_a-E_{a'})\bra {a'}\hat x\ket{a})
+\end{equation}
+\begin{equation}
+	\bra a\hat p\ketbra{a'}\hat p\ket a=m^2(E_a-E_{a'})^2|\bra a\hat x\ket{a'}|^2
+\end{equation} 
 Moving the factor of $m^2$ to the left and summing over all $a'$ will result in
-$$\frac{1}{m^2}\sum_{a'}\bra a\hat p\ketbra{a'}\hat p\ket a=\sum_{a'}|\bra a\hat x\ket{a'}|^2(E_a-E_{a'})^2$$ 
+\begin{equation}
+	\frac{1}{m^2}\sum_{a'}\bra a\hat p\ketbra{a'}\hat p\ket a=\sum_{a'}|\bra a\hat x\ket{a'}|^2(E_a-E_{a'})^2
+\end{equation} 
 Flipping the equation and using completeness yields
-$$\sum_{a'}|\bra a\hat x\ket{a'}|^2(E_a-E_{a'})^2=\frac{\bra a\hat p^2\ket a}{m^2}$$
+\begin{equation}
+	\sum_{a'}|\bra a\hat x\ket{a'}|^2(E_a-E_{a'})^2=\frac{\bra a\hat p^2\ket a}{m^2}
+\end{equation}
 \item
 Consider the expectation value of the following commutator on a stationary state $[\hat x\hat p,\hat H]$. For stationary states, the value of any commutator with the Hamiltonian must be zero by definition. Next, rewrite the commutator as
-$$[\hat x\hat p, \hat H]=\frac{[\hat x\hat p,\hat p^2]}{2m}+[\hat x\hat p,V(\hat x)]=0$$
+\begin{equation}
+	[\hat x\hat p, \hat H]=\frac{[\hat x\hat p,\hat p^2]}{2m}+[\hat x\hat p,V(\hat x)]=0
+\end{equation}
 Note this equality is only true for stationary states. Next, compute the terms separately, the first term can be simplified
-$$\frac{1}{2m}(\hat x\hat p\hat p\hat p-\hat p\hat p\hat x\hat p)=\frac{[\hat x,\hat p^2]}{2m}\hat p$$ 
+\begin{equation}
+	\frac{1}{2m}(\hat x\hat p\hat p\hat p-\hat p\hat p\hat x\hat p)=\frac{[\hat x,\hat p^2]}{2m}\hat p
+\end{equation} 
 The commutator $[\hat x,\hat p^2]$ was already computed to be $2i\hat p$, thus,
-$$\frac{[\hat x\hat p,\hat p^2]}{2m}=i\frac{\hat p^2}{m}$$
+\begin{equation}
+	\frac{[\hat x\hat p,\hat p^2]}{2m}=i\frac{\hat p^2}{m}
+\end{equation}
 The second term can be evaluated using the position-space representation of the momentum operator, $\hat p=-i\nabla$. 
-$$[\hat x\hat p,V(\hat x)]=\hat x\hat p V(\hat x)-V(\hat x)\hat x\hat p=\hat x(-i\nabla)V(\hat x)-V(\hat x)\hat x(-i\nabla)$$
-$$=-i\hat x(\nabla V(\hat x)+V(\hat x)\nabla-V(\hat x)\nabla)=-i\hat x\nabla V(\hat x)$$
+\begin{equation}
+	[\hat x\hat p,V(\hat x)]=\hat x\hat p V(\hat x)-V(\hat x)\hat x\hat p=\hat x(-i\nabla)V(\hat x)-V(\hat x)\hat x(-i\nabla)
+\end{equation}
+\begin{equation}
+	=-i\hat x(\nabla V(\hat x)+V(\hat x)\nabla-V(\hat x)\nabla)=-i\hat x\nabla V(\hat x)
+\end{equation}
 For convenience, both sides of the original equation can be divided by 2 to yield
-$$\frac{1}{2}[\hat x\hat p, \hat H]=i\left(\frac{\hat p^2}{2m}-\frac{1}{2}\hat x\nabla V(\hat x)\right)=0$$
+\begin{equation}
+	\frac{1}{2}[\hat x\hat p, \hat H]=i\left(\frac{\hat p^2}{2m}-\frac{1}{2}\hat x\nabla V(\hat x)\right)=0
+\end{equation}
 Therefore, given a stationary state $\ket a$,
-$$\bra a\frac{\hat p^2}{2m}=\frac{1}{2}\bra a\hat x\nabla V(\hat x)\ket a$$
+\begin{equation}
+	\bra a\frac{\hat p^2}{2m}=\frac{1}{2}\bra a\hat x\nabla V(\hat x)\ket a
+\end{equation}
 Or, for all stationary states in time-independent potentials,
-$$2\langle T\rangle=\langle x\nabla V\rangle$$ 
+\begin{equation}
+	2\langle T\rangle=\langle x\nabla V\rangle
+\end{equation} 
 This theorem can be applied for the cases $V(x)=\alpha x^n$. Here,
-$$\langle T\rangle=\frac{\alpha(n-1)}{2}\langle x^n\rangle$$ 
+\begin{equation}
+	\langle T\rangle=\frac{\alpha(n-1)}{2}\langle x^n\rangle
+\end{equation} 
 \end{enumerate}
 \end{sol}

@@ -2,24 +2,48 @@
 \begin{enumerate}[label=\textbf{(\alph*)}]
 \item
 Since $\hat{H}$ is a hermitian operator, all states can be expanded in its orthonormal eigenbasis $\phi_n$.\\
-$$\ket\psi=\sum_{n=1}^\infty\braket{\phi_n}{\psi}\phi_n$$ 
+\begin{equation}
+    \ket\psi=\sum_{n=1}^\infty\braket{\phi_n}{\psi}\phi_n
+\end{equation}
 Given that $\ket\psi$ is orthogonal to the ground state, $\braket{\phi_1}{\psi}=0$
-$$\ket\psi=\sum_{n=2}^\infty\braket{\phi_n}{\psi}\phi_n$$ 
+\begin{equation}
+	\ket\psi=\sum_{n=2}^\infty\braket{\phi_n}{\psi}\phi_n
+\end{equation} 
 The expectation value of the hamiltonian is
-$$\bra{\psi}\hat{H}\ket{\psi}=\sum_{n=2}^\infty|\braket{\phi_n}{\psi}|^2E_n, E_{n+1}\geq E_n$$
-$$\because E_{n+1}\geq E_n, E_m\geq E_2\forall m\geq 2\therefore \bra{\psi}\hat{H}\ket{\psi}\geq\sum_{n=2}^\infty|\braket{\phi_n}{\psi}|^2 E_2$$
-$$\because \braket{\psi}{\psi}=1, \bra\psi\hat H\ket\psi\geq E_2$$
+\begin{equation}
+	\bra{\psi}\hat{H}\ket{\psi}=\sum_{n=2}^\infty|\braket{\phi_n}{\psi}|^2E_n, E_{n+1}\geq E_n
+\end{equation}
+\begin{equation}
+	\because E_{n+1}\geq E_n, E_m\geq E_2\forall m\geq 2\therefore \bra{\psi}\hat{H}\ket{\psi}\geq\sum_{n=2}^\infty|\braket{\phi_n}{\psi}|^2 E_2
+\end{equation}
+\begin{equation}
+	\because \braket{\psi}{\psi}=1, \bra\psi\hat H\ket\psi\geq E_2
+\end{equation}
 \item
-$$\mathcal{F}(\phi_2+\sum_{n=1}^\infty\epsilon_n\phi_n)=\frac{\bra{\phi_2+\sum_{n=1}^\infty\epsilon_n\phi_n}\hat H\ket{\phi_2+\sum_{n=1}^\infty\epsilon_n\phi_n}}{\braket{\phi_2+\sum_{n=1}^\infty\epsilon_n\phi_n}{\phi_2+\sum_{n=1}^\infty\epsilon_n\phi_n}}$$ $$=\frac{E_2\braket{\phi_2}{\phi_2}+\sum_{n=1}^\infty E_n|\epsilon_n|^2\braket{\phi_n}{\phi_n}}{\braket{\phi_2}{\phi_2}+\sum_{n=1}^\infty|\epsilon_n|^2\braket{\phi_n}{\phi_n}}$$
+\begin{equation}
+	\mathcal{F}(\phi_2+\sum_{n=1}^\infty\epsilon_n\phi_n)=\frac{\bra{\phi_2+\sum_{n=1}^\infty\epsilon_n\phi_n}\hat H\ket{\phi_2+\sum_{n=1}^\infty\epsilon_n\phi_n}}{\braket{\phi_2+\sum_{n=1}^\infty\epsilon_n\phi_n}{\phi_2+\sum_{n=1}^\infty\epsilon_n\phi_n}}
+\end{equation} \begin{equation}
+	=\frac{E_2\braket{\phi_2}{\phi_2}+\sum_{n=1}^\infty E_n|\epsilon_n|^2\braket{\phi_n}{\phi_n}}{\braket{\phi_2}{\phi_2}+\sum_{n=1}^\infty|\epsilon_n|^2\braket{\phi_n}{\phi_n}}
+\end{equation}
 Notice the linear terms in the $\epsilon$'s cancel due to the orthogonality.  Thus, $\phi_2$ is a stationary function of the functional.\\
 \\
 Take one particular $\epsilon_n$ of interest. The result of the functional can be rewritten as
-$$\mathcal{F}(\phi_2+\epsilon_n\phi_n)=\frac{E_2\braket{\phi_2}{\phi_2}+E_n|\epsilon_n|^2\braket{\phi_n}{\phi_n}}{\braket{\phi_2}{\phi_2}+|\epsilon_n|^2\braket{\phi_n}{\phi_n}}$$ If $\epsilon_n$ is taken to be small, $\braket{\phi_2}{\phi_2}>>|\epsilon_n|^2\braket{\phi_n}{\phi_n}$. Thus, it is reasonable to use the geometric series expansion:
-$$\frac{1}{1+x}= 1-x+x^2...$$ The previous expression can be rewritten as
-$$(E_2+\frac{E_n|\epsilon_n|^2\braket{\phi_n}{\phi_n}}{\braket{\phi_2}{\phi_2}})(1-\frac{|\epsilon_n|^2\braket{\phi_n}{\phi_n}}{\braket{\phi_2}{\phi_2}}+\frac{(|\epsilon_n|^2\braket{\phi_n}{\phi_n})^2}{\braket{\phi_2}{\phi_2}^2}...)$$ 
+\begin{equation}
+	\mathcal{F}(\phi_2+\epsilon_n\phi_n)=\frac{E_2\braket{\phi_2}{\phi_2}+E_n|\epsilon_n|^2\braket{\phi_n}{\phi_n}}{\braket{\phi_2}{\phi_2}+|\epsilon_n|^2\braket{\phi_n}{\phi_n}}
+\end{equation} If $\epsilon_n$ is taken to be small, $\braket{\phi_2}{\phi_2}>>|\epsilon_n|^2\braket{\phi_n}{\phi_n}$. Thus, it is reasonable to use the geometric series expansion:
+\begin{equation}
+	\frac{1}{1+x}= 1-x+x^2...
+\end{equation} The previous expression can be rewritten as
+\begin{equation}
+	(E_2+\frac{E_n|\epsilon_n|^2\braket{\phi_n}{\phi_n}}{\braket{\phi_2}{\phi_2}})(1-\frac{|\epsilon_n|^2\braket{\phi_n}{\phi_n}}{\braket{\phi_2}{\phi_2}}+\frac{(|\epsilon_n|^2\braket{\phi_n}{\phi_n})^2}{\braket{\phi_2}{\phi_2}^2}...)
+\end{equation} 
 Neglecting the terms that are more than quadratic in $\epsilon_n$, the previous expression can be simplified to
-$$\mathcal{F}(\phi_2+\epsilon_n\phi_n)=E_2+\frac{E_n-E_2}{\braket{\phi_2}{\phi_2}}|\epsilon_n|^2\braket{\phi_n}{\phi_n}$$
-$$\mathcal{F}(\phi_2+\epsilon_n\phi_n)=\mathcal{F}(\phi_2)+\frac{E_n-E_2}{\braket{\phi_2}{\phi_2}}|\epsilon_n|^2\braket{\phi_n}{\phi_n}$$
+\begin{equation}
+	\mathcal{F}(\phi_2+\epsilon_n\phi_n)=E_2+\frac{E_n-E_2}{\braket{\phi_2}{\phi_2}}|\epsilon_n|^2\braket{\phi_n}{\phi_n}
+\end{equation}
+\begin{equation}
+	\mathcal{F}(\phi_2+\epsilon_n\phi_n)=\mathcal{F}(\phi_2)+\frac{E_n-E_2}{\braket{\phi_2}{\phi_2}}|\epsilon_n|^2\braket{\phi_n}{\phi_n}
+\end{equation}
 Several properties can be noted about this functional. Firstly, if there is only an additional $\epsilon_2$ contribution, there is no change to the result of the functional. Thus, $\mathcal{F}$ is flat along the direction of $\phi_2$. Intuitively, this makes sense as superposing two states with the same energy does not change the energy eigenvalue. Secondly, if there is only a $\epsilon_1$ contribution, the value of $\mathcal{F}$ decreases since $E_2>E_1$. This also makes intuitive sense as superposing a state with lower energy should decrease the expectation value of the hamiltonian. Finally, any other $\epsilon_n$ will increase the value of $\mathcal{F}$, thus, $\phi_2$ is a minimum in those directions. Since $\mathcal{F}$ behaves differently in different directions near $\phi_2$ and $\phi_2$ is a stationary function of $\mathcal{F}$, $\phi_2$ can be described as a saddle of $\mathcal{F}$.
 \end{enumerate}
 \end{sol}

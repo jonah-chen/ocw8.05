@@ -3,56 +3,110 @@
 $\mathbf{a}\cdot\mathbf{b}=(\mathbf{b}\cdot\mathbf{a})^*$
 \end{lemma}
 \begin{proof} 
-$$\mathbf a^\dagger\mathbf b=\mathbf{a}_i^*\mathbf{b}_i$$
-$$\mathbf b^\dagger\mathbf a=\mathbf{a}_i\mathbf{b}_i^*=(\mathbf a^*_i\mathbf b_i)^*$$
+\begin{equation}
+	\mathbf a^\dagger\mathbf b=\mathbf{a}_i^*\mathbf{b}_i
+\end{equation}
+\begin{equation}
+	\mathbf b^\dagger\mathbf a=\mathbf{a}_i\mathbf{b}_i^*=(\mathbf a^*_i\mathbf b_i)^*
+\end{equation}
 Note: for $\mathbf a, \mathbf b\in\mathbb{R}^n$, $\mathbf{a}\cdot\mathbf{b}=\mathbf{b}\cdot\mathbf{a}$.
 \end{proof}
 \begin{enumerate}[label=\textbf{(\alph*)}]
 \item
-$$f(\lambda)\equiv|\mathbf{a}-\lambda\mathbf{b}|^2\geq 0$$ 
-$$=(\mathbf{a}-\lambda\mathbf{b})\cdot(\mathbf{a}-\lambda\mathbf{b})=(\mathbf{a}-\lambda\mathbf{b})^\dagger(\mathbf{a}-\lambda\mathbf{b})=(\mathbf{a}^\dagger-\lambda\mathbf{b}^\dagger)(\mathbf{a}-\lambda\mathbf{b})$$ 
-$$=\mathbf{a}^\dagger\mathbf a+\lambda^2\mathbf b^\dagger \mathbf b-\lambda (\mathbf a^\dagger\mathbf b+\mathbf{ab}^\dagger)$$
+\begin{equation}
+	f(\lambda)\equiv|\mathbf{a}-\lambda\mathbf{b}|^2\geq 0
+\end{equation} 
+\begin{equation}
+	=(\mathbf{a}-\lambda\mathbf{b})\cdot(\mathbf{a}-\lambda\mathbf{b})=(\mathbf{a}-\lambda\mathbf{b})^\dagger(\mathbf{a}-\lambda\mathbf{b})=(\mathbf{a}^\dagger-\lambda\mathbf{b}^\dagger)(\mathbf{a}-\lambda\mathbf{b})
+\end{equation} 
+\begin{equation}
+	=\mathbf{a}^\dagger\mathbf a+\lambda^2\mathbf b^\dagger \mathbf b-\lambda (\mathbf a^\dagger\mathbf b+\mathbf{ab}^\dagger)
+\end{equation}
 Using Lemma 6,
-$$f(\lambda)=|\mathbf{a}|^2+\lambda^2|\mathbf{b}|^2-2\lambda (\mathbf a\cdot\mathbf b)$$
-Since $f$ is a quadratic function in $\lambda$ and $|\mathbf{a}|^2$ and $|\mathbf{b}|^2$ are strictly non-negative, the minimum point for $f$ is at $\lambda_{min}=\frac{\mathbf{a}\cdot\mathbf{b}}{|\mathbf{b}|^2}$. $$\because f(\lambda)\geq 0\forall x\in\mathbb{R}, f(\lambda_{min})\geq 0$$ 
-$$\min_{\lambda}f(\lambda)\equiv f(\lambda_{min})=|\mathbf{a}|^2+\frac{(\mathbf{a}\cdot\mathbf{b})^2}{|\mathbf{b}|^2}-\frac{2(\mathbf{a}\cdot\mathbf{b})^2}{|\mathbf{b}|^2}\geq 0$$
-$$|\mathbf{a}|^2|\mathbf{b}|^2-(\mathbf{a}\cdot\mathbf{b})^2\geq 0$$
-$$|\mathbf{a}\cdot\mathbf{b}|^2\leq|\mathbf{a}||\mathbf{b}|$$ 
+\begin{equation}
+	f(\lambda)=|\mathbf{a}|^2+\lambda^2|\mathbf{b}|^2-2\lambda (\mathbf a\cdot\mathbf b)
+\end{equation}
+Since $f$ is a quadratic function in $\lambda$ and $|\mathbf{a}|^2$ and $|\mathbf{b}|^2$ are strictly non-negative, the minimum point for $f$ is at $\lambda_{min}=\frac{\mathbf{a}\cdot\mathbf{b}}{|\mathbf{b}|^2}$. \begin{equation}
+	\because f(\lambda)\geq 0\forall x\in\mathbb{R}, f(\lambda_{min})\geq 0
+\end{equation} 
+\begin{equation}
+	\min_{\lambda}f(\lambda)\equiv f(\lambda_{min})=|\mathbf{a}|^2+\frac{(\mathbf{a}\cdot\mathbf{b})^2}{|\mathbf{b}|^2}-\frac{2(\mathbf{a}\cdot\mathbf{b})^2}{|\mathbf{b}|^2}\geq 0
+\end{equation}
+\begin{equation}
+	|\mathbf{a}|^2|\mathbf{b}|^2-(\mathbf{a}\cdot\mathbf{b})^2\geq 0
+\end{equation}
+\begin{equation}
+	|\mathbf{a}\cdot\mathbf{b}|^2\leq|\mathbf{a}||\mathbf{b}|
+\end{equation} 
 The Schwarz inequality is saturated when $\lambda=\lambda_{min}$ or when $\displaystyle{\mathbf{b}=\frac{\mathbf{a}\cdot\mathbf{b}}{|\mathbf b|^2}\mathbf{a}}$.
 \begin{lemma}
 Given $f(z):\mathbb{C}\to\mathbb{C}$ is a holomorphic function for $z\in\mathbb{C}$, $Re(z_0)\neq 0, Im(z_0)\neq 0$
-$$\frac{\partial f}{\partial z_0}(w)=0 \text{ and }\frac{\partial f}{\partial z_0^*}(w)=0\implies w \text{ is a stationary point of }f$$
+\begin{equation}
+	\frac{\partial f}{\partial z_0}(w)=0 \text{ and }\frac{\partial f}{\partial z_0^*}(w)=0\implies w \text{ is a stationary point of }f
+\end{equation}
 \end{lemma}
 \begin{proof}
 A stationary point of $f$ is defined to be a point $z$ where
-$$\lim_{\delta z\to 0,\delta z\in\mathbb{C}} \frac{f(w+\delta z)-f(z)}{\delta w}=0$$
+\begin{equation}
+	\lim_{\delta z\to 0,\delta z\in\mathbb{C}} \frac{f(w+\delta z)-f(z)}{\delta w}=0
+\end{equation}
 Let $\epsilon$ be a small real number and $u\in\mathbb C$. The equation above is equivalent to 
-$$\lim_{\epsilon\to 0} \frac{f(w+u\epsilon)-f(w)}{u\epsilon}=0$$ 
+\begin{equation}
+	\lim_{\epsilon\to 0} \frac{f(w+u\epsilon)-f(w)}{u\epsilon}=0
+\end{equation} 
 This limit is also the definition of $\displaystyle{\frac{\partial f}{\partial u}}$. 
 \\
-$$\text{Re}(z_0)\neq 0, \text{Im}(z_0)\neq 0\implies\forall z\in\mathbb{C}=\alpha z_0+\beta z_0^*, (\alpha,\beta)\in\mathbb{R}^2$$
-$$\therefore\frac{\partial f}{\partial u}=\alpha\frac{\partial f}{\partial z_0}+\beta\frac{\partial f}{\partial z_0^*}=0$$ 
+\begin{equation}
+	\text{Re}(z_0)\neq 0, \text{Im}(z_0)\neq 0\implies\forall z\in\mathbb{C}=\alpha z_0+\beta z_0^*, (\alpha,\beta)\in\mathbb{R}^2
+\end{equation}
+\begin{equation}
+	\therefore\frac{\partial f}{\partial u}=\alpha\frac{\partial f}{\partial z_0}+\beta\frac{\partial f}{\partial z_0^*}=0
+\end{equation} 
 Define $w=u\epsilon$ and the defining condition for a stationary point of $f$ is satisfied. 
 \end{proof}
 \item
-$$f(\lambda)\equiv\braket{\nu(\lambda)}{\nu(\lambda)}\geq 0$$
-$$=\braket{\ket a-\lambda\ket b}{\ket a-\lambda\ket b}=\braket{a}{a}+|\lambda|^2\braket{b}{b}-\lambda\braket{a}{b}-\lambda^*\braket{b}{a})$$ 
+\begin{equation}
+	f(\lambda)\equiv\braket{\nu(\lambda)}{\nu(\lambda)}\geq 0
+\end{equation}
+\begin{equation}
+	=\braket{\ket a-\lambda\ket b}{\ket a-\lambda\ket b}=\braket{a}{a}+|\lambda|^2\braket{b}{b}-\lambda\braket{a}{b}-\lambda^*\braket{b}{a})
+\end{equation} 
 Using Lemma 6, 
-$$f(\lambda)=|a|^2+|\lambda|^2|b|^2-2\lambda\braket{a}{b}=|a|^2+\lambda^*\lambda|b|^2-\lambda\braket{a}{b}+\lambda^*\braket{a}{b}^*$$
+\begin{equation}
+	f(\lambda)=|a|^2+|\lambda|^2|b|^2-2\lambda\braket{a}{b}=|a|^2+\lambda^*\lambda|b|^2-\lambda\braket{a}{b}+\lambda^*\braket{a}{b}^*
+\end{equation}
 Since $f$ is a quadratic function in $\lambda$ and $\lambda^*$ and $\braket{a}{a}$ and $\braket{b}{b}$ are non-negative, the stationary point of $f$ is a global minimum, which can be found using Lemma 7.
-$$\frac{\partial f}{\partial\lambda}=\lambda^*|b|^2-\braket{a}{b}=0$$ 
-$$\frac{\partial f}{\partial\lambda^*}=\lambda|b|^2-\braket{a}{b}^*=0$$ 
-$$\therefore\lambda_{min}=\frac{\braket{a}{b}^*}{|b|^2},\lambda^*_{min}=\frac{\braket{a}{b}}{|b|^2}$$
+\begin{equation}
+	\frac{\partial f}{\partial\lambda}=\lambda^*|b|^2-\braket{a}{b}=0
+\end{equation} 
+\begin{equation}
+	\frac{\partial f}{\partial\lambda^*}=\lambda|b|^2-\braket{a}{b}^*=0
+\end{equation} 
+\begin{equation}
+	\therefore\lambda_{min}=\frac{\braket{a}{b}^*}{|b|^2},\lambda^*_{min}=\frac{\braket{a}{b}}{|b|^2}
+\end{equation}
 Note that $\lambda_{min}^*\lambda_{min}|b|^4=|\lambda_{min}|^2|b|^4=|\braket{a}{b}|^2$.
-$$f(\lambda_{min})=|a|^2+\frac{|\braket{a}{b}|^2}{|b|^2}-\frac{|\braket{a}{b}|^2}{|b|^2}-\frac{|\braket{a}{b}|^2}{|b|^2}=|a|^2-\frac{|\braket{a}{b}|^2}{|b|^2}\geq 0$$
-$$|\braket{a}{b}|^2\leq\braket{a}{a}\braket{b}{b}$$ 
+\begin{equation}
+	f(\lambda_{min})=|a|^2+\frac{|\braket{a}{b}|^2}{|b|^2}-\frac{|\braket{a}{b}|^2}{|b|^2}-\frac{|\braket{a}{b}|^2}{|b|^2}=|a|^2-\frac{|\braket{a}{b}|^2}{|b|^2}\geq 0
+\end{equation}
+\begin{equation}
+	|\braket{a}{b}|^2\leq\braket{a}{a}\braket{b}{b}
+\end{equation} 
 \item
 The \textit{triangle inequality} is $|a+b|\leq|a|+|b|$.\\
 Squaring both sides of the inequality results in:
-$$|a+b|^2=\braket{a+b}{a+b}=\braket{a}{a}+\braket{b}{b}+\braket{a}{b}+(\braket{a}{b})^*$$
-$$=\braket{a}{a}+\braket{b}{b}+2\text{Re}(\braket{a}{b})$$ 
-$$(|a|+|b|)^2=\braket{a}{a}+\braket{b}{b}+2\braket{a}{b}$$
-$$\because\forall z\in\mathbb C, |\text{Re}(z)|\leq|z|, |a+b|^2\leq(|a|+|b|)^2$$ 
+\begin{equation}
+	|a+b|^2=\braket{a+b}{a+b}=\braket{a}{a}+\braket{b}{b}+\braket{a}{b}+(\braket{a}{b})^*
+\end{equation}
+\begin{equation}
+	=\braket{a}{a}+\braket{b}{b}+2\text{Re}(\braket{a}{b})
+\end{equation} 
+\begin{equation}
+	(|a|+|b|)^2=\braket{a}{a}+\braket{b}{b}+2\braket{a}{b}
+\end{equation}
+\begin{equation}
+	\because\forall z\in\mathbb C, |\text{Re}(z)|\leq|z|, |a+b|^2\leq(|a|+|b|)^2
+\end{equation} 
 Then, the \textit{triangle inequality} will miraculously manifest from taking the square root of both sides.
 \end{enumerate}
 \end{sol}

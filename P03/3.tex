@@ -5,52 +5,122 @@ $
 \end{lemma}
 \begin{proof} 
 The definition of the Pauli Matrices $\mathbf{\sigma}$ from the spin operators is $\hat{S}_i=\frac{1}{2}\sigma_i$. The commutators of the spin operators are known as
-$$[\hat{S}_i,\hat{S}_j]\equiv i\epsilon_{ijk}\hat{S}_k$$ 
+\begin{equation}
+	[\hat{S}_i,\hat{S}_j]\equiv i\epsilon_{ijk}\hat{S}_k
+\end{equation} 
 From this definition, it can be concluded that
-$$\frac{1}{2}^2[\sigma_i,\sigma_j]=\frac{1}{2}i\epsilon_{ijk}\sigma_k$$
-$$[\sigma_i,\sigma_j]=2i\epsilon_{ijk}\sigma_k$$
+\begin{equation}
+	\frac{1}{2}^2[\sigma_i,\sigma_j]=\frac{1}{2}i\epsilon_{ijk}\sigma_k
+\end{equation}
+\begin{equation}
+	[\sigma_i,\sigma_j]=2i\epsilon_{ijk}\sigma_k
+\end{equation}
 Next, it can be shown that $(\sigma_i)^2=\mathbf{1}$ 
-$$\mathbf{\sigma}_1\mathbf{\sigma}_1=\begin{pmatrix}0&1\\1&0\end{pmatrix}\begin{pmatrix}0&1\\1&0\end{pmatrix} =\begin{pmatrix}1 &0\\0&1\end{pmatrix}\equiv\mathbf{1}$$ $$\mathbf{\sigma}_2\mathbf{\sigma}_2=\begin{pmatrix}0&-i\\i&0\end{pmatrix}\begin{pmatrix}0&-i\\i&0\end{pmatrix} =\begin{pmatrix}1 &0\\0&1\end{pmatrix}\equiv\mathbf{1}$$ $$\mathbf{\sigma}_3\mathbf{\sigma}_3=\begin{pmatrix}1&0\\0&-1\end{pmatrix}\begin{pmatrix}1&0\\0&-1\end{pmatrix} =\begin{pmatrix}1 &0\\0&1\end{pmatrix}\equiv\mathbf{1}$$
+\begin{equation}
+	\mathbf{\sigma}_1\mathbf{\sigma}_1=\begin{pmatrix}0&1\\1&0\end{pmatrix}\begin{pmatrix}0&1\\1&0\end{pmatrix} =\begin{pmatrix}1 &0\\0&1\end{pmatrix}\equiv\mathbf{1}
+\end{equation} \begin{equation}
+	\mathbf{\sigma}_2\mathbf{\sigma}_2=\begin{pmatrix}0&-i\\i&0\end{pmatrix}\begin{pmatrix}0&-i\\i&0\end{pmatrix} =\begin{pmatrix}1 &0\\0&1\end{pmatrix}\equiv\mathbf{1}
+\end{equation} \begin{equation}
+	\mathbf{\sigma}_3\mathbf{\sigma}_3=\begin{pmatrix}1&0\\0&-1\end{pmatrix}\begin{pmatrix}1&0\\0&-1\end{pmatrix} =\begin{pmatrix}1 &0\\0&1\end{pmatrix}\equiv\mathbf{1}
+\end{equation}
 Next, it can be shown that $\sigma_i\sigma_j=-\sigma_j\sigma_i$. Note only the case of $\sigma_1\sigma_2=-\sigma_2\sigma_1$ will be shown here, but the other cases can be computed and will satisfy this identity.
-$$\sigma_1\sigma_2=\begin{pmatrix}0&1\\1&0\end{pmatrix}\begin{pmatrix}0&-i\\i&0\end{pmatrix}=\begin{pmatrix}i&0\\0&-i\end{pmatrix}$$ 
-$$\sigma_2\sigma_1=\begin{pmatrix}0&-i\\i&0\end{pmatrix}\begin{pmatrix}0&1\\1&0\end{pmatrix}=\begin{pmatrix}-i&0\\0&i\end{pmatrix}=-\begin{pmatrix}i&0\\0&-i\end{pmatrix}$$ 
+\begin{equation}
+	\sigma_1\sigma_2=\begin{pmatrix}0&1\\1&0\end{pmatrix}\begin{pmatrix}0&-i\\i&0\end{pmatrix}=\begin{pmatrix}i&0\\0&-i\end{pmatrix}
+\end{equation} 
+\begin{equation}
+	\sigma_2\sigma_1=\begin{pmatrix}0&-i\\i&0\end{pmatrix}\begin{pmatrix}0&1\\1&0\end{pmatrix}=\begin{pmatrix}-i&0\\0&i\end{pmatrix}=-\begin{pmatrix}i&0\\0&-i\end{pmatrix}
+\end{equation} 
 Thus, the anti-commutator $\{\sigma_i,\sigma_j\}=2\delta_{ij}\mathbf{1}$.\\\\
 Given the definition of the commutator and anti-commutator, an operator product $AB=\frac{1}{2}([A,B]+\{A,B\})$. Thus,
-$$\sigma_i\sigma_j=i\epsilon_{ijk}\sigma_k+\delta_{ij}\mathbf{1}$$
-From the definition of the dot product and the cross product, $$a\cdot b=a_ib_i=a_ib_j\delta_{ij}$$ 
-$$(a\times b)_k=a_ib_j\epsilon_{ijk}$$
+\begin{equation}
+	\sigma_i\sigma_j=i\epsilon_{ijk}\sigma_k+\delta_{ij}\mathbf{1}
+\end{equation}
+From the definition of the dot product and the cross product, \begin{equation}
+	a\cdot b=a_ib_i=a_ib_j\delta_{ij}
+\end{equation} 
+\begin{equation}
+	(a\times b)_k=a_ib_j\epsilon_{ijk}
+\end{equation}
 Since the components of $\mathbf{n}$ are scalars, 
-$$(\mathbf{n}\cdot\mathbf{\sigma})^2=(\mathbf{n}\cdot\mathbf{\sigma})(\mathbf{n}\cdot\mathbf{\sigma})=(n_i\sigma_i)(n_j\sigma_j)=i(n_in_j\epsilon_{ijk})\sigma_k+n_in_j\delta_{ij}\mathbf{1}$$ 
-$$=i(\mathbf{n}\times\mathbf{n})\sigma_k+(\mathbf{n}\cdot\mathbf{n})\mathbf{1}=||\mathbf{n}||^2\mathbf{1}=\mathbf{1}$$
+\begin{equation}
+	(\mathbf{n}\cdot\mathbf{\sigma})^2=(\mathbf{n}\cdot\mathbf{\sigma})(\mathbf{n}\cdot\mathbf{\sigma})=(n_i\sigma_i)(n_j\sigma_j)=i(n_in_j\epsilon_{ijk})\sigma_k+n_in_j\delta_{ij}\mathbf{1}
+\end{equation} 
+\begin{equation}
+	=i(\mathbf{n}\times\mathbf{n})\sigma_k+(\mathbf{n}\cdot\mathbf{n})\mathbf{1}=||\mathbf{n}||^2\mathbf{1}=\mathbf{1}
+\end{equation}
 \end{proof}
 \begin{enumerate}[label=\textbf{(\alph*)}]
 \item
-Define $\theta\equiv-\frac{\alpha}{2}$ and $\mathbf{M}\equiv\mathbf{n}\cdot\mathbf{\sigma} $. Note $$\hat{R_\mathbf{n}}(\alpha) = \exp(i\mathbf{M}\theta)$$
+Define $\theta\equiv-\frac{\alpha}{2}$ and $\mathbf{M}\equiv\mathbf{n}\cdot\mathbf{\sigma} $. Note \begin{equation}
+	\hat{R_\mathbf{n}}(\alpha) = \exp(i\mathbf{M}\theta)
+\end{equation}
 From Lemma 5 and the result from \textit{sol.6, p.16},
-$$\hat{R_\mathbf{n}}(\alpha) =\cos(\theta)\mathbf{1}+i\sin(\theta)\mathbf{M}=\mathbf{1}\cos(\frac{\alpha}{2})-i\mathbf{\sigma}\cdot\mathbf{n}\sin(\frac{\alpha}{2})$$ The adjoint of $\hat{R_\mathbf{n}}$ is 
-$$\hat{R_\mathbf{n}}(\alpha)^\dagger=\mathbf{1}\cos(\frac{\alpha}{2})+i(\mathbf{\sigma}\cdot\mathbf{n})^\dagger\sin(\frac{\alpha}{2})$$
+\begin{equation}
+	\hat{R_\mathbf{n}}(\alpha) =\cos(\theta)\mathbf{1}+i\sin(\theta)\mathbf{M}=\mathbf{1}\cos(\frac{\alpha}{2})-i\mathbf{\sigma}\cdot\mathbf{n}\sin(\frac{\alpha}{2})
+\end{equation} The adjoint of $\hat{R_\mathbf{n}}$ is 
+\begin{equation}
+	\hat{R_\mathbf{n}}(\alpha)^\dagger=\mathbf{1}\cos(\frac{\alpha}{2})+i(\mathbf{\sigma}\cdot\mathbf{n})^\dagger\sin(\frac{\alpha}{2})
+\end{equation}
 Since $\mathbf{n}$ is a vector of scalars and every component of $\sigma$ is hermitian, $\mathbf{\sigma}\cdot\mathbf{n}$ must be hermitian. Thus, 
-$$\hat{R_\mathbf{n}}(\alpha)^\dagger=\mathbf{1}\cos(\frac{\alpha}{2})+i\mathbf{\sigma}\cdot\mathbf{n}\sin(\frac{\alpha}{2})$$
-$$\hat{R_\mathbf{n}}(\alpha)^\dagger\hat{R_\mathbf{n}}(\alpha)=(\mathbf{1}\cos(\frac{\alpha}{2})+i\mathbf{\sigma}\cdot\mathbf{n}\sin(\frac{\alpha}{2}))(\mathbf{1}\cos(\frac{\alpha}{2})-i\mathbf{\sigma}\cdot\mathbf{n}\sin(\frac{\alpha}{2}))$$ $$=\mathbf{1}\cos^2(\frac{\alpha}{2})+(\sigma\cdot\mathbf{n})^2\sin^2(\frac{\alpha}{2})$$ From Lemma 5, $(\sigma\cdot\mathbf{n})^2=\mathbf{1}$ Thus,
-$$\hat{R_\mathbf{n}}(\alpha)^\dagger\hat{R_\mathbf{n}}(\alpha)=\mathbf{1}(\cos^2(\frac{\alpha}{2})+\sin^2(\frac{\alpha}{2}))=\mathbf{1}$$ Thus, $\hat{R_\mathbf{n}}(\alpha)$ is unitary.
+\begin{equation}
+	\hat{R_\mathbf{n}}(\alpha)^\dagger=\mathbf{1}\cos(\frac{\alpha}{2})+i\mathbf{\sigma}\cdot\mathbf{n}\sin(\frac{\alpha}{2})
+\end{equation}
+\begin{equation}
+	\hat{R_\mathbf{n}}(\alpha)^\dagger\hat{R_\mathbf{n}}(\alpha)=(\mathbf{1}\cos(\frac{\alpha}{2})+i\mathbf{\sigma}\cdot\mathbf{n}\sin(\frac{\alpha}{2}))(\mathbf{1}\cos(\frac{\alpha}{2})-i\mathbf{\sigma}\cdot\mathbf{n}\sin(\frac{\alpha}{2}))
+\end{equation} \begin{equation}
+	=\mathbf{1}\cos^2(\frac{\alpha}{2})+(\sigma\cdot\mathbf{n})^2\sin^2(\frac{\alpha}{2})
+\end{equation} From Lemma 5, $(\sigma\cdot\mathbf{n})^2=\mathbf{1}$ Thus,
+\begin{equation}
+	\hat{R_\mathbf{n}}(\alpha)^\dagger\hat{R_\mathbf{n}}(\alpha)=\mathbf{1}(\cos^2(\frac{\alpha}{2})+\sin^2(\frac{\alpha}{2}))=\mathbf{1}
+\end{equation} Thus, $\hat{R_\mathbf{n}}(\alpha)$ is unitary.
 \item
 From the definition, 
-$$\hat{R_\mathbf{y}}(\alpha)=\mathbf{1}\cos(\frac{\alpha}{2})-i\sigma_y\sin(\frac{\alpha}{2})$$
-$$\hat{R_\mathbf{y}}(\alpha)^\dagger=\mathbf{1}\cos(\frac{\alpha}{2})+i\sigma_y\sin(\frac{\alpha}{2})$$
-$$\hat{S}_z=\frac{1}{2}\sigma_z$$ $$\hat{R_\mathbf{y}}(\alpha)\hat{S_z}\hat{R_\mathbf{y}}(\alpha)^\dagger=(\mathbf{1}\cos(\frac{\alpha}{2})-i\sigma_y\sin(\frac{\alpha}{2}))(\frac{1}{2}\sigma_z)(\mathbf{1}\cos(\frac{\alpha}{2})+i\sigma_y\sin(\frac{\alpha}{2}))$$ $$=\frac{1}{2}\Big(\sigma_z\cos^2(\frac{\alpha}{2})+i\sigma_z\sigma_y\sin(\frac{\alpha}{2})\cos(\frac{\alpha}{2})-i\sigma_y\sigma_z\sin(\frac{\alpha}{2})\cos(\frac{\alpha}{2})+\sigma_y\sigma_z\sigma_y\sin^2(\frac{\alpha}{2})\Big)$$
-$$=\sigma_z\cos^2(\frac{\alpha}{2})+\frac{1}{2}i[\sigma_z,\sigma_y]\sin(\alpha)+\sigma_y\sigma_z\sigma_y\sin^2(\frac{\alpha}{2})$$
+\begin{equation}
+	\hat{R_\mathbf{y}}(\alpha)=\mathbf{1}\cos(\frac{\alpha}{2})-i\sigma_y\sin(\frac{\alpha}{2})
+\end{equation}
+\begin{equation}
+	\hat{R_\mathbf{y}}(\alpha)^\dagger=\mathbf{1}\cos(\frac{\alpha}{2})+i\sigma_y\sin(\frac{\alpha}{2})
+\end{equation}
+\begin{equation}
+	\hat{S}_z=\frac{1}{2}\sigma_z
+\end{equation} \begin{equation}
+	\hat{R_\mathbf{y}}(\alpha)\hat{S_z}\hat{R_\mathbf{y}}(\alpha)^\dagger=(\mathbf{1}\cos(\frac{\alpha}{2})-i\sigma_y\sin(\frac{\alpha}{2}))(\frac{1}{2}\sigma_z)(\mathbf{1}\cos(\frac{\alpha}{2})+i\sigma_y\sin(\frac{\alpha}{2}))
+\end{equation} \begin{equation}
+	=\frac{1}{2}\Big(\sigma_z\cos^2(\frac{\alpha}{2})+i\sigma_z\sigma_y\sin(\frac{\alpha}{2})\cos(\frac{\alpha}{2})-i\sigma_y\sigma_z\sin(\frac{\alpha}{2})\cos(\frac{\alpha}{2})+\sigma_y\sigma_z\sigma_y\sin^2(\frac{\alpha}{2})\Big)
+\end{equation}
+\begin{equation}
+	=\sigma_z\cos^2(\frac{\alpha}{2})+\frac{1}{2}i[\sigma_z,\sigma_y]\sin(\alpha)+\sigma_y\sigma_z\sigma_y\sin^2(\frac{\alpha}{2})
+\end{equation}
 The commutator $[\sigma_z,\sigma_y]$ is known to be $-2i\sigma_x$. Moreover,
-$$\sigma_y\sigma_z\sigma_y=\begin{pmatrix}0&-i\\i&0\end{pmatrix}\begin{pmatrix}1&0\\0&-1\end{pmatrix}\begin{pmatrix}0&-i\\i&0\end{pmatrix}=\begin{pmatrix}-1&0\\0&1\end{pmatrix}=-\sigma_z$$ 
+\begin{equation}
+	\sigma_y\sigma_z\sigma_y=\begin{pmatrix}0&-i\\i&0\end{pmatrix}\begin{pmatrix}1&0\\0&-1\end{pmatrix}\begin{pmatrix}0&-i\\i&0\end{pmatrix}=\begin{pmatrix}-1&0\\0&1\end{pmatrix}=-\sigma_z
+\end{equation} 
 Substituting the results into the original equation,
-$$\hat{R_\mathbf{y}}(\alpha)\hat{S_z}\hat{R_\mathbf{y}}(\alpha)^\dagger=\frac{1}{2}\Big(\sigma_z\cos^2(\frac{\alpha}{2})-\sigma_z\sin^2(\frac{\alpha}{2})+\sigma_x\sin(\alpha)\Big)$$
-$$=\frac{1}{2}\big(\sigma_z\cos(\alpha)+\sigma_x\sin(\alpha)\big)$$ $$=\hat S_z\cos(\alpha)+\hat S_x\sin(\alpha)$$  
+\begin{equation}
+	\hat{R_\mathbf{y}}(\alpha)\hat{S_z}\hat{R_\mathbf{y}}(\alpha)^\dagger=\frac{1}{2}\Big(\sigma_z\cos^2(\frac{\alpha}{2})-\sigma_z\sin^2(\frac{\alpha}{2})+\sigma_x\sin(\alpha)\Big)
+\end{equation}
+\begin{equation}
+	=\frac{1}{2}\big(\sigma_z\cos(\alpha)+\sigma_x\sin(\alpha)\big)
+\end{equation} \begin{equation}
+	=\hat S_z\cos(\alpha)+\hat S_x\sin(\alpha)
+\end{equation}  
 \item
-$$\hat{R_\mathbf{y}}(\alpha)\ket{+}=\Big(\mathbf{1}\cos(\frac{\alpha}{2})-i\sigma_y\sin(\frac{\alpha}{2})\Big)\ket{+}$$ 
+\begin{equation}
+	\hat{R_\mathbf{y}}(\alpha)\ket{+}=\Big(\mathbf{1}\cos(\frac{\alpha}{2})-i\sigma_y\sin(\frac{\alpha}{2})\Big)\ket{+}
+\end{equation} 
 The state $\ket{+}$ can be represented by the column vector $\begin{pmatrix}1\\0\end{pmatrix}$.
-$$\hat{R_\mathbf{y}}(\alpha)\begin{pmatrix}1\\0\end{pmatrix}=\cos(\frac{\alpha}{2})\begin{pmatrix}1&0\\0&1\end{pmatrix}\begin{pmatrix}1\\0\end{pmatrix}-i\sin(\frac{\alpha}{2})\begin{pmatrix}0&-i\\i&0\end{pmatrix}\begin{pmatrix}1\\0\end{pmatrix}=\begin{pmatrix}\cos(\frac{\alpha}{2})\\\sin(\frac{\alpha}{2})\end{pmatrix}$$ 
-The resulting state is an eigenstate of the operator $\hat{R_\mathbf{y}}(\alpha)\hat{S_z}\hat{R_\mathbf{y}}(\alpha)^\dagger$ with eigenvalue $\frac{1}{2}$. Simply check this result by multiplying. Note that $$\hat{R_\mathbf{y}}(\alpha)\hat{S_z}\hat{R_\mathbf{y}}(\alpha)^\dagger=\hat S_z\cos(\alpha)+\hat S_x\sin(\alpha)=\frac{1}{2}\begin{pmatrix}\cos\alpha&\sin\alpha\\\sin\alpha&-\cos\alpha\end{pmatrix}$$
-$$\hat{R_\mathbf{y}}(\alpha)\hat{S_z}\hat{R_\mathbf{y}}(\alpha)^\dagger\begin{pmatrix}\cos(\frac{\alpha}{2})\\\sin(\frac{\alpha}{2})\end{pmatrix}=\frac{1}{2}\begin{pmatrix}\cos\alpha&\sin\alpha\\\sin\alpha&-\cos\alpha\end{pmatrix}\begin{pmatrix}\cos(\frac{\alpha}{2})\\\sin(\frac{\alpha}{2})\end{pmatrix}$$
-$$=\frac{1}{2}\begin{pmatrix}\cos(\alpha)\cos(\frac{\alpha}{2})+\sin(\alpha)\sin(\frac{\alpha}{2})\\\sin(\alpha)\cos(\frac{\alpha}{2})-\cos(\alpha)\sin(\frac{\alpha}{2})\end{pmatrix}=\frac{1}{2}\begin{pmatrix}\cos(\frac{\alpha}{2})\\\sin(\frac{\alpha}{2})\end{pmatrix}$$
+\begin{equation}
+	\hat{R_\mathbf{y}}(\alpha)\begin{pmatrix}1\\0\end{pmatrix}=\cos(\frac{\alpha}{2})\begin{pmatrix}1&0\\0&1\end{pmatrix}\begin{pmatrix}1\\0\end{pmatrix}-i\sin(\frac{\alpha}{2})\begin{pmatrix}0&-i\\i&0\end{pmatrix}\begin{pmatrix}1\\0\end{pmatrix}=\begin{pmatrix}\cos(\frac{\alpha}{2})\\\sin(\frac{\alpha}{2})\end{pmatrix}
+\end{equation} 
+The resulting state is an eigenstate of the operator $\hat{R_\mathbf{y}}(\alpha)\hat{S_z}\hat{R_\mathbf{y}}(\alpha)^\dagger$ with eigenvalue $\frac{1}{2}$. Simply check this result by multiplying. Note that \begin{equation}
+	\hat{R_\mathbf{y}}(\alpha)\hat{S_z}\hat{R_\mathbf{y}}(\alpha)^\dagger=\hat S_z\cos(\alpha)+\hat S_x\sin(\alpha)=\frac{1}{2}\begin{pmatrix}\cos\alpha&\sin\alpha\\\sin\alpha&-\cos\alpha\end{pmatrix}
+\end{equation}
+\begin{equation}
+	\hat{R_\mathbf{y}}(\alpha)\hat{S_z}\hat{R_\mathbf{y}}(\alpha)^\dagger\begin{pmatrix}\cos(\frac{\alpha}{2})\\\sin(\frac{\alpha}{2})\end{pmatrix}=\frac{1}{2}\begin{pmatrix}\cos\alpha&\sin\alpha\\\sin\alpha&-\cos\alpha\end{pmatrix}\begin{pmatrix}\cos(\frac{\alpha}{2})\\\sin(\frac{\alpha}{2})\end{pmatrix}
+\end{equation}
+\begin{equation}
+	=\frac{1}{2}\begin{pmatrix}\cos(\alpha)\cos(\frac{\alpha}{2})+\sin(\alpha)\sin(\frac{\alpha}{2})\\\sin(\alpha)\cos(\frac{\alpha}{2})-\cos(\alpha)\sin(\frac{\alpha}{2})\end{pmatrix}=\frac{1}{2}\begin{pmatrix}\cos(\frac{\alpha}{2})\\\sin(\frac{\alpha}{2})\end{pmatrix}
+\end{equation}
 From part b, it can be noticed that using $\hat R_y(\alpha)\hat S\hat R_y(\alpha)^\dagger$  rotated the spin operator about the y-axis by an angle $\alpha$. The $\hat R_y(\alpha)$ operator rotated the spinors y-axis by an angle $\alpha$ such that they are eigenvectors of $\hat R_y(\alpha)\hat S\hat R_y(\alpha)^\dagger$. Furthermore, $\hat R_\mathbf{n}(\alpha)$ is a unitary operator similar to the translation and momentum change operators that have been used. Therefore, it is intuitive to think of  $\hat R_\mathbf{n}(\alpha)$ as a rotation operator whose behavior on the spin operator and their eigenvectors suggests that it is a rotation operator about the axis of $\mathbf{n}$ for an angle $\alpha$.
 \end{enumerate}
 \end{sol}

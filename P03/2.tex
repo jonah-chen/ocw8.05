@@ -1,16 +1,36 @@
 \begin{sol}
 It is well known that a state $\ket{\mathbf{n}(\theta,\phi);+}=\begin{pmatrix}\cos(\frac{\theta}{2})\\e^{i\phi}\sin(\frac{\theta}{2})\end{pmatrix}$ \\
-$$|\braket{\mathbf{n'}(\theta,\phi);+}{\mathbf{n}(\theta,\phi);+}|^2=\bigg|\begin{pmatrix}\cos\left(\frac{\theta'}{2}\right)&e^{-i\phi'}\sin\left(\frac{\theta'}{2}\right)\end{pmatrix}\begin{pmatrix}\cos\left(\frac{\theta}{2}\right)\\e^{i\phi}\sin\left(\frac{\theta}{2}\right)\end{pmatrix}\bigg|^2$$
-$$=\bigg|\cos\left(\frac{\theta'}{2}\right)\cos\left(\frac{\theta}{2}\right)+e^{i(\phi-\phi')}\sin\left(\frac{\theta'}{2}\right)\sin\left(\frac{\theta}{2}\right)\bigg|^2$$
-$$=\cos^2\left(\frac{\theta'}{2}\right)\cos^2\left(\frac{\theta}{2}\right)+\sin^2\left(\frac{\theta'}{2}\right)\sin^2\left(\frac{\theta}{2}\right)+2\cos\left(\frac{\theta'}{2}\right)\cos\left(\frac{\theta}{2}\right)\sin\left(\frac{\theta'}{2}\right)\sin\left(\frac{\theta}{2}\right)\cos(\phi-\phi')$$ 
-$$=\cos^2\left(\frac{\theta'}{2}\right)\cos^2\left(\frac{\theta}{2}\right)+\sin^2\left(\frac{\theta'}{2}\right)\sin^2\left(\frac{\theta}{2}\right)+\frac{1}{2}\sin\left(\theta'\right)\sin\left(\theta\right)\cos(\phi-\phi')$$
-$$=\frac{1}{2}(\cos(\theta')\cos(\theta)+\sin(\theta')\sin(\theta)\cos(\phi-\phi')+1)$$ 
+\begin{equation}
+	|\braket{\mathbf{n'}(\theta,\phi);+}{\mathbf{n}(\theta,\phi);+}|^2=\bigg|\begin{pmatrix}\cos\left(\frac{\theta'}{2}\right)&e^{-i\phi'}\sin\left(\frac{\theta'}{2}\right)\end{pmatrix}\begin{pmatrix}\cos\left(\frac{\theta}{2}\right)\\e^{i\phi}\sin\left(\frac{\theta}{2}\right)\end{pmatrix}\bigg|^2
+\end{equation}
+\begin{equation}
+	=\bigg|\cos\left(\frac{\theta'}{2}\right)\cos\left(\frac{\theta}{2}\right)+e^{i(\phi-\phi')}\sin\left(\frac{\theta'}{2}\right)\sin\left(\frac{\theta}{2}\right)\bigg|^2
+\end{equation}
+\begin{equation}
+	=\cos^2\left(\frac{\theta'}{2}\right)\cos^2\left(\frac{\theta}{2}\right)+\sin^2\left(\frac{\theta'}{2}\right)\sin^2\left(\frac{\theta}{2}\right)+2\cos\left(\frac{\theta'}{2}\right)\cos\left(\frac{\theta}{2}\right)\sin\left(\frac{\theta'}{2}\right)\sin\left(\frac{\theta}{2}\right)\cos(\phi-\phi')
+\end{equation} 
+\begin{equation}
+	=\cos^2\left(\frac{\theta'}{2}\right)\cos^2\left(\frac{\theta}{2}\right)+\sin^2\left(\frac{\theta'}{2}\right)\sin^2\left(\frac{\theta}{2}\right)+\frac{1}{2}\sin\left(\theta'\right)\sin\left(\theta\right)\cos(\phi-\phi')
+\end{equation}
+\begin{equation}
+	=\frac{1}{2}(\cos(\theta')\cos(\theta)+\sin(\theta')\sin(\theta)\cos(\phi-\phi')+1)
+\end{equation} 
 Let $\mathbf{n}$ be represented in spherical coordinates as $(1,\theta,\phi)$. Let $\mathbf{n'}$ be represented in spherical coordinates as $(1,\theta',\phi')$.\\\\
 Then, $\mathbf{n}=\begin{pmatrix}\sin\theta\cos\phi\\\sin\theta\sin\phi\\\cos\theta\end{pmatrix}$ and $\mathbf{n'}=\begin{pmatrix}\sin\theta'\cos\phi'\\\sin\theta'\sin\phi'\\\cos\theta'\end{pmatrix}$
-$$\mathbf{n}\cdot\mathbf{n'}=\mathbf{n}^\dagger\mathbf{n}'$$
-$$=\sin\theta\cos\phi\sin\theta'\cos\phi'+\sin\theta\sin\phi\sin\theta'\sin\phi'+\cos\theta\cos\theta'$$ 
-$$=\sin\theta\sin\theta'(\cos\phi\cos\phi'-\sin\phi\sin\phi')+\cos\theta\cos\theta'$$ 
-$$=\sin\theta\sin\theta'\cos(\phi-\phi')+\cos\theta\cos\theta'\equiv\cos\gamma$$ 
+\begin{equation}
+	\mathbf{n}\cdot\mathbf{n'}=\mathbf{n}^\dagger\mathbf{n}'
+\end{equation}
+\begin{equation}
+	=\sin\theta\cos\phi\sin\theta'\cos\phi'+\sin\theta\sin\phi\sin\theta'\sin\phi'+\cos\theta\cos\theta'
+\end{equation} 
+\begin{equation}
+	=\sin\theta\sin\theta'(\cos\phi\cos\phi'-\sin\phi\sin\phi')+\cos\theta\cos\theta'
+\end{equation} 
+\begin{equation}
+	=\sin\theta\sin\theta'\cos(\phi-\phi')+\cos\theta\cos\theta'\equiv\cos\gamma
+\end{equation} 
 Notice this expression appears in the expression for $|\braket{\mathbf{n'}(\theta,\phi);+}{\mathbf{n}(\theta,\phi);+}|^2$. Substituting $\cos\gamma$ will yield:
-$$|\braket{\mathbf{n'}(\theta,\phi);+}{\mathbf{n}(\theta,\phi);+}|^2=\frac{1}{2}(\cos\gamma+1)=\cos^2\left(\frac{\gamma}{2}\right)$$ 
+\begin{equation}
+	|\braket{\mathbf{n'}(\theta,\phi);+}{\mathbf{n}(\theta,\phi);+}|^2=\frac{1}{2}(\cos\gamma+1)=\cos^2\left(\frac{\gamma}{2}\right)
+\end{equation} 
 \end{sol}

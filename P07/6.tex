@@ -2,31 +2,55 @@
 \begin{enumerate}[label=\textbf{(\alph*)}]
 \item
 The Hamiltonian of the shifted harmonic oscillator is 
-$$\hat H=\frac{\hat p^2}{2m}+\frac{1}{2}m\omega^2\hat x^2-F\hat x$$
+\begin{equation}
+	\hat H=\frac{\hat p^2}{2m}+\frac{1}{2}m\omega^2\hat x^2-F\hat x
+\end{equation}
 Complete the square for the second and third terms of the Hamiltonian. Let a characteristic length $\beta\equiv\frac{F}{m\omega^2}$
-$$\hat H=\frac{p^2}{2m}+\frac{1}{2}m\omega^2(\hat x-\beta)^2-\frac{1}{2}m\omega^2\beta^2$$
+\begin{equation}
+	\hat H=\frac{p^2}{2m}+\frac{1}{2}m\omega^2(\hat x-\beta)^2-\frac{1}{2}m\omega^2\beta^2
+\end{equation}
 Define a new position operator $\hat y\equiv \hat x-\beta$. The Hamiltonian can be rewritten as
-$$\hat H=\frac{p^2}{2m}+\frac{1}{2}m\omega^2\hat y^2-\frac{1}{2}m\omega^2\beta^2$$
+\begin{equation}
+	\hat H=\frac{p^2}{2m}+\frac{1}{2}m\omega^2\hat y^2-\frac{1}{2}m\omega^2\beta^2
+\end{equation}
 It is clear that this Hamiltonian is analogous to the Hamiltonian of the normal simple harmonic oscillator with $\hat y$ being the position operator. For a simple harmonic oscillator, the expectation value of the position in the ground state is zero. Thus, $\langle\hat y\rangle=0$. 
-$$\langle x\rangle=\langle y\rangle-\beta=-\frac{F}{m\omega^2}$$
+\begin{equation}
+	\langle x\rangle=\langle y\rangle-\beta=-\frac{F}{m\omega^2}
+\end{equation}
 \item
 Define the operator
-$$\hat a_y\equiv\sqrt{\frac{m\omega}{2}}\left(\hat y+\frac{i\hat p}{m\omega}\right)=\hat a-\sqrt{\frac{m\omega}{2}}\beta$$
+\begin{equation}
+	\hat a_y\equiv\sqrt{\frac{m\omega}{2}}\left(\hat y+\frac{i\hat p}{m\omega}\right)=\hat a-\sqrt{\frac{m\omega}{2}}\beta
+\end{equation}
 This is the annihilation operator of the shifted harmonic oscillator. Thus, $\hat a_y\ket {0'}=0$.
 It is given that 
-$$\ket{0'}=Ne^{\alpha \hat a^\dagger}\ket 0$$
+\begin{equation}
+	\ket{0'}=Ne^{\alpha \hat a^\dagger}\ket 0
+\end{equation}
 For simplicity, let $\gamma\equiv\sqrt{\frac{m\omega}{2}}\beta$ 
-$$\hat a_y\ket{0'}=(\hat a-\gamma)Ne^{\alpha \hat a^\dagger}\ket 0=0$$ 
+\begin{equation}
+	\hat a_y\ket{0'}=(\hat a-\gamma)Ne^{\alpha \hat a^\dagger}\ket 0=0
+\end{equation} 
 Since $N$ is a constant, it can be ignored. Rearranging the terms will result in
-$$\hat ae^{\alpha\hat a^\dagger}\ket 0=\gamma e^{\alpha\hat a^\dagger}\ket 0$$
+\begin{equation}
+	\hat ae^{\alpha\hat a^\dagger}\ket 0=\gamma e^{\alpha\hat a^\dagger}\ket 0
+\end{equation}
 Note that $[\hat a,e^{\alpha\hat a^\dagger}]\ket 0=\hat ae^{\alpha\hat a^\dagger}\ket 0+e^{\alpha\hat a^\dagger}\hat a\ket 0=\hat ae^{\alpha\hat a^\dagger}\ket 0$. Hence, $[\hat a,e^{\alpha\hat a^\dagger}]\ket 0=\gamma e^{\alpha\hat a^\dagger}\ket 0$.\\
 It will be helpful to compute the commutator. First, use the definition of the exponential and the linearity of the commutator.
-$$[\hat a,e^{\alpha\hat a^\dagger}]=\sum_{n=0}^\infty\frac{\alpha^n}{n!}[a,(a^\dagger)^n]$$
+\begin{equation}
+	[\hat a,e^{\alpha\hat a^\dagger}]=\sum_{n=0}^\infty\frac{\alpha^n}{n!}[a,(a^\dagger)^n]
+\end{equation}
 It was computed in \textit{5b, p.52} that $[a,(a^\dagger)^n]=n(a^\dagger)^{n-1}$ for $n\geq 1$. Note that $a$ commutes with $(a^\dagger)^0$ which is the identity operator.
-$$[\hat a,e^{\alpha\hat a^\dagger}]=\sum_{n=1}^\infty\frac{\alpha^n}{n!}[a,(a^\dagger)^n]=\sum_{n=1}^\infty\frac{\alpha^n}{n!}n(a^\dagger)^{n-1}=\sum_{n=1}^\infty\frac{\alpha^n(a^\dagger)^{n-1}}{(n-1)!}=\alpha\sum_{j=0}^\infty\frac{\alpha^j(a^\dagger)^{j}}{j!}=\alpha e^{\alpha \hat a^\dagger}$$ 
+\begin{equation}
+	[\hat a,e^{\alpha\hat a^\dagger}]=\sum_{n=1}^\infty\frac{\alpha^n}{n!}[a,(a^\dagger)^n]=\sum_{n=1}^\infty\frac{\alpha^n}{n!}n(a^\dagger)^{n-1}=\sum_{n=1}^\infty\frac{\alpha^n(a^\dagger)^{n-1}}{(n-1)!}=\alpha\sum_{j=0}^\infty\frac{\alpha^j(a^\dagger)^{j}}{j!}=\alpha e^{\alpha \hat a^\dagger}
+\end{equation} 
 Substituting this result in the previous expression will yield
-$$[\hat a,e^{\alpha\hat a^\dagger}]\ket 0=\alpha e^{\alpha\hat a^\dagger}\ket 0=\gamma e^{\alpha\hat a^\dagger}\ket 0$$
-$$\alpha=\gamma=\sqrt{\frac{m\omega}{2}}\frac{F}{m\omega^2}=\frac{F}{\sqrt{2m\omega^3}}$$ 
+\begin{equation}
+	[\hat a,e^{\alpha\hat a^\dagger}]\ket 0=\alpha e^{\alpha\hat a^\dagger}\ket 0=\gamma e^{\alpha\hat a^\dagger}\ket 0
+\end{equation}
+\begin{equation}
+	\alpha=\gamma=\sqrt{\frac{m\omega}{2}}\frac{F}{m\omega^2}=\frac{F}{\sqrt{2m\omega^3}}
+\end{equation} 
 
 \end{enumerate}
 \end{sol}

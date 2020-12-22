@@ -1,22 +1,44 @@
 \begin{sol}
 Define the parameter $\theta$ and let the Hamiltonian be 
-$$\hat H(\theta)=-\Delta\csc\theta(\sigma_1\sin\theta+\sigma_3\cos\theta)$$
+\begin{equation}
+	\hat H(\theta)=-\Delta\csc\theta(\sigma_1\sin\theta+\sigma_3\cos\theta)
+\end{equation}
 Note the initial Hamiltonian corresponds to $\hat H(\frac{\pi}{2})$. Conveniently, this is also proportional to the spin operator pointing in the direction $\theta$ and $\phi=0$, thus, the eigenvectors are well known to be
-$$\ket+= \ket1\cos\frac{\theta}{2}+\ket2\sin\frac{\theta}{2}\:\:\:\:\:\:\hat H(\theta)\ket+=-\Delta\csc\theta\ket+$$ $$\ket-= \ket1\sin\frac{\theta}{2}-\ket2\cos\frac{\theta}{2}\:\:\:\:\:\:\hat H(\theta)\ket-=\Delta\csc\theta\ket-$$ 
+\begin{equation}
+	\ket+= \ket1\cos\frac{\theta}{2}+\ket2\sin\frac{\theta}{2}\:\:\:\:\:\:\hat H(\theta)\ket+=-\Delta\csc\theta\ket+
+\end{equation} \begin{equation}
+	\ket-= \ket1\sin\frac{\theta}{2}-\ket2\cos\frac{\theta}{2}\:\:\:\:\:\:\hat H(\theta)\ket-=\Delta\csc\theta\ket-
+\end{equation} 
 To solve the problem of time evolution, write the state $\ket1$ in the energy basis.
-$$\ket1=(\ketbra{+}{+}+\ketbra{-}{-})\ket1=\ket+\cos\frac{\theta}{2}+\ket-\sin\frac{\theta}{2}$$
+\begin{equation}
+	\ket1=(\ketbra{+}{+}+\ketbra{-}{-})\ket1=\ket+\cos\frac{\theta}{2}+\ket-\sin\frac{\theta}{2}
+\end{equation}
 
 Define $E(\theta)=-\Delta\csc\theta$. Compute the time evolution.
-$$\hat U_t\ket1=\ket+e^{-iEt}\cos\frac{\theta}{2}+\ket-e^{iEt}\sin\frac{\theta}{2}$$
+\begin{equation}
+	\hat U_t\ket1=\ket+e^{-iEt}\cos\frac{\theta}{2}+\ket-e^{iEt}\sin\frac{\theta}{2}
+\end{equation}
 Compute the norm-square of the inner product with the state $\ket1$ to find the probability
-$$|\bra1\hat U_t\ket1|^2=\left|\braket{+}{+}e^{-iEt}\cos^2\frac{\theta}{2}+\braket{-}{-}e^{iEt}\sin^2\frac{\theta}{2}\right|^2$$ 
-$$=\cos^4\frac{\theta}{2}+\sin^4\frac{\theta}{2}+(e^{2iEt}+e^{-2iEt})\cos^2\frac{\theta}{2}\sin^2\frac{\theta}{2}$$ 
-$$=\frac{1}{4}(\cos(2\theta)+3)+\frac{1}{2}\cos(2Et)\sin^2\theta$$
+\begin{equation}
+	|\bra1\hat U_t\ket1|^2=\left|\braket{+}{+}e^{-iEt}\cos^2\frac{\theta}{2}+\braket{-}{-}e^{iEt}\sin^2\frac{\theta}{2}\right|^2
+\end{equation} 
+\begin{equation}
+	=\cos^4\frac{\theta}{2}+\sin^4\frac{\theta}{2}+(e^{2iEt}+e^{-2iEt})\cos^2\frac{\theta}{2}\sin^2\frac{\theta}{2}
+\end{equation} 
+\begin{equation}
+	=\frac{1}{4}(\cos(2\theta)+3)+\frac{1}{2}\cos(2Et)\sin^2\theta
+\end{equation}
 Because $E(\theta)$ is never nonzero for any $\theta$, the minimum value of $\cos(2Et)$ over time is $-1$. Therefore,
-$$p_{min}=\frac{1}{4}(\cos(2\theta)+3)-\frac{1}{2}\sin^2\theta=\cos^2\theta$$
+\begin{equation}
+	p_{min}=\frac{1}{4}(\cos(2\theta)+3)-\frac{1}{2}\sin^2\theta=\cos^2\theta
+\end{equation}
 $\hat H(\theta)$ can be rewritten in the more familiar form
-$$\hat H(\theta)=-\Delta\sigma_1+(-\Delta\sigma_3\cot\theta)$$
+\begin{equation}
+	\hat H(\theta)=-\Delta\sigma_1+(-\Delta\sigma_3\cot\theta)
+\end{equation}
 The parameter $\theta$ can be expressed as $\cos^{-1}(\sqrt{p_{min}})$. Using some trigonometric identities, the additional term can be added to change the minimum probability of measuring the system in the state $\ket1$ over all time is
-$$-\sigma_3\Delta\sqrt{\frac{p_{min}}{1-p_{min}}}$$ 
+\begin{equation}
+	-\sigma_3\Delta\sqrt{\frac{p_{min}}{1-p_{min}}}
+\end{equation} 
 
 \end{sol}

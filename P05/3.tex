@@ -2,18 +2,30 @@
 \begin{enumerate}[label=\textbf{(\alph*)}]
 \item
 For $\ket{u}\in\mathbb U$ where $\mathbb U$ is a two dimensional real vector space and $S$ is not the zero operator and $\bra uS\ket u=0\forall \ket u\in\mathbb U$.
-$$\bra uS\ket u=\begin{pmatrix}u_1&u_2\end{pmatrix}\begin{pmatrix}S_1^1&S_2^1\\S_1^2&S_2^2\end{pmatrix}\begin{pmatrix}u^1\\u^2\end{pmatrix}=(u_1)^2S_1^1+u_1u_2(S_1^2+S_2^1)+(u_2)^2S_2^2=0$$  
+\begin{equation}
+	\bra uS\ket u=\begin{pmatrix}u_1&u_2\end{pmatrix}\begin{pmatrix}S_1^1&S_2^1\\S_1^2&S_2^2\end{pmatrix}\begin{pmatrix}u^1\\u^2\end{pmatrix}=(u_1)^2S_1^1+u_1u_2(S_1^2+S_2^1)+(u_2)^2S_2^2=0
+\end{equation}  
 For $S_1^1=S_2^2=0$ and $S_1^2=-S_2^1\neq 0$, $\bra u S\ket u=0\forall \ket u\in\mathbb U$. It is clear that these conditions are both necessary and sufficient. \\\\
 Next, take $\ket v\in\mathbb V$ where $\mathbb V$ is a two dimensional complex vector space and assume $T$ is not the zero operator and $\bra vT\ket v=0\forall\ket v\in \mathbb V$
-$$\bra vT\ket v=\begin{pmatrix}v_1^*&v_2^*\end{pmatrix}\begin{pmatrix}T_1^1&T_2^1\\T_1^2&T_2^2\end{pmatrix}\begin{pmatrix}v^1\\v^2\end{pmatrix}=|v_1|^2T_1^1+v_1v_2^*T_1^2+v_1^*v_2T_2^1+|v_2|^2T_2^2=0$$
+\begin{equation}
+	\bra vT\ket v=\begin{pmatrix}v_1^*&v_2^*\end{pmatrix}\begin{pmatrix}T_1^1&T_2^1\\T_1^2&T_2^2\end{pmatrix}\begin{pmatrix}v^1\\v^2\end{pmatrix}=|v_1|^2T_1^1+v_1v_2^*T_1^2+v_1^*v_2T_2^1+|v_2|^2T_2^2=0
+\end{equation}
 First, take $v$ to be real. Then, $T$ must satisfy the same relations as $S$.  $T_1^1=T_2^2=0$ and $T_1^2=-T_2^1\neq 0$. Under this condition, the expression for inner product can be simplified to
-$$\bra v T\ket v=(v_1v_2^*-v_1^*v_2)T_1^2=0$$However, take $\ket w\in\mathbb V$ such that $w^1=1$ and $w^2=i$.
-$$\bra wT\ket w=(w_1w_2^*-w_1^*w_2)T_1^2=-2iT_1^2=0$$
-$$T_1^2=0$$ 
+\begin{equation}
+	\bra v T\ket v=(v_1v_2^*-v_1^*v_2)T_1^2=0
+\end{equation}However, take $\ket w\in\mathbb V$ such that $w^1=1$ and $w^2=i$.
+\begin{equation}
+	\bra wT\ket w=(w_1w_2^*-w_1^*w_2)T_1^2=-2iT_1^2=0
+\end{equation}
+\begin{equation}
+	T_1^2=0
+\end{equation} 
 Since it is assumed that $T_1^2$ is not zero, there is a contradiction; thus, $T$ must be the zero operator.
 \item
 For arbitrary size matrices $S$ acting on real vector space $\mathbb U$, given $S$ is not the zero operator and $\bra uS\ket u=0\forall \ket u\in\mathbb U$.
-$$\bra uS\ket u=u_i S_j^i u^j=\sum_{i=1}^{\dim\mathbb U}(u_i)^2S_i^i+\sum_{i=1}^{\dim\mathbb U}\sum_{j=1}^{\dim\mathbb U}u_iu_j(S_i^j+S_j^i)(1-\delta_{ij})=0$$ It can be seen that this equation is satisfied when 
+\begin{equation}
+	\bra uS\ket u=u_i S_j^i u^j=\sum_{i=1}^{\dim\mathbb U}(u_i)^2S_i^i+\sum_{i=1}^{\dim\mathbb U}\sum_{j=1}^{\dim\mathbb U}u_iu_j(S_i^j+S_j^i)(1-\delta_{ij})=0
+\end{equation} It can be seen that this equation is satisfied when 
 \begin{enumerate}
 
 \item $S_i^i=0\forall i\in[1,\dim\mathbb U]$
@@ -21,10 +33,16 @@ $$\bra uS\ket u=u_i S_j^i u^j=\sum_{i=1}^{\dim\mathbb U}(u_i)^2S_i^i+\sum_{i=1}^
 \item $S$ has at least one pair of non-zero elements.
 \end{enumerate}
 Next, consider the case for a matrix $T$ that acts on a complex vector space $\mathbb V$, given $T$ is not the zero operator and $\bra vT\ket v=0\forall\ket v\in\mathbb V$
-$$\bra vT\ket v=v_i^* S_j^i v^j=\sum_{i=1}^{\dim\mathbb V}|v_i|^2T_i^i+\sum_{i=1}^{\dim\mathbb V}\sum_{j=1}^{\dim\mathbb V}(v_iv_j^*T_i^j+v_i^*v_jT_j^i)(1-\delta_{ij})=0$$
+\begin{equation}
+	\bra vT\ket v=v_i^* S_j^i v^j=\sum_{i=1}^{\dim\mathbb V}|v_i|^2T_i^i+\sum_{i=1}^{\dim\mathbb V}\sum_{j=1}^{\dim\mathbb V}(v_iv_j^*T_i^j+v_i^*v_jT_j^i)(1-\delta_{ij})=0
+\end{equation}
 First, take $v$ to be a real vector. The three conditions that must be satisfied for a real vector space must also be satisfied. Select a pair of non-zero elements of $S$. According to condition \textit{a}, the first sum must vanish. From conditions \textit{b} and \textit{c}, $\exists i,j:T_j^i=-T_i^j\neq 0$. Take $\ket w\in\mathbb V$ such that $w^i=1,w^j=i,w^k=0\forall k\notin\{i,j\}$
-$$\bra w T\ket w=(w_iw_j^*-w_i^*w_j)T_i^j=-2iT_i^j=0$$
-$$T_i^j=0$$ 
+\begin{equation}
+	\bra w T\ket w=(w_iw_j^*-w_i^*w_j)T_i^j=-2iT_i^j=0
+\end{equation}
+\begin{equation}
+	T_i^j=0
+\end{equation} 
 
 Since it is assumed that $T_i^j$ is not zero, there is a contradiction; thus, $T$ must be the zero operator.
 \item

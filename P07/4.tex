@@ -2,33 +2,61 @@
 \begin{enumerate}[label=\textbf{(\alph*)}]
 \item
 Since the operator $\Omega$ has no explicit time dependence in the Schrodinger picture, the Heisenberg equation of motion is
-$$\frac{d\Omega_H}{dt}=-i[\hat\Omega_H,\hat H_H]=-\frac{i}{2m}[\hat{\mathbf r}_H\cdot \hat{\mathbf p}_H,\hat{\mathbf p}_H^2]-i[\hat{\mathbf r}_H\cdot \hat{\mathbf p}_H,V(\hat {\mathbf{r}}_H)]$$  
+\begin{equation}
+	\frac{d\Omega_H}{dt}=-i[\hat\Omega_H,\hat H_H]=-\frac{i}{2m}[\hat{\mathbf r}_H\cdot \hat{\mathbf p}_H,\hat{\mathbf p}_H^2]-i[\hat{\mathbf r}_H\cdot \hat{\mathbf p}_H,V(\hat {\mathbf{r}}_H)]
+\end{equation}  
 Compute the first commutation relation by separating into components. The commutator $[\hat x\hat p,\hat p^2]$ is computed in \textit{4c, p.51} to be $2i\hat p^2$. It is also known that position and momentum along different axis commute.
-$$[\hat{\mathbf r}_H\cdot \hat{\mathbf p}_H,\hat{\mathbf p}_H^2]=[r_xp_x,p_x^2]+[r_yp_y,p_y^2]+[r_zp_z,p_z^2]=2i\hat{\mathbf p}_H^2$$
+\begin{equation}
+	[\hat{\mathbf r}_H\cdot \hat{\mathbf p}_H,\hat{\mathbf p}_H^2]=[r_xp_x,p_x^2]+[r_yp_y,p_y^2]+[r_zp_z,p_z^2]=2i\hat{\mathbf p}_H^2
+\end{equation}
 The commutation relation $[\hat{\mathbf r}_H\cdot \hat{\mathbf p}_H,V(\hat {\mathbf{r}}_H)]$ is similar to that computed in \textit{4c, p.51}
 
-$$[\hat{\mathbf r}_H\cdot \hat{\mathbf p}_H,V(\hat {\mathbf{r}}_H)]=\hat{\mathbf r}_H\cdot \hat{\mathbf p}_HV(\hat {\mathbf{r}}_H)-V(\hat {\mathbf{r}}_H)\hat{\mathbf r}_H\cdot \hat{\mathbf p}_H=-i\hat{ \mathbf r}_H\cdot(\nabla( V(\hat {\mathbf{r}}_H))-V(\hat {\mathbf{r}}_H)\nabla)$$ 
+\begin{equation}
+	[\hat{\mathbf r}_H\cdot \hat{\mathbf p}_H,V(\hat {\mathbf{r}}_H)]=\hat{\mathbf r}_H\cdot \hat{\mathbf p}_HV(\hat {\mathbf{r}}_H)-V(\hat {\mathbf{r}}_H)\hat{\mathbf r}_H\cdot \hat{\mathbf p}_H=-i\hat{ \mathbf r}_H\cdot(\nabla( V(\hat {\mathbf{r}}_H))-V(\hat {\mathbf{r}}_H)\nabla)
+\end{equation} 
 Using the chain rule
-$$=-i\hat{ \mathbf r}_H\cdot(\nabla V(\hat {\mathbf{r}}_H)+V(\hat {\mathbf{r}}_H)\nabla-V(\hat {\mathbf{r}}_H)\nabla)=-i\hat{ \mathbf r}_H\cdot\nabla V(\hat {\mathbf{r}}_H)$$
+\begin{equation}
+	=-i\hat{ \mathbf r}_H\cdot(\nabla V(\hat {\mathbf{r}}_H)+V(\hat {\mathbf{r}}_H)\nabla-V(\hat {\mathbf{r}}_H)\nabla)=-i\hat{ \mathbf r}_H\cdot\nabla V(\hat {\mathbf{r}}_H)
+\end{equation}
 
-$$\frac{d\Omega_H}{dt}=\frac{\hat{\mathbf p}_H^2}{m}-\hat {\mathbf r}_H\cdot\nabla V(\hat {\mathbf r}_H)$$ 
+\begin{equation}
+	\frac{d\Omega_H}{dt}=\frac{\hat{\mathbf p}_H^2}{m}-\hat {\mathbf r}_H\cdot\nabla V(\hat {\mathbf r}_H)
+\end{equation} 
 \item
 The Heisenberg equation of motion holds for all Heisenberg operators, 
-$$\frac{d\hat A_H}{dt}=\frac{\partial \hat A_S}{\partial t}-i[\hat A_H,\hat H_H]$$
+\begin{equation}
+	\frac{d\hat A_H}{dt}=\frac{\partial \hat A_S}{\partial t}-i[\hat A_H,\hat H_H]
+\end{equation}
 If the Schrodinger operator is time-independent, the first term on the right hand side cancels. Expand the commutator to obtain
-$$\frac{d\hat A_H}{dt}=i(\hat H_H\hat A_H-\hat A_H\hat H_H)$$ 
+\begin{equation}
+	\frac{d\hat A_H}{dt}=i(\hat H_H\hat A_H-\hat A_H\hat H_H)
+\end{equation} 
 Take the expectation value of this operator on any stationary state $\ket{\Psi,0}$ with a energy eigenvalue $E$.
-$$\left\langle\frac{d\hat A_H}{dt}\right\rangle=i(\bra{\Psi,0}\hat H_H\hat A_H\ket{\Psi,0}-\bra{\Psi,0}\hat A_H\hat H_H\ket{\Psi,0})$$$$=i(E\bra{\Psi,0}\hat A_H\ket{\Psi,0}-E\bra{\Psi,0}\hat A_H\ket{\Psi,0})=0$$
+\begin{equation}
+	\left\langle\frac{d\hat A_H}{dt}\right\rangle=i(\bra{\Psi,0}\hat H_H\hat A_H\ket{\Psi,0}-\bra{\Psi,0}\hat A_H\hat H_H\ket{\Psi,0})
+\end{equation}\begin{equation}
+	=i(E\bra{\Psi,0}\hat A_H\ket{\Psi,0}-E\bra{\Psi,0}\hat A_H\ket{\Psi,0})=0
+\end{equation}
 \item
 For a stationary state of the Hamiltonian, the operator $\Omega$ must be time independent. This states that
-$$\frac{d\Omega_H}{dt}=\frac{\hat{\mathbf p}_H^2}{m}-\hat {\mathbf r}_H\cdot\nabla V(\hat {\mathbf r}_H)=0$$ 
-$$\therefore\frac{\hat{\mathbf p}_H^2}{m}=\hat {\mathbf r}_H\cdot\nabla V(\hat {\mathbf r}_H)$$
+\begin{equation}
+	\frac{d\Omega_H}{dt}=\frac{\hat{\mathbf p}_H^2}{m}-\hat {\mathbf r}_H\cdot\nabla V(\hat {\mathbf r}_H)=0
+\end{equation} 
+\begin{equation}
+	\therefore\frac{\hat{\mathbf p}_H^2}{m}=\hat {\mathbf r}_H\cdot\nabla V(\hat {\mathbf r}_H)
+\end{equation}
 In spherical coordinates
-$$\nabla V=\frac{\partial V}{\partial r}\hat r+\frac{1}{r\sin\phi}\frac{\partial V}{\partial\theta}\hat\theta+\frac{1}{r}\frac{\partial V}{\partial\phi}\hat\phi$$
+\begin{equation}
+	\nabla V=\frac{\partial V}{\partial r}\hat r+\frac{1}{r\sin\phi}\frac{\partial V}{\partial\theta}\hat\theta+\frac{1}{r}\frac{\partial V}{\partial\phi}\hat\phi
+\end{equation}
 Since a central potential is angularly independent, the gradient reduces to the first term. Similarly, the dot product reduces to a ordinary scalar product. For the potential $V(r)=c/r^k$,
-$$\frac{\hat{\mathbf p}_H^2}{m}=r\frac{\partial V}{\partial r}=-r\frac{kc}{r^{k+1}}=-\frac{kc}{r^k}=-kV(r)$$  
+\begin{equation}
+	\frac{\hat{\mathbf p}_H^2}{m}=r\frac{\partial V}{\partial r}=-r\frac{kc}{r^{k+1}}=-\frac{kc}{r^k}=-kV(r)
+\end{equation}  
 Since the kinetic energy is equal to $\frac{\hat{\mathbf p}_H^2}{2m}$. Multiplying both sides by 2 and taking the expectation value yields
-$$\langle T\rangle=-\frac{k}{2}\langle V\rangle$$
+\begin{equation}
+	\langle T\rangle=-\frac{k}{2}\langle V\rangle
+\end{equation}
 
 \end{enumerate}
 \end{sol}

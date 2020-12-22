@@ -1,22 +1,48 @@
 \begin{sol}
 \begin{enumerate}[label=\textbf{(\alph*)}]
 \item
-$$[A,BC]=ABC-BCA=ABC-B(AC-(AC-CA))$$$$=ABC-BAC+B[A,C]=[A,B]C+B[A,C]$$
+\begin{equation}
+	[A,BC]=ABC-BCA=ABC-B(AC-(AC-CA))
+\end{equation}\begin{equation}
+	=ABC-BAC+B[A,C]=[A,B]C+B[A,C]
+\end{equation}
 \item
-$$[[A,B],C]+[[B,C],A]+[[C,A],B]=[AB-BA,C]+[BC-CB,A]+[CA-AC,B]$$ 
-$$=ABC-CAB-BAC+CBA+BCA-ABC-CBA+ACB+CAB-BCA-ACB+BAC$$ 
-$$=0$$ \item
-$$[q^n,p]=-[p,qq^{n-1}]=-([p,q]q^{n-1}+q[p,q^{n-1}])=[q,p]q^{n-1}+q[q^{n-1},p]=iq^{n-1}+q[q^{n-1},p]$$
+\begin{equation}
+	[[A,B],C]+[[B,C],A]+[[C,A],B]=[AB-BA,C]+[BC-CB,A]+[CA-AC,B]
+\end{equation} 
+\begin{equation}
+	=ABC-CAB-BAC+CBA+BCA-ABC-CBA+ACB+CAB-BCA-ACB+BAC
+\end{equation} 
+\begin{equation}
+	=0
+\end{equation} \item
+\begin{equation}
+	[q^n,p]=-[p,qq^{n-1}]=-([p,q]q^{n-1}+q[p,q^{n-1}])=[q,p]q^{n-1}+q[q^{n-1},p]=iq^{n-1}+q[q^{n-1},p]
+\end{equation}
 Assume the identity $[q^n,p]=inq^{n-1}$ is true.
-$$inq^{n-1}=iq^{n-1}+qi(n-1)q^{n-2}$$ $$inq^{n-1}=inq^{n-1}$$
+\begin{equation}
+	inq^{n-1}=iq^{n-1}+qi(n-1)q^{n-2}
+\end{equation} \begin{equation}
+	inq^{n-1}=inq^{n-1}
+\end{equation}
 \item
 Given $f(q)$ can be expanded in a power series of $q$, define $a_n:f(q)=\sum_{n=0}^\infty a_nq^n$
-$$[f(q),p]=\sum_{n=0}^\infty[a_nq^n,p]=i\sum_{n=0}^\infty a_nnq^{n-1}$$ 
+\begin{equation}
+	[f(q),p]=\sum_{n=0}^\infty[a_nq^n,p]=i\sum_{n=0}^\infty a_nnq^{n-1}
+\end{equation} 
 Take the derivative of the power series of $f(q)$ using the power rule for derivatives
-$$f'(q)=\sum_{n=0}^\infty a_n nq^{n-1}\therefore[f(q),p]=if'(q)$$
+\begin{equation}
+	f'(q)=\sum_{n=0}^\infty a_n nq^{n-1}\therefore[f(q),p]=if'(q)
+\end{equation}
 \item
 Let the commutator act of an arbitrary wavefunction $\psi$.
-$$[f(x),p]\psi=f(x)\left(-i\frac{\partial}{\partial x}\right)\psi-\left(-i\frac{\partial}{\partial x}\right)f(x)\psi$$
-$$=-if(x)\frac{\partial\psi}{\partial x}+if'(x)\psi+if(x)\frac{\partial\psi}{\partial x}=if'(x)\psi$$ $$\therefore[f(x),p]=if'(x)$$ 
+\begin{equation}
+	[f(x),p]\psi=f(x)\left(-i\frac{\partial}{\partial x}\right)\psi-\left(-i\frac{\partial}{\partial x}\right)f(x)\psi
+\end{equation}
+\begin{equation}
+	=-if(x)\frac{\partial\psi}{\partial x}+if'(x)\psi+if(x)\frac{\partial\psi}{\partial x}=if'(x)\psi
+\end{equation} \begin{equation}
+	\therefore[f(x),p]=if'(x)
+\end{equation} 
 \end{enumerate}
 \end{sol}

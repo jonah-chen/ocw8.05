@@ -4,12 +4,24 @@
 Due to unitary time evolution, $\braket{\Psi(0)}{\Psi(0)}=\braket{\Psi(t)}{\Psi(t)}=1$. Applying \textit{Schwarz's Inequality}, $\braket{\Psi(0)}{\Psi(t)}\leq\braket{\Psi(0)}{\Psi(0)}\braket{\Psi(t)}{\Psi(t)}=1$. 
 \item
 Since the system is governed by a time-independent Hamiltonian, the Schrodinger's equation can be written as
-$$\frac{\partial}{\partial t}\ket {\Psi(t)}=-i\hat H\ket{\Psi(t)}$$
+\begin{equation}
+	\frac{\partial}{\partial t}\ket {\Psi(t)}=-i\hat H\ket{\Psi(t)}
+\end{equation}
 Taking the partial derivative with respect to $t$ of both sides yields
-$$\frac{\partial^2}{\partial t^2}\ket{\Psi(t)}=-i\hat H\frac{\partial}{\partial t}\ket{\Psi(t)}=-\hat H^2\ket{\Psi(t)}$$
+\begin{equation}
+	\frac{\partial^2}{\partial t^2}\ket{\Psi(t)}=-i\hat H\frac{\partial}{\partial t}\ket{\Psi(t)}=-\hat H^2\ket{\Psi(t)}
+\end{equation}
 The first two derivatives is sufficient to calculate the taylor expansion up to second order.
-$$\ket{\Psi(t)}=\ket{\Psi(0)}-i\hat H\ket{\Psi(0)}t-\frac{1}{2}\hat H^2\ket{\Psi(0)}t+\mathcal O(t^3)$$
-$$|\braket{\Psi(0)}{\Psi(t)}|^2=\Big|\braket{\Psi(0)}{\Psi(0)}-it\bra{\Psi(0)}\hat H\ket{\Psi(0)}-\frac{t^2}{2}\bra{\Psi(0)}\hat H^2\ket{\Psi(0)}\Big|^2$$
-$$=\Big|1-it\langle\hat H\rangle-\frac{t^2}{2}\langle \hat H^2\rangle\Big|^2=\left(1-\frac{t^2}{2}\langle \hat H^2\rangle\right)^2+(t\langle\hat H\rangle)^2$$$$=1-t^2\langle \hat H^2\rangle+t^2\langle\hat H\rangle^2+\mathcal{O}(t^3)=1-(\Delta E)^2t^2+\mathcal{O}(t^3)$$
+\begin{equation}
+	\ket{\Psi(t)}=\ket{\Psi(0)}-i\hat H\ket{\Psi(0)}t-\frac{1}{2}\hat H^2\ket{\Psi(0)}t+\mathcal O(t^3)
+\end{equation}
+\begin{equation}
+	|\braket{\Psi(0)}{\Psi(t)}|^2=\Big|\braket{\Psi(0)}{\Psi(0)}-it\bra{\Psi(0)}\hat H\ket{\Psi(0)}-\frac{t^2}{2}\bra{\Psi(0)}\hat H^2\ket{\Psi(0)}\Big|^2
+\end{equation}
+\begin{equation}
+	=\Big|1-it\langle\hat H\rangle-\frac{t^2}{2}\langle \hat H^2\rangle\Big|^2=\left(1-\frac{t^2}{2}\langle \hat H^2\rangle\right)^2+(t\langle\hat H\rangle)^2
+\end{equation}\begin{equation}
+	=1-t^2\langle \hat H^2\rangle+t^2\langle\hat H\rangle^2+\mathcal{O}(t^3)=1-(\Delta E)^2t^2+\mathcal{O}(t^3)
+\end{equation}
 \end{enumerate}
 \end{sol}

@@ -1,23 +1,51 @@
 \begin{sol}
 Given the electric and magnetic fields. For electromagnetic field, $\omega=k$.
-$$E_x(z,t)=\sqrt{\frac{2}{V\epsilon_0}}\omega q(t)\sin(kz)$$
-$$B_y(z,t)=\sqrt{\frac{2}{V\epsilon_0}}p(t)\cos(kz)$$ 
+\begin{equation}
+	E_x(z,t)=\sqrt{\frac{2}{V\epsilon_0}}\omega q(t)\sin(kz)
+\end{equation}
+\begin{equation}
+	B_y(z,t)=\sqrt{\frac{2}{V\epsilon_0}}p(t)\cos(kz)
+\end{equation} 
 Gauss' Law determines there is no charge present in the cavity.
-$$\nabla\cdot\mathbf{E}=\frac{\rho}{\epsilon_0}=\frac{\partial E_x}{\partial x}=0$$ 
+\begin{equation}
+	\nabla\cdot\mathbf{E}=\frac{\rho}{\epsilon_0}=\frac{\partial E_x}{\partial x}=0
+\end{equation} 
 Gauss' Law for magnetism holds.
-$$\nabla\cdot \mathbf{B}=\frac{\partial B_y}{\partial y}=0$$
+\begin{equation}
+	\nabla\cdot \mathbf{B}=\frac{\partial B_y}{\partial y}=0
+\end{equation}
 Applying Faraday's Law 
-$$\nabla\times\mathbf{E}=-\frac{\partial\mathbf{B}}{\partial t}$$
-$$\nabla\times\mathbf{E}=\frac{\partial E_x}{\partial z}\hat j=\sqrt{\frac{2}{V\epsilon_0}}\omega k q(t)\cos(kz)\hat j$$
-$$-\frac{\partial\mathbf B}{\partial t}=-\sqrt{\frac{2}{V\epsilon_0}}\dot p(t)\cos(kz)\hat j$$
-$$\because\omega=k,\:\: q(t)=-\omega^2\dot p(t)$$ 
+\begin{equation}
+	\nabla\times\mathbf{E}=-\frac{\partial\mathbf{B}}{\partial t}
+\end{equation}
+\begin{equation}
+	\nabla\times\mathbf{E}=\frac{\partial E_x}{\partial z}\hat j=\sqrt{\frac{2}{V\epsilon_0}}\omega k q(t)\cos(kz)\hat j
+\end{equation}
+\begin{equation}
+	-\frac{\partial\mathbf B}{\partial t}=-\sqrt{\frac{2}{V\epsilon_0}}\dot p(t)\cos(kz)\hat j
+\end{equation}
+\begin{equation}
+	\because\omega=k,\:\: q(t)=-\omega^2\dot p(t)
+\end{equation} 
 Applying Ampere's Law with Maxwell's Addition, with zero current density
-$$\nabla\times\mathbf B=\frac{1}{\epsilon_0}\mathbf J-\frac{\partial\mathbf{E}}{\partial t}$$
-$$\nabla\times \mathbf B=\frac{\partial B_y}{\partial z}\hat i=-\sqrt{\frac{2}{V\epsilon_0}}kp(t)\sin(kz)\hat i$$ $$\frac{\partial\mathbf{E}}{\partial t}=\sqrt{\frac{2}{V\epsilon_0}}\omega \dot q(t)\sin(kz)\hat i$$ 
-$$\dot q(t)=p(t)$$
+\begin{equation}
+	\nabla\times\mathbf B=\frac{1}{\epsilon_0}\mathbf J-\frac{\partial\mathbf{E}}{\partial t}
+\end{equation}
+\begin{equation}
+	\nabla\times \mathbf B=\frac{\partial B_y}{\partial z}\hat i=-\sqrt{\frac{2}{V\epsilon_0}}kp(t)\sin(kz)\hat i
+\end{equation} \begin{equation}
+	\frac{\partial\mathbf{E}}{\partial t}=\sqrt{\frac{2}{V\epsilon_0}}\omega \dot q(t)\sin(kz)\hat i
+\end{equation} 
+\begin{equation}
+	\dot q(t)=p(t)
+\end{equation}
 
 Assume $\hat p$ and $\hat q$ have the canonical commutation relation $[\hat q,\hat p]=i\mathbf 1$. Applying Heisenberg's equation of motion for the Hamiltonian $\hat H=\frac{1}{2}(\hat p^2+\omega^2\hat q^2)$ , 
-$$\frac{d\hat p}{dt}=-i[\hat p,\hat H]=\frac{i}{2}\omega^2[\hat p,\hat q^2]=-\omega^2\hat q$$  
-$$\frac{d\hat q}{dt}=-i[\hat q,\hat H]=-\frac{i}{2}[\hat q,\hat p^2]=\hat p$$
+\begin{equation}
+	\frac{d\hat p}{dt}=-i[\hat p,\hat H]=\frac{i}{2}\omega^2[\hat p,\hat q^2]=-\omega^2\hat q
+\end{equation}  
+\begin{equation}
+	\frac{d\hat q}{dt}=-i[\hat q,\hat H]=-\frac{i}{2}[\hat q,\hat p^2]=\hat p
+\end{equation}
 The relations given by the Heisenberg's equation of motion is analogous to the relations given by Maxwell's equations. 
 \end{sol}

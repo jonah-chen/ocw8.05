@@ -1,15 +1,25 @@
 \begin{sol}
 \begin{enumerate}
 \item[\textbf{(1)}]
-$$\{M^i,M^j\}=2\delta^{ij}\mathbf{1}\implies M^iM^i=\mathbf{1}$$  
+\begin{equation}
+	\{M^i,M^j\}=2\delta^{ij}\mathbf{1}\implies M^iM^i=\mathbf{1}
+\end{equation}  
 Firstly, the eigenvalue of $(M^i)^2$ must be 1 since it is identical to the identity, which by definition, has all vectors as eigenvectors with eigenvalue 1. 
 Let $\ket\phi$ be an eigenvector of $M^i$ with eigenvalue $\lambda$, then, $(M^i)^2\ket\phi=\lambda^2\ket\phi$. Since it has been shown that the eigenvalues of $(M^i)^2$ must be $1$, $\lambda^2=1$ thus $\lambda=\pm 1$.
 \item[\textbf{(2)}]
-$$\{M^i,M^j\}=2\delta^{ij}\mathbf{1}\implies M^iM^j=-M^jM^i\text{ for }i\neq j$$
+\begin{equation}
+	\{M^i,M^j\}=2\delta^{ij}\mathbf{1}\implies M^iM^j=-M^jM^i\text{ for }i\neq j
+\end{equation}
 As it is known that $M^iM^i=\mathbf{1}$, thus, $M^i$ must be invertible.
-$$M^i=-M^jM^i(M^j)^{-1}\text{ for }i\neq j$$
-$$\Tr(M^i)=M^i_{nn}=-(M^jM^i(M^j)^{-1})_{nn}=-(M^j_{nl}M^i_{lm}(M^j)^{-1}_{mn})$$
-$$=-((M^j)^{-1}_{mn}M^j_{nl}M^i_{lm})=-\mathbf 1_{ml}M^i_{lm}=-M^i_{ll}=-\Tr(M^i)$$
+\begin{equation}
+	M^i=-M^jM^i(M^j)^{-1}\text{ for }i\neq j
+\end{equation}
+\begin{equation}
+	\Tr(M^i)=M^i_{nn}=-(M^jM^i(M^j)^{-1})_{nn}=-(M^j_{nl}M^i_{lm}(M^j)^{-1}_{mn})
+\end{equation}
+\begin{equation}
+	=-((M^j)^{-1}_{mn}M^j_{nl}M^i_{lm})=-\mathbf 1_{ml}M^i_{lm}=-M^i_{ll}=-\Tr(M^i)
+\end{equation}
 It is shown that $\Tr(M^i)=-\Tr(M^i)$, thus, $M^i$ must be traceless.\\\\Note that the choice of $M^j$ is irrelevant to the problem and for any invertible matrix $S$, $\Tr(M)=\Tr(SMS^{-1})$. This fact will be used later.
 \item[\textbf{(3)}]
 It is shown that all matrices that satisfy the relation $\{M^i,M^j\}=2\delta^{ij}\mathbf{1}$ must be traceless and be its own inverse.\\

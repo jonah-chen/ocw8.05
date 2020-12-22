@@ -17,7 +17,9 @@ A linear operator $P$ acting on a vector space $\mathbb V$ that satisfies $P^2=P
 \begin{proof}
 By way of contradiction, assume $\mathbb V\neq \text{null }P\oplus\text{range }P\implies\exists\mathbb W\subset\mathbb V:\forall w\in\mathbb W, w\notin\text{null }P\oplus\text{range }P$. \\
 Take vector $w\in\mathbb W$. $Pw\neq \mathbf{0}\because w\notin\text{null }P$, thus, $Pw\in \text{range }P$ by definition.\\ $\because P^2=P, P(Pw)=Pw$. \\Since $P$ is also a linear operator, $P(w-Pw)=0\therefore u\equiv w-Pw\in \text{null }P$.
-$$w=u+Pw\because u\in\text{null }P,Pw\in\text{range } P\implies w\in\text{null }P\oplus\text{range }P$$ 
+\begin{equation}
+	w=u+Pw\because u\in\text{null }P,Pw\in\text{range } P\implies w\in\text{null }P\oplus\text{range }P
+\end{equation} 
 This is a contradiction, thus $\mathbb V=\text{null }P\oplus\text{range }P$.
 \end{proof}
 \item
@@ -25,39 +27,67 @@ This is a contradiction, thus $\mathbb V=\text{null }P\oplus\text{range }P$.
 Given $u,v\in\mathbb V$. $\braket{u}{v}=0\iff|u|\leq|u+av|\forall a\in \mathbb F$ 
 \end{lemma}
 \begin{proof}
-$$ |u|\leq|u+av|\implies\braket{u}{u}\leq\braket{u+av}{u+av}$$ $$\braket{u}{u}\leq\braket{u}{u}+\braket{u}{av}+\braket{av}{u}+\braket{av}{av}$$
-$$0\leq 2\text{Re}(a\braket{u}{v})+|a|^2|v|^2$$ 
+\begin{equation}
+	 |u|\leq|u+av|\implies\braket{u}{u}\leq\braket{u+av}{u+av}
+\end{equation} \begin{equation}
+	\braket{u}{u}\leq\braket{u}{u}+\braket{u}{av}+\braket{av}{u}+\braket{av}{av}
+\end{equation}
+\begin{equation}
+	0\leq 2\text{Re}(a\braket{u}{v})+|a|^2|v|^2
+\end{equation} 
 If $\braket{u}{v}=0$, the real part is trivially zero. Since the range of the norm is non-negative, the inequality is satisfied for all $a\in\mathbb F$.\\
 If $\braket{u}{v}\neq 0$, consider the case where $a\in\mathbb R$:
-$$0\leq 2a\text{Re}\braket{u}{v}+a^2|v|^2$$ 
+\begin{equation}
+	0\leq 2a\text{Re}\braket{u}{v}+a^2|v|^2
+\end{equation} 
 Let a non-zero real number $\displaystyle{\kappa\equiv\frac{\text{Re}\braket{u}{v}}{|v|^2}}$ 
-$$0\leq 2\kappa a+a^2$$ 
-$$0\leq (a+\kappa)^2-\kappa^2$$ 
+\begin{equation}
+	0\leq 2\kappa a+a^2
+\end{equation} 
+\begin{equation}
+	0\leq (a+\kappa)^2-\kappa^2
+\end{equation} 
 Choosing $a=-\kappa$ will yield $0\leq-\kappa^2$. Since $\kappa$ is real and non-zero, $-\kappa^2$ is strictly negative. This is a contradiction, thus, the inequality cannot be satisfied if $\braket{u}{v}$ is non-zero.
 \end{proof}
 \begin{proof}\,\\
 \textbf{Case 1:} If $P$ is hermitian\\
 From Lemma 9, any $v\in V$ can be written as $u+w:u\in \text{range }P,w\in\text{null }P$. Since $P$ is a linear operator, $Pv=u$. From the definition of the orthogonal projector, $\braket{u}{w}=0$.\\
-$$\bra u P\ket v=\braket{P^\dagger u}{v}$$ 
+\begin{equation}
+	\bra u P\ket v=\braket{P^\dagger u}{v}
+\end{equation} 
 If $P$ is hermitian, $P^\dagger u=Pu=u$ 
-$$\braket{u}{u}=\braket{u}{v}=\braket{u}{u}+\braket{u}{w}$$
-$$\braket{u}{w}=0$$ 
+\begin{equation}
+	\braket{u}{u}=\braket{u}{v}=\braket{u}{u}+\braket{u}{w}
+\end{equation}
+\begin{equation}
+	\braket{u}{w}=0
+\end{equation} 
 \textbf{Case 2:} If $|Pv|\leq|v|\forall v\in\mathbb V$\\
 Again, from Lemma 9, any $v\in \mathbb V$ can be written as $u+w:u\in \text{range }P,w\in\text{null }P$. Since $P$ is a linear operator, $Pv=u$ and $aw\in\text{null }P\forall a\in\mathbb F$. The condition for this case can be rewritten as $|u|\leq|u+w|\forall u\in \text{range }P,w\in\text{null }P$. It is trivial to conclude from the previous results and Lemma 10 that $\braket{u}{w}=0\forall u\in \text{range }P,w\in\text{null }P$.\\\\
 These two cases proves the theorem.
 \end{proof}
 \item
 It is known that nontrivial two-by-two complex solutions to $P^2=P$ are
-$$P=\begin{pmatrix}
+\begin{equation}
+	P=\begin{pmatrix}
 a& b\\\frac{a}{b}(1-a)&1-a
-\end{pmatrix}$$ 
+\end{pmatrix}
+\end{equation} 
 For this example, $a$ will be chosen to be $i$ and $b$ will be chosen to be $1$
-$$P=\begin{pmatrix}i&1\\1+i&1-i\end{pmatrix}\,\,\,\,\,\,\,\,\,\,\,\,\,P^\dagger=\begin{pmatrix}i&1-i\\1&1-i\end{pmatrix}$$ 
+\begin{equation}
+	P=\begin{pmatrix}i&1\\1+i&1-i\end{pmatrix}\,\,\,\,\,\,\,\,\,\,\,\,\,P^\dagger=\begin{pmatrix}i&1-i\\1&1-i\end{pmatrix}
+\end{equation} 
 It is obvious that $P$ is not hermitian. Next, take the vector $v=\begin{pmatrix}1\\0\end{pmatrix}$ that has a norm of $1$.
-$$Pv=\begin{pmatrix}i&1\\1+i&1-i\end{pmatrix}\begin{pmatrix}1\\0\end{pmatrix}=\begin{pmatrix}i\\1+i\end{pmatrix}$$ 
-$$|Pv|=\sqrt{\begin{pmatrix}-i&1-i\end{pmatrix}\begin{pmatrix}i\\1+i\end{pmatrix}}=\sqrt 3>|v|$$ 
+\begin{equation}
+	Pv=\begin{pmatrix}i&1\\1+i&1-i\end{pmatrix}\begin{pmatrix}1\\0\end{pmatrix}=\begin{pmatrix}i\\1+i\end{pmatrix}
+\end{equation} 
+\begin{equation}
+	|Pv|=\sqrt{\begin{pmatrix}-i&1-i\end{pmatrix}\begin{pmatrix}i\\1+i\end{pmatrix}}=\sqrt 3>|v|
+\end{equation} 
 It has been demonstrated that $P$ violates both conditions.
-$$\braket{v}{Pv}=\begin{pmatrix}1&0\end{pmatrix}\begin{pmatrix}i\\1+i\end{pmatrix}=i\neq 0$$ 
+\begin{equation}
+	\braket{v}{Pv}=\begin{pmatrix}1&0\end{pmatrix}\begin{pmatrix}i\\1+i\end{pmatrix}=i\neq 0
+\end{equation} 
 $P$ is not an orthogonal projector is verified. 
 
 \end{enumerate}

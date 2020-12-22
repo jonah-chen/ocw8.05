@@ -7,13 +7,23 @@ Given $u_k=Av_k$ and $v_k=Bu_k$, the matrix representation of A is $u_j=A_{ij} v
 Using change of basis for matrices, $T_{ij}(\{u\})=A^{-1}T_{ij}(\{v\})A, T_{ij}(\{v\})=AT_{ij}(\{u\})A^{-1}$.
 \item
 Note the property of the identity $\mathbf{1}_{ij}=\delta_{ij}$. Thus, $A^{-1}_{ij}A_{jk}=A_{jk}A^{-1}_{ij}=\delta_{ik}$.
-$$tr(T\{u\})\equiv T\{u\}_{ii}=(A^{-1}T\{v\}A)_{ii}$$ 
-$$=A^{-1}_{ij}T\{v\}_{jk}A_{ki}=A^{-1}_{ij}A_{ki}T\{v\}_{jk}=\delta_{jk}T\{v\}_{jk}$$   
-$$=T\{v\}_{jj}\equiv tr(T\{v\})$$  
+\begin{equation}
+	tr(T\{u\})\equiv T\{u\}_{ii}=(A^{-1}T\{v\}A)_{ii}
+\end{equation} 
+\begin{equation}
+	=A^{-1}_{ij}T\{v\}_{jk}A_{ki}=A^{-1}_{ij}A_{ki}T\{v\}_{jk}=\delta_{jk}T\{v\}_{jk}
+\end{equation}   
+\begin{equation}
+	=T\{v\}_{jj}\equiv tr(T\{v\})
+\end{equation}  
 \item
 Using the identity $\det(AB)=\det(A)\det(B)$
-$$\det(T\{u\})=\det(A^{-1}T\{v\}A)=\det(A^{-1})\det(T\{v\})\det(A)$$
-$$=\det(A^{-1}A)\det(T\{v\})=\det(\mathbf{1})\det(T\{v\})=\det(T\{v\})$$ 
+\begin{equation}
+	\det(T\{u\})=\det(A^{-1}T\{v\}A)=\det(A^{-1})\det(T\{v\})\det(A)
+\end{equation}
+\begin{equation}
+	=\det(A^{-1}A)\det(T\{v\})=\det(\mathbf{1})\det(T\{v\})=\det(T\{v\})
+\end{equation} 
 
 \end{enumerate}
 \end{sol}

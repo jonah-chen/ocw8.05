@@ -1,6 +1,7 @@
 \begin{sol}
 Define the change of basis matrix
-$$S\equiv\frac{1}{\sqrt 2}\begin{pmatrix}
+\begin{equation}
+	S\equiv\frac{1}{\sqrt 2}\begin{pmatrix}
 1&-1&0\\
 0&0&\sqrt{2}\\
 1&1&0
@@ -8,9 +9,11 @@ $$S\equiv\frac{1}{\sqrt 2}\begin{pmatrix}
 1&0&1\\
 -1&0&1\\
 0&\sqrt{2}&0
-\end{pmatrix}$$ 
+\end{pmatrix}
+\end{equation} 
 In the new basis, 
-$$A_2=S^{-1}A_2S=\frac{1}{2}\begin{pmatrix}
+\begin{equation}
+	A_2=S^{-1}A_2S=\frac{1}{2}\begin{pmatrix}
 1&0&1\\
 -1&0&1\\
 0&\sqrt{2}&0
@@ -24,13 +27,20 @@ $$A_2=S^{-1}A_2S=\frac{1}{2}\begin{pmatrix}
 3&0&0\\
 0&1&-\sqrt{2}\\
 0&-\sqrt{2}&0
-\end{pmatrix}$$ 
+\end{pmatrix}
+\end{equation} 
 To find the eigenvalues, find the characteristic polynomial of $A_2$
-$$\det(A_2-\lambda\mathbf{1})=0$$ 
-$$\det\begin{pmatrix}
+\begin{equation}
+	\det(A_2-\lambda\mathbf{1})=0
+\end{equation} 
+\begin{equation}
+	\det\begin{pmatrix}
 3-\lambda&0&0\\
 0&1-\lambda&-\sqrt{2}\\
 0&-\sqrt{2}&-\lambda
-\end{pmatrix}=(3-\lambda)(-\lambda(1-\lambda)-2)=(3-\lambda)(\lambda-2)(\lambda+1)=0$$ 
-$$\lambda={3,2,-1}$$ 
+\end{pmatrix}=(3-\lambda)(-\lambda(1-\lambda)-2)=(3-\lambda)(\lambda-2)(\lambda+1)=0
+\end{equation} 
+\begin{equation}
+	\lambda={3,2,-1}
+\end{equation} 
 \end{sol}

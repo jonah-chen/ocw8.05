@@ -2,28 +2,56 @@
 \begin{enumerate}[label=\textbf{(\alph*)}]
 \item
 Since the position and momentum operators have no explicit time-dependence, the Heisenberg equations of motion are
-$$\frac{d\hat x_H}{dt}=-i[\hat x_H,\hat H_H]=-\frac{i}{2m}[\hat x_H,\hat p_H^2]=\frac{\hat p_H}{m}$$
-$$\frac{d\hat p_H}{dt}=-i[\hat p_H,\hat H_H]=-ig[p_H, x_H]=-g$$
+\begin{equation}
+	\frac{d\hat x_H}{dt}=-i[\hat x_H,\hat H_H]=-\frac{i}{2m}[\hat x_H,\hat p_H^2]=\frac{\hat p_H}{m}
+\end{equation}
+\begin{equation}
+	\frac{d\hat p_H}{dt}=-i[\hat p_H,\hat H_H]=-ig[p_H, x_H]=-g
+\end{equation}
 Applying the initial conditions will yield
-$$\hat x_H(t)=\hat x+\int_0^t\frac{\hat p_H(t')}{m}dt'=\hat x+\frac{1}{m}\left(\hat pt-\frac{gt^2}{2}\right)$$
-$$\hat p_H(t)=\hat p-gt$$ 
+\begin{equation}
+	\hat x_H(t)=\hat x+\int_0^t\frac{\hat p_H(t')}{m}dt'=\hat x+\frac{1}{m}\left(\hat pt-\frac{gt^2}{2}\right)
+\end{equation}
+\begin{equation}
+	\hat p_H(t)=\hat p-gt
+\end{equation} 
 \item
-$$\bra\psi\hat x_H(t)\ket\psi=\bra\psi\hat x\ket\psi+\frac{1}{m}(\bra\psi\hat p\ket\psi t-gt^2\braket{\psi}{\psi})=0-\frac{1}{m}\left(0-\frac{gt^2}{2}\right)=-\frac{gt^2}{2m}$$
+\begin{equation}
+	\bra\psi\hat x_H(t)\ket\psi=\bra\psi\hat x\ket\psi+\frac{1}{m}(\bra\psi\hat p\ket\psi t-gt^2\braket{\psi}{\psi})=0-\frac{1}{m}\left(0-\frac{gt^2}{2}\right)=-\frac{gt^2}{2m}
+\end{equation}
 A classical particle starting at rest and $x=0$ that experience a constant force $-g$ will have an acceleration of $-\frac{g}{m}$. The equation of motion of a classical particle is  $x(t)=x_0+v_0t+\frac{1}{2}at^2$. With these conditions, $x(t)=-\frac{gt^2}{2m}$ which is exactly the same as the equation for $\bra\psi\hat x_H(t)\ket\psi$.
 \item
 Find the Heisenberg operator $\hat x_H^2=\hat x_H\hat x_H$
-$$\hat x_H^2=\left(\hat x+\frac{\hat pt}{m}-\frac{gt^2}{2m}\right)\left(\hat x+\frac{\hat pt}{m}-\frac{gt^2}{2m}\right)$$ 
-$$=\hat x^2+\frac{\hat x\hat pt}{m}-\frac{\hat xgt^2}{2m}+\frac{\hat p\hat xt}{m}+\frac{\hat p^2t^2}{m^2}-\frac{\hat pgt^3}{2m^2}-\frac{\hat xgt^2}{2m}-\frac{\hat pgt^3}{2m^2}+\frac{g^2t^4}{4m^2}$$ 
-$$=\hat x^2+\{\hat x,\hat p\}\frac{t}{m}+\frac{\hat p^2t^2}{m^2}+\alpha\hat x+\beta\hat p$$
+\begin{equation}
+	\hat x_H^2=\left(\hat x+\frac{\hat pt}{m}-\frac{gt^2}{2m}\right)\left(\hat x+\frac{\hat pt}{m}-\frac{gt^2}{2m}\right)
+\end{equation} 
+\begin{equation}
+	=\hat x^2+\frac{\hat x\hat pt}{m}-\frac{\hat xgt^2}{2m}+\frac{\hat p\hat xt}{m}+\frac{\hat p^2t^2}{m^2}-\frac{\hat pgt^3}{2m^2}-\frac{\hat xgt^2}{2m}-\frac{\hat pgt^3}{2m^2}+\frac{g^2t^4}{4m^2}
+\end{equation} 
+\begin{equation}
+	=\hat x^2+\{\hat x,\hat p\}\frac{t}{m}+\frac{\hat p^2t^2}{m^2}+\alpha\hat x+\beta\hat p
+\end{equation}
 Compute the expectation value on a Gaussian wave-packet $\braket{x}{\psi}=\psi(x)=N\exp\left(-\frac{x^2}{2a^2}\right)$ 
-$$\langle\hat x^2\rangle(t)=\bra\psi\hat x^2\ket\psi+\bra\psi\{\hat x,\hat p\}\ket\psi\frac{t}{m}+\bra\psi\hat p^2\ket\psi\frac{t^2}{m^2}+\frac{g^2t^4}{4m^2}\braket{\psi}{\psi}+\bra\psi\hat x\ket\psi\alpha+\bra\psi\hat p\ket\psi\beta$$ 
-$$=\int_{-\infty}^\infty x^2\psi(x)^2dx+\frac{it}{m}\int_{-\infty}^\infty x\psi(x)\psi'(x)dx+\frac{it}{m}\int_{-\infty}^\infty\psi(x)(\psi(x)+x\psi'(x))dx$$
-$$-\frac{t^2}{m^2}\int_{-\infty}^\infty\psi(x)\psi''(x)dx+\frac{g^2t^4}{4m^2}+0+0$$
-$$=\frac{a^2}{2}-\frac{it}{2m}+\frac{it}{2m}+\frac{t^2}{2a^2m^2}+\frac{g^2t^4}{4m^2}=\frac{a^2}{2}+\frac{t^2}{2a^2m^2}+\frac{g^2t^4}{4m^2}$$ 
+\begin{equation}
+	\langle\hat x^2\rangle(t)=\bra\psi\hat x^2\ket\psi+\bra\psi\{\hat x,\hat p\}\ket\psi\frac{t}{m}+\bra\psi\hat p^2\ket\psi\frac{t^2}{m^2}+\frac{g^2t^4}{4m^2}\braket{\psi}{\psi}+\bra\psi\hat x\ket\psi\alpha+\bra\psi\hat p\ket\psi\beta
+\end{equation} 
+\begin{equation}
+	=\int_{-\infty}^\infty x^2\psi(x)^2dx+\frac{it}{m}\int_{-\infty}^\infty x\psi(x)\psi'(x)dx+\frac{it}{m}\int_{-\infty}^\infty\psi(x)(\psi(x)+x\psi'(x))dx
+\end{equation}
+\begin{equation}
+	-\frac{t^2}{m^2}\int_{-\infty}^\infty\psi(x)\psi''(x)dx+\frac{g^2t^4}{4m^2}+0+0
+\end{equation}
+\begin{equation}
+	=\frac{a^2}{2}-\frac{it}{2m}+\frac{it}{2m}+\frac{t^2}{2a^2m^2}+\frac{g^2t^4}{4m^2}=\frac{a^2}{2}+\frac{t^2}{2a^2m^2}+\frac{g^2t^4}{4m^2}
+\end{equation} 
 It is computed in \textit{(b)} that $\displaystyle{\langle\hat x\rangle=-\frac{gt^2}{4m}}$; therefore,
-$$(\Delta x)^2=\langle\hat x^2\rangle-\langle\hat x\rangle^2=\frac{a^2}{2}+\frac{t^2}{2a^2m^2}$$
+\begin{equation}
+	(\Delta x)^2=\langle\hat x^2\rangle-\langle\hat x\rangle^2=\frac{a^2}{2}+\frac{t^2}{2a^2m^2}
+\end{equation}
 For a Gaussian wave-packet, it is known that the square of position uncertainty at $t=0$ is $\frac{a^2}{2}$. The expression can be rewritten, defining $\lambda\equiv\frac{1}{2a^2m^2}$
-$$(\Delta x(t))^2=(\Delta x(0))^2+\lambda t^2$$
+\begin{equation}
+	(\Delta x(t))^2=(\Delta x(0))^2+\lambda t^2
+\end{equation}
 It has been shown that the dispersion of the wave-packet is independent of the value of $g$.
 
 \end{enumerate}

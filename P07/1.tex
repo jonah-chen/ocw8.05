@@ -2,31 +2,53 @@
 \begin{enumerate}[label=\textbf{(\alph*)}]
 \item 
  Since the Hamiltonian is a time-dependent Hamiltonian such that $[H(t),H(t')]=0\forall t,t'$. Thus, 
- $$\mathcal U(t)=\exp\left(-i\int_0^t H(t')dt'\right)$$ 
+ \begin{equation}
+	\mathcal U(t)=\exp\left(-i\int_0^t H(t')dt'\right)
+\end{equation} 
  The potential caused by a magnetic field is 
- $$H=\gamma\mathbf B\cdot\mathbf S=\gamma B_0\cos(\omega t)S_z$$ 
- $$\mathcal U(t)=\exp\left(-i\gamma B_0S_z\int_0^t\cos(\omega t)dt\right)=\exp\left(-\frac{i\gamma B_0}{\omega}\sin(\omega t)S_z\right)$$ 
+ \begin{equation}
+	H=\gamma\mathbf B\cdot\mathbf S=\gamma B_0\cos(\omega t)S_z
+\end{equation} 
+ \begin{equation}
+	\mathcal U(t)=\exp\left(-i\gamma B_0S_z\int_0^t\cos(\omega t)dt\right)=\exp\left(-\frac{i\gamma B_0}{\omega}\sin(\omega t)S_z\right)
+\end{equation} 
  \item
- $$\ket{\psi,t}=\mathcal U(t)\ket{\psi,0}=\frac{1}{\sqrt{2}}\left(\exp\left(-\frac{i\gamma B_0}{\omega}\sin(\omega t)S_z\right)\ket{+}+\exp\left(-\frac{i\gamma B_0}{\omega}\sin(\omega t)S_z\right)\ket-\right)$$ 
- $$=\frac{1}{\sqrt{2}}\left(\exp\left(-\frac{i\gamma B_0}{2\omega}\sin(\omega t)\right)\ket+ +\exp\left(\frac{i\gamma B_0}{2\omega}\sin(\omega t)\right)\ket-\right)$$ 
- Define a new time-dependent function $$\phi(t)\equiv\frac{\gamma B_0}{\omega}\sin(\omega t)$$ 
+ \begin{equation}
+	\ket{\psi,t}=\mathcal U(t)\ket{\psi,0}=\frac{1}{\sqrt{2}}\left(\exp\left(-\frac{i\gamma B_0}{\omega}\sin(\omega t)S_z\right)\ket{+}+\exp\left(-\frac{i\gamma B_0}{\omega}\sin(\omega t)S_z\right)\ket-\right)
+\end{equation} 
+ \begin{equation}
+	=\frac{1}{\sqrt{2}}\left(\exp\left(-\frac{i\gamma B_0}{2\omega}\sin(\omega t)\right)\ket+ +\exp\left(\frac{i\gamma B_0}{2\omega}\sin(\omega t)\right)\ket-\right)
+\end{equation} 
+ Define a new time-dependent function \begin{equation}
+	\phi(t)\equiv\frac{\gamma B_0}{\omega}\sin(\omega t)
+\end{equation} 
  Rewrite the state as
- $$\ket{\psi,t}=\frac{1}{\sqrt{2}}\left(e^{\frac{-i\phi}{2}}\ket++e^{\frac{i\phi}{2}}\ket-\right)$$ 
+ \begin{equation}
+	\ket{\psi,t}=\frac{1}{\sqrt{2}}\left(e^{\frac{-i\phi}{2}}\ket++e^{\frac{i\phi}{2}}\ket-\right)
+\end{equation} 
 It is known that a spin in a arbitrary direction corresponding to the unit vector $\mathbf n(\theta, \phi)$ is
-$$\ket{\mathbf{n}}=\cos\left(\frac{\theta}{2}\right)\ket{+}+e^{i\phi}\sin\left(\frac{\theta}{2}\right)\ket{-}$$
+\begin{equation}
+	\ket{\mathbf{n}}=\cos\left(\frac{\theta}{2}\right)\ket{+}+e^{i\phi}\sin\left(\frac{\theta}{2}\right)\ket{-}
+\end{equation}
 Re-normalizing can yield
- $$\ket{\psi,t}=\frac{e^{\frac{-i\phi}{2}}}{\sqrt{2}}\left(\ket++e^{i\phi}\ket-\right)=e^{\frac{-i\phi}{2}}\left(\cos\Big(\frac{\pi}{4}\Big)\ket++\sin\Big(\frac{\pi}{4}\Big)e^{i\phi}\ket-\right)$$ 
+ \begin{equation}
+	\ket{\psi,t}=\frac{e^{\frac{-i\phi}{2}}}{\sqrt{2}}\left(\ket++e^{i\phi}\ket-\right)=e^{\frac{-i\phi}{2}}\left(\cos\Big(\frac{\pi}{4}\Big)\ket++\sin\Big(\frac{\pi}{4}\Big)e^{i\phi}\ket-\right)
+\end{equation} 
  In this form, it is clear that $\theta(t)=\frac{\pi}{2}$ and $\phi(t)$ is exactly what's shown above.
  \item
  The probability of measuring $S_x=-\frac{1}{2}$ is
- $$|\braket{-_x}{\psi,t}|^2=\Bigg|\frac{1}{2}\begin{pmatrix}
+ \begin{equation}
+	|\braket{-_x}{\psi,t}|^2=\Bigg|\frac{1}{2}\begin{pmatrix}
  1&-1
  \end{pmatrix}\begin{pmatrix}
  e^{\frac{-i\phi}{2}}\\e^{\frac{i\phi}{2}}
- \end{pmatrix}\Bigg|^2=\sin^2\left(\frac{\phi(t)}{2}\right)$$
+ \end{pmatrix}\Bigg|^2=\sin^2\left(\frac{\phi(t)}{2}\right)
+\end{equation}
  \item
  A full flip in $S_x$ corresponds to $\phi(t)=\pi$ at some point in time. 
- $$\max_{\forall t}\phi(t)=\frac{\gamma B_0}{\omega}\geq\pi\therefore\omega\leq\frac{\gamma B}{\pi}$$
+ \begin{equation}
+	\max_{\forall t}\phi(t)=\frac{\gamma B_0}{\omega}\geq\pi\therefore\omega\leq\frac{\gamma B}{\pi}
+\end{equation}
  
 \end{enumerate}
 \end{sol}

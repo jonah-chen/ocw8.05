@@ -1,10 +1,20 @@
 \begin{sol}
 Given $\ket{\Psi(0)}=\frac{1}{\sqrt{2}}(\ket{\psi_1}+\ket{\psi_2})$, and $\ket{\psi_1}$ and $\ket{\psi_2}$ are stationary states, $\ket{\Psi(t)}=\frac{1}{\sqrt{2}}(e^{-i\omega_1t}\ket{\psi_1}+e^{-i\omega_2t}\ket{\psi_2})$.
-$$\braket{\Psi(0)}{\Psi(t)}=\frac{1}{2}\left(e^{-i\omega_1t}(\braket{\psi_1}{\psi_1}+\braket{\psi_2}{\psi_1})+e^{-i\omega_2t}(\braket{\psi_1}{\psi_2}+\braket{\psi_2}{\psi_2})\right)=\frac{1}{2}(e^{-i\omega_1t}+e^{-i\omega_2t})$$ 
+\begin{equation}
+	\braket{\Psi(0)}{\Psi(t)}=\frac{1}{2}\left(e^{-i\omega_1t}(\braket{\psi_1}{\psi_1}+\braket{\psi_2}{\psi_1})+e^{-i\omega_2t}(\braket{\psi_1}{\psi_2}+\braket{\psi_2}{\psi_2})\right)=\frac{1}{2}(e^{-i\omega_1t}+e^{-i\omega_2t})
+\end{equation} 
 It follows that $\displaystyle{\braket{\Psi(0)}{\Psi\left(\frac{2\pi N}{|\omega_2-\omega_1|}\right)}=0}$ then, by definition $\displaystyle{\tau=\frac{2\pi}{\omega_2-\omega_1},\,\Delta t=\frac{2}{|\omega_2-\omega_1|}}$
-$$\Delta E^2=\bra\Psi\hat H^2\ket\Psi-\bra\Psi\hat H\ket\Psi^2=\frac{\bra{\psi_1}\hat H^2\ket{\psi_1}}{2}+\frac{\bra{\psi_2}\hat H^2\ket{\psi_2}}{2}-\left(\frac{\bra{\psi_1}\hat H\ket{\psi_1}}{2}+\frac{\bra{\psi_2}\hat H\ket{\psi_2}}{2}\right)^2$$
-$$=\frac{\omega_1^2}{2}+\frac{\omega_2^2}{2}-\frac{1}{4}(\omega_1^2+\omega_2^2+2\omega_1\omega_2)=\frac{1}{4}(\omega_2-\omega_1)^2$$
-$$\Delta E=\frac{|\omega_2-\omega_1|}{2}$$
+\begin{equation}
+	\Delta E^2=\bra\Psi\hat H^2\ket\Psi-\bra\Psi\hat H\ket\Psi^2=\frac{\bra{\psi_1}\hat H^2\ket{\psi_1}}{2}+\frac{\bra{\psi_2}\hat H^2\ket{\psi_2}}{2}-\left(\frac{\bra{\psi_1}\hat H\ket{\psi_1}}{2}+\frac{\bra{\psi_2}\hat H\ket{\psi_2}}{2}\right)^2
+\end{equation}
+\begin{equation}
+	=\frac{\omega_1^2}{2}+\frac{\omega_2^2}{2}-\frac{1}{4}(\omega_1^2+\omega_2^2+2\omega_1\omega_2)=\frac{1}{4}(\omega_2-\omega_1)^2
+\end{equation}
+\begin{equation}
+	\Delta E=\frac{|\omega_2-\omega_1|}{2}
+\end{equation}
 This satisfy the energy-time uncertainty relation 
-$$\Delta E\Delta t=\frac{|\omega_2-\omega_1|}{2}\frac{2}{|\omega_2-\omega_2|}=1\geq \frac{1}{2}$$
+\begin{equation}
+	\Delta E\Delta t=\frac{|\omega_2-\omega_1|}{2}\frac{2}{|\omega_2-\omega_2|}=1\geq \frac{1}{2}
+\end{equation}
 \end{sol}

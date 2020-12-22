@@ -3,24 +3,42 @@
 \item
 Define $\ket+,\ket-:\hat S_z\ket+=\frac{1}{2}\ket+,\hat S_z\ket-=\frac{1}{2}\ket-$. As $\hat S_x$ is known, $\ket{\Psi,0}=\frac{1}{\sqrt{2}}(\ket++\ket-)$.\\
 The Hamiltonian for the system is $\hat H=-\gamma B\hat S_z$. Note that $\ket+$ and $\ket-$ are energy eigenstates, thus, time evolution is trivial.
-$$\ket{\Psi,t}=\frac{1}{\sqrt{2}}\left(e^{\frac{i\gamma B}{2}t}\ket++e^{-\frac{i\gamma B}{2}t}\ket-\right)$$ 
+\begin{equation}
+	\ket{\Psi,t}=\frac{1}{\sqrt{2}}\left(e^{\frac{i\gamma B}{2}t}\ket++e^{-\frac{i\gamma B}{2}t}\ket-\right)
+\end{equation} 
 To understand the result, it is known that a spin in a arbitrary direction corresponding to the unit vector $\mathbf n(\theta, \phi)$ is
-$$\ket{\mathbf{n}}=\cos\left(\frac{\theta}{2}\right)\ket{+}+e^{i\phi}\sin\left(\frac{\theta}{2}\right)\ket{-}$$
+\begin{equation}
+	\ket{\mathbf{n}}=\cos\left(\frac{\theta}{2}\right)\ket{+}+e^{i\phi}\sin\left(\frac{\theta}{2}\right)\ket{-}
+\end{equation}
 Re-normalize the state in this form
-$$\ket{\Psi,t}=\frac{e^{\frac{i\gamma B}{2}t}}{\sqrt{2}}\left(\ket++e^{-i\gamma Bt}\ket-\right)=e^{\frac{i\gamma B}{2}t}\left(\cos\Big(\frac{\pi}{4}\Big)\ket++e^{-i\gamma Bt}\sin\Big(\frac{\pi}{4}\Big)\ket-\right)$$
+\begin{equation}
+	\ket{\Psi,t}=\frac{e^{\frac{i\gamma B}{2}t}}{\sqrt{2}}\left(\ket++e^{-i\gamma Bt}\ket-\right)=e^{\frac{i\gamma B}{2}t}\left(\cos\Big(\frac{\pi}{4}\Big)\ket++e^{-i\gamma Bt}\sin\Big(\frac{\pi}{4}\Big)\ket-\right)
+\end{equation}
 It is now clear that $\theta=\frac{\pi}{2}$ and $\phi(t)=-\gamma Bt$. Thus, this evolution of this state can be described as rotation about the $xy$-plane at a constant angular frequency of $-\gamma B$.
 
 \item
 Finding the overlap of the state with respect to the original state
-$$\braket{\Psi,0}{\Psi,t}=\braket{+_x}{\Psi,t}=\cos\left(\frac{\gamma Bt}{2}\right)$$ 
+\begin{equation}
+	\braket{\Psi,0}{\Psi,t}=\braket{+_x}{\Psi,t}=\cos\left(\frac{\gamma Bt}{2}\right)
+\end{equation} 
 The first time the states are orthogonal is $\displaystyle{\frac{\gamma Bt}{2}=\frac{\pi}{2}}$ or when $\displaystyle{t=\frac{\pi}{\gamma B}}$.\\\\
 Since $H$ is time independent, from Lemma 11, $\Delta E$ is time independent
-$$(\Delta E)^2=\bra{\Psi,0}\hat {H^2}\ket{\Psi,0}-\bra{\Psi,0}\hat H\ket{\Psi,0}^2$$
-$$=\frac{1}{2}\left(\bra++\bra-\right)\left(\frac{\gamma^2 B^2}{4}\ket++\frac{\gamma^2 B^2}{4}\ket-\right)
--\left(\frac{1}{2}\left(\bra++\bra-\right)\left(\frac{-\gamma B}{2}\ket++\frac{\gamma B}{2}\ket-\right)\right)^2$$
-$$=\frac{1}{2}\left(\frac{\gamma^2 B^2}{4}+\frac{\gamma^2 B^2}{4}\right)-0^2=\frac{\gamma^2 B^2}{4}$$ 
-$$\Delta E=\frac{\gamma B}{2}$$ 
-$$\Delta E\Delta t_\perp=\left(\frac{\gamma B}{2}\right)\left(\frac{\pi}{\gamma B}\right)=\frac{\pi}{2}$$ 
+\begin{equation}
+	(\Delta E)^2=\bra{\Psi,0}\hat {H^2}\ket{\Psi,0}-\bra{\Psi,0}\hat H\ket{\Psi,0}^2
+\end{equation}
+\begin{equation}
+	=\frac{1}{2}\left(\bra++\bra-\right)\left(\frac{\gamma^2 B^2}{4}\ket++\frac{\gamma^2 B^2}{4}\ket-\right)
+-\left(\frac{1}{2}\left(\bra++\bra-\right)\left(\frac{-\gamma B}{2}\ket++\frac{\gamma B}{2}\ket-\right)\right)^2
+\end{equation}
+\begin{equation}
+	=\frac{1}{2}\left(\frac{\gamma^2 B^2}{4}+\frac{\gamma^2 B^2}{4}\right)-0^2=\frac{\gamma^2 B^2}{4}
+\end{equation} 
+\begin{equation}
+	\Delta E=\frac{\gamma B}{2}
+\end{equation} 
+\begin{equation}
+	\Delta E\Delta t_\perp=\left(\frac{\gamma B}{2}\right)\left(\frac{\pi}{\gamma B}\right)=\frac{\pi}{2}
+\end{equation} 
 
  \end{enumerate}
 \end{sol}
